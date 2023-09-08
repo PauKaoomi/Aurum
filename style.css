@@ -1,0 +1,25 @@
+header{
+    display: flex;
+    background-color: #cdc6ff;
+    height: 10vh;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.imagen{
+    padding: 5px;
+}
+.simbolo{
+    margin: 2px;
+    padding: 17px 10px 0 10px ;
+    
+}
+
+.nombre{
+    margin: 2px;
+    padding-top: 22px;
+    font-size: 25px;
+}
+
+
+
