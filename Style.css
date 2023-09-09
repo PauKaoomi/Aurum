@@ -1,0 +1,140 @@
+header {
+    height: 10vh;
+    margin: 0;
+    background-color: rgb(122, 91, 151);
+
+}
+
+.pss {
+
+    margin: 0px;
+}
+
+main {
+
+    padding: 20px;
+    height: 100vh;
+    width: 50vh;
+    background-color: white;
+    position: absolute;
+    left: 50vh;
+}
+
+
+aside {
+/*configuracion del contenedor*/
+    position: fixed;
+    right: 0;
+    width: 40vh;
+    height: 70vh;
+    background-color: #8AA1FD;
+    padding: 2vh;
+    margin: 1vh;
+    text-align: center;
+    border-radius: 5vh;
+}
+
+.seccion1 h2 {
+/*titulo*/
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 1vh;
+    padding-left: 4vh;
+    padding-top: 1vh;
+
+}
+
+a {
+/*textos del navar*/
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1vh;
+    margin: 0;
+
+
+}
+
+.tendencias nav ul {
+/* opciones del navar*/
+    position: absolute;
+    bottom: 20vh;
+    width: 40vh;
+    padding: 1VH;
+}
+
+/*CONFIGURACION DE BOTONES */
+.bsc {
+    position: relative;
+    background-color: #8AA1FD;
+    padding: 0vh;
+    bottom: 1vh;
+    margin: 1vh;
+    background-repeat: no-repeat;
+    width: 35vh;
+    height: 3vh;
+    color: #fff;
+    border: none;
+    transition: all .4s ease-in-out;
+    z-index: 1;
+}
+
+.bsc::before {
+    content: "";
+    background-color: #4061BA;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 300ms ease-in-out;
+    display: inline-block;
+}
+
+.bsc:hover::before {
+    width: 100%;
+}
+
+/*separador*/
+.separator {
+    position: relative;
+    height: 1px;
+    background-color: #0E2A56;
+    margin: 1vh;
+    top: 50vh;
+    right: 1vh;
+    width: 40vh;
+
+}
+
+/*configuracion navr*/
+.menu nav ul {
+    position: relative;
+    top: 50vh;
+    right: 5vh;
+    width: 40vh;
+
+}
+
+/*BOTONES MENU*/
+.smenu {
+    border: 2px solid #8AA1FD;
+    background-color: #8AA1FD;
+    border-radius: 10px;
+    padding: 2vh;
+    transition: all ease-in-out 0.1s;
+    font-size: 15px;
+}
+
+.smenu section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.smenu:hover {
+    background-color: #4061BA
+}
