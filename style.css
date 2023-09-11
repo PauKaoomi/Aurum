@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-decoration: none;
+
+}
+footer{
+    font-family: sans-serif;
+    background-image: url(Image/music.jpg);
+    padding: 20px 0;
+   
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+.contenedor{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  left: 70px;
+  
+}
+
+    
+.lista{
+    font-size: 20px;
+    margin-bottom: 25px;
+    padding: 60px;
+    
+   
+
+}
+H4{
+    font-size: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+}
+h4:hover{
+    color: aqua;
+}
+li a{
+    color: rgb(13, 43, 218);
+}
+
+li a:hover{
+color: crimson;
+background-color: cyan;
+}
+
+
+
+
+
+
+
+
+h3{
+    position: relative;
+    left: 175px;
+
+}
+h3:hover{
+    color: red;
+}
