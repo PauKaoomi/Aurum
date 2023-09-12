@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Aurum</title>
         <meta name="description" content="">
+        <link rel="stylesheet" href="EstilosMain.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="carpeta_imagenes/Favicon.ico">
@@ -80,5 +81,137 @@
                         </ul>
                 </nav>
         </header>
+        <!-- Cuerpo Posts de Foro -->
+        <main class="contenedorArticulos">
+            <!-- Seccion zona para que se publique el post -->
+            <!--
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-pen" viewBox="0 0 16 16">
+                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-image" viewBox="0 0 16 16">
+                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-paperclip" viewBox="0 0 16 16">
+                <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+            </svg>-->
+
+            <section class="PublicarPost">
+                <article class="LadoIzquierdoPublicar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-pen" viewBox="0 0 16 16">
+                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                    </svg>
+                    <input class="CuadroTexto" type="text" placeholder="Crear Post...">
+                </article>
+                <article class="LadoDerechoPublicar">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-image" viewBox="0 0 16 16">
+                            <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/><path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-paperclip" viewBox="0 0 16 16">
+                            <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                        </svg>
+                    </a>
+                </article>
+            </section>
+            <!-- Zona de Post ya Publicados -->
+            <section class="PostPublicados">
+                <article class="Post">
+                    <h3>Marc Anthony recibe su estrella en el Paseo del Fama de Hollywood</h3>
+                    <p>
+                        <img src="Img/MarkEstrella.png">
+                        <br>
+                        En la tarde de este jueves 7 de septiembre, fue la ceremonia oficial que posicionaba al cantante de salsa neoyorquino Marc Anthony, 
+                        como el dueño de una estrella en el Paseo de la Fama de Hollywood, en Estados Unidos.
+                        La sobresaliente voz tenor del neoyorquino ha sido su firma personal en el mundo de la música desde 1990, 
+                        siendo una de las más fáciles de reconocer de la salsa.
+                        <br>
+                        El artista también ha compartido su faceta como actor en la gran pantalla, 
+                        participando en películas como “El cantante” haciendo el papel del rey de la salsa Héctor Lavoe; “Vidas al límite”, 
+                        de Martin Scorsese, y “The Capeman”, un musical de Broadway de Paul Simon.
+                        <br>
+                        <br><b>Fuente:</b> El Espectador
+                    </p>
+                    <section class="BotonesAccionPost">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
+                                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                    </svg>
+                                    Comentarios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                                    </svg>
+                                    Compartir
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                    </svg>
+                                    Guardar
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+            </section>
+
+            <section class="PostPublicados">
+                <article class="Post">
+                    <h3>Canción generada por IA que imita a Drake y The Weeknd es enviada a consideración para el Grammy</h3>
+                    <p>
+                        Luego que el artista anónimo Ghostwriter se hiciera viral con su tema generado con inteligencia artificial (IA) “Heart on My Sleeve” — 
+                        que imita a Drake y The Weeknd — a principios de este año, sus representantes revelaron en una entrevista reciente con el New York Times
+                         que la polémica canción fue enviada a los premios Grammy del próximo año.
+                        <br>
+                        Presentada para su consideración en las categorías de mejor canción de rap y canción del año, “Heart on My Sleeve” es elegible pese al uso
+                         de tecnología de IA en la grabación, dijo Harvey Mason, jr., CEO de la Academia de la Grabación, al New York Times.
+                          “En cuanto al lado creativo, es absolutamente elegible porque fue escrita por un humano”, señaló.
+                        <br>
+                        El pasado abril, “Heart on My Sleeve” fue retirada de los servicios de streaming tras generar más de 600.000 reproducciones en Spotify
+                         y 275.000 vistas en YouTube. Tras la indignación, Spotify, YouTube, Apple Music, TIDAL y Deezer retiraron la canción de sus respectivas plataformas. 
+                         En una declaración a Billboard, UMG denunció la pista y el uso de IA diciendo que las publicaciones virales “demuestran por qué las plataformas
+                          tienen una responsabilidad legal y ética fundamental de evitar el uso de sus servicios de manera que perjudique a los artistas”.
+                    </p>
+                    <section class="BotonesAccionPost">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
+                                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                    </svg>
+                                    Comentarios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                                    </svg>
+                                    Compartir
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                    </svg>
+                                    Guardar
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+            </section>
+        </main>
     </body>
 </html>
