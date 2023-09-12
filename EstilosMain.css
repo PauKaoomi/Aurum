@@ -1,0 +1,90 @@
+@import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
+@import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
+
+/* Contenedor Main */
+.contenedorArticulos{
+    margin: 10px auto;
+    width: 30vw;
+}
+
+/* Contenedor Publicar Post */
+.PublicarPost{
+    padding: 1vh;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #EBE7F6;
+}
+
+/* Colores para los iconos de la pagina */
+svg{
+    fill: #0E2A56;
+}
+
+/* Estilos Cuadro de Texto Para Publicar Post */
+.PublicarPost input{
+    border: 1px solid rgba(128, 128, 128, 0.801);
+    border-radius: 5px;
+    height: 4vh;
+    width: 15vw;
+}
+
+.PublicarPost a{
+    text-decoration: none;
+}
+
+.PublicarPost .LadoIzquierdoPublicar{
+    display: inline-block;
+}
+
+.PublicarPost .LadoDerechoPublicar{
+    width: 35%;
+    height: 4vh;
+    text-align: right;
+    display: inline-block;
+}
+
+/* Contenedor post de ejemplo ya publicados */
+.PostPublicados{
+    margin: 10px auto;
+    border: 0px;
+    background-color: #ebe7f6c0;
+    border-radius: 5px;
+    padding: 1vh;
+}
+
+/* Estilos posts ya publicados */
+.PostPublicados img{
+    width: 29vw;
+}
+
+.PostPublicados h3{
+    font-family: "TypnicHeadlineSlab";
+    color: #0E2A56;
+}
+
+.PostPublicados p{
+    font-family: "Regular";
+}
+
+/* Estilos Botones: Comentar, Compartir, Guardar */
+.BotonesAccionPost{
+    border-top: 1px solid grey;
+    padding: 1vh;
+}
+
+.BotonesAccionPost ul{
+    padding: 0;
+    margin: 0;
+}
+
+.BotonesAccionPost ul li{
+    padding-right: 5px;
+    list-style:none;
+    display: inline-block;
+}
+
+.BotonesAccionPost ul li a{
+    font-family: "Regular";
+    text-decoration: none;
+    color: #140F07;
+}
