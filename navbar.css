@@ -1,0 +1,46 @@
+* {
+    margin:0;
+    padding:0;
+    width: 15%;
+    list-style: none;
+    text-decoration: none;
+    position:relative;
+    top:60px;
+    
+
+    }
+    
+.sidebar {
+    position:fixed;
+    left: 0;
+    width: 250 px;
+    height: 100%;
+    background:#384AA4;
+
+}
+
+.sidebar header {
+    margin:0;
+    padding: 80px;
+    font-size:30px;
+    color:white;
+    text-align: center;
+    line-height: 20px;
+    background: #384AA4;
+    }
+
+    .sidebar ul a {
+        display:block;
+        height: 30px;
+        width:100%;
+        line-height: 80px;
+        font-size: 20px;
+        color:white;
+        padding-left:80px;
+        box-sizing: border-box;
+        border-top: 10px 
+
+        }
+
+   
+
