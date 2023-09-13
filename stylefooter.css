@@ -1,89 +1,91 @@
 * {
-    margin: 0;
-    padding: 0;
+
     list-style: none;
     text-decoration: none;
-
 }
+
 footer {
     font-family: sans-serif;
     background-color: #4061BA;
     color: whitesmoke;
-    height: 15vh;
+    height: 20vh;
     position: absolute;
-    bottom: 0;
     width: 100%;
     padding: 12vh;
-  
+    text-decoration: none;
+
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
+
 
 .contenedor {
 
- position: relative;
- left: 30vh;
- top: -8vh;
-
-
-
-}
-
-.lista{
-    width: 200px;
-    height: 120px;
-    border: 1px;
-    margin-right: 10px; 
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
     position: relative;
-    top: 2vh;
+    left: 30vh;
+    top: -8vh;
+
+
+
 }
 
-.lista1{
+.lista {
     width: 200px;
     height: 120px;
     border: 1px;
-    margin-right: 10px; 
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    position: relative;
-    right: 5vh;
-    position:relative;
-    top: -1vh;
-    left: 1vh;
-    
-}
-
-.lista2{
-    width: 200px;
-    height: 120px;
-    border: 1px;
-    margin-right: 10px; 
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-   position: relative;
-   top: -7vh;
-   left:3vh;
-}
-
-.lista3{
-    width: 200px;
-    height: 120px;
-    border: 1px;
-    margin-right: 10px; 
+    margin-right: 10px;
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     position: relative;
     top: -5vh;
+    right: 25vh;
+
 }
-H4 {
+
+.lista1 {
+    width: 200px;
+    height: 120px;
+    border: 1px;
+    margin-right: 10px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    position: relative;
+    right: 5vh;
+    position: relative;
+    top: -5vh;
+    right: 20vh;
+
+}
+
+
+.lista2 {
+    width: 200px;
+    height: 120px;
+    border: 1px;
+    margin-right: 10px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    position: relative;
+    top: -12vh;
+    right: 15vh;
+}
+
+.lista3 {
+    width: 200px;
+    height: 120px;
+    border: 1px;
+    margin-right: 10px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    position: relative;
+    top: -3vh;
+
+}
+
+footer h4 {
     font-size: 20px;
     margin-bottom: 25px;
     padding-bottom: 10px;
@@ -91,22 +93,38 @@ H4 {
     display: inline-block;
 
 }
-h4:hover {
+
+footer h4:hover {
     color: aqua;
 }
-li a {
-    color: whitesmoke; 
+
+footer li a {
+    color: whitesmoke;
 
 }
-li a:hover{
+
+footer li a:hover {
     background-color: aquamarine;
 }
-h3 {
+
+footer h3 {
     position: relative;
-    left: 90vh;
+    left: 80vh;
     top: -8vh;
 }
 
-h3:hover {
+footer h3:hover {
     color: red;
+}
+
+footer h5 {
+    position: relative;
+    top: -4vh;
+}
+
+footer .lista3 a {
+
+    position: relative;
+    top: -5vh;
+
 }
