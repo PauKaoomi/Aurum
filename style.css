@@ -1,0 +1,201 @@
+header{
+    background-color: #cdc6ff;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    border-radius: 10px;
+}
+.contenedor-logo{
+    width: 200px;
+    height: 80px;
+    position: relative;
+
+}
+.imagen{
+    padding: 12px 10px 11px 12px;
+}
+.simbolo{
+    margin: 2px;
+    padding: 17px 10px 0 10px ;
+    width: 65px;
+    left: 60px;
+    top: -98px;
+    color: #0c243d;
+    position: relative;
+}
+
+.nombre{
+    margin: 2px;
+    padding: 6px;
+    font-size: 25px;
+    width: 85px;
+    left: 96px;
+    top: -152px;
+    border:#7f8fea 4px solid ;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 25px;
+    color: #0c243d;
+    position: relative;
+
+}
+.buscar {
+    position: relative;
+    padding: 17px 15px 17px 15px;
+    width: 50px;
+    height: 40px;
+    right: -35vw;
+    top: -80px;
+    text-align: left;
+
+    
+    
+  }
+  
+.buscar input {
+    width: 0;
+    height: 40px;
+    padding: 0 19px;
+    font-size: 18px;
+    color: #000000;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    position: absolute;
+    transition: all 0.6s ease;
+
+
+
+  }
+  
+  .btn {
+    width: 30px;
+    height: 30px;
+    line-height: 5px;
+    top: -7px;
+    left: -9px;
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+
+  }
+  
+  
+  .buscar:hover input {
+    width: 300px;
+  }
+  
+  .buscar input:focus {
+    width: 300px;
+  }
+
+
+.menu::after{
+    content:'';
+    clear: both;
+    display: table;
+}
+
+.menu{
+    
+    position: relative;
+    top:-162px;
+    right: -58vw;
+    height: 74px;
+    width: 40vw;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.menu ul{
+    float: right;
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 2px;
+    position: relative;
+
+
+
+}
+
+.menu ul li{
+
+    display: inline-block;
+    background: #cdc6ff;
+    margin: 0 5px;
+
+}
+
+
+.menu ul .servicios li{
+
+    display: inline-block;
+    background: #ffff;
+    margin: 0 5px;
+    left:-110px;
+
+}
+.menu ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    line-height: 67px;
+    font-size: 20px;
+    padding: 8px 9px;
+}
+
+.menu ul li a:hover{
+    color: #0404e2;
+    box-shadow: 0 0 5px #ff44d4,
+                0 0 5px cyan;
+    border-radius: 10px;
+
+}
+.menu ul ul{
+    position: absolute;
+    top: 90px;
+    padding-inline-start: 0;
+    width: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+    
+}
+
+.menu ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+
+
+}
+
+.menu ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 200px;
+    background-color: #ffff;
+    float: none;
+    display: list-item;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+.menu ul ul ul li{
+    position: relative;
+    top: -40px;
+    left: 201px;
+    background-color: #ffff;
+    border-radius: 5px;
+
+
+}
+.menu ul ul ul li a{
+    font-size: 15px;
+
+}
