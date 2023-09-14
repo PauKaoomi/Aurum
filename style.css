@@ -1,9 +1,17 @@
-header{
+@import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
+@import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
+
+
+.header-h{
     height: 14vh;
     width: 100%;
     border-radius: 15px;
-    position: relative;
-    background-color: #dfe1f6;
+    position:fixed;
+    background-color: #BBD8F2;
+    padding: 0;
+    margin: 0;
+    top: 0vh;
+    z-index: 15;
 
 }
 
@@ -25,11 +33,10 @@ header{
     bottom: 8%;
     width: 23%;
     text-align: center;
-    font-size: 28px;
+    font-size: 23px;
     position: relative;
-    border: 5px solid #bec4fa;
     border-radius: 20px;
-
+    font-family: "TypnicHeadlineSlab";
 }
 
 
@@ -98,8 +105,8 @@ header{
 
     position:  absolute;
     height: 100%;
-    width: 40%;
-    right: 1%;
+    width: 42%;
+    right: -2%;
     
 
 }
@@ -109,13 +116,14 @@ header{
     height: 100%;
     position: relative;
     padding-inline-start: 0;
+    font-family: "Regular";
 
 }
 
 .menu ul li{
 
     display: inline-block;
-    background: #dfe1f6;
+    background: #BBD8F2;
     margin: 0 8px;
 
 }
@@ -127,15 +135,15 @@ header{
     display: inline-block;
     background: #ffff;
     left:-110px;
-    margin-top: 19px;
+
 
 }
 .menu ul li a{
     color: rgb(0, 0, 0);
     text-decoration: none;
     line-height: 75px;
-    font-size: 23px;
-
+    font-size: 20px;
+    font-family: "Regular";
 }
 
 .menu ul li a:hover{
@@ -152,7 +160,7 @@ header{
     opacity: 0;
     visibility: hidden;
     transition: top .3s;
-    
+    z-index: 10;
 }
 
 .menu ul li:hover > ul{
@@ -172,7 +180,8 @@ header{
     border-bottom: 2px solid rgb(0, 0, 0);
     text-align: center;
     border-radius: 5px;
-    margin-top: 19px;
+
+
 }
 
 .menu ul ul li a{

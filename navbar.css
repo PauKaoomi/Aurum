@@ -1,37 +1,43 @@
+@import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
+@import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
 
-    
+
 .sidebar {
-    position:fixed;
+    position: fixed;
     left: 0;
-    width: 250 px;
-    height: 100%;
-    background:#384AA4;
+    width: 24vw;
+    height: 82vh;
+    background: #958BD9;
+    top: 15vh;
+    left: 0vw;
+    border-radius: 0 15px 15px 0;
 
 }
 
-.sidebar header {
-    margin:0;
-    width:10vw;
-    padding: 80px;
-    font-size:30px;
-    color:white;
+.sidebar h1 {
+    margin: 10px auto;
+    width: 10vw;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
     text-align: center;
     line-height: 20px;
-    background: #384AA4;
-    }
+    background: #958BD9;
+    font-family: "TypnicHeadlineSlab";
+}
 
-    .sidebar ul a {
-        display:block;
-        height: 30px;
-        width:100%;
-        line-height: 80px;
-        font-size: 20px;
-        color:white;
-        padding-left:80px;
-        box-sizing: border-box;
-        border-top: 10px 
-
-        }
-
-   
-
+.sidebar ul a {
+    display: block;
+    height: 30px;
+    width: 100%;
+    line-height: 80px;
+    font-size: 20px;
+    color: white;
+    padding-left: 80px;
+    box-sizing: border-box;
+    border-top: 10px;
+    font-family: "Regular";
+}
+.sidebar i{
+    color: #454BBF;
+}

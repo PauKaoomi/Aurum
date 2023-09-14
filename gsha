@@ -1,0 +1,7 @@
+.buscar:hover input {
+    width: 300px;
+  }
+  
+  .buscar input:focus {
+    width: 300px;
+  }

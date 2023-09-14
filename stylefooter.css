@@ -1,3 +1,7 @@
+@import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
+@import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
+
+
 * {
 
     list-style: none;
@@ -6,25 +10,31 @@
 
 footer {
     font-family: sans-serif;
-    background-color: #4061BA;
-    color: whitesmoke;
-    height: 20vh;
+    background-color: #0D0D0D;
+    color:#fff;
+    height: 27vh;
     position: absolute;
-    width: 100%;
-    padding: 12vh;
+    width: 98vw;
+    padding: 5vh 2vh ;
     text-decoration: none;
+    border-radius: 5px;
+    z-index: 10;
+
+}
+footer ul{
+
+    padding: 0;
 
 }
 
-
-
 .contenedor {
 
+
+    height: 100%;
+    width: 60%;
     position: relative;
-    left: 30vh;
-    top: -8vh;
-
-
+    top:12%;
+    left: 30%;
 
 }
 
@@ -46,42 +56,40 @@ footer {
     width: 200px;
     height: 120px;
     border: 1px;
-    margin-right: 10px;
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     position: relative;
     right: 5vh;
     position: relative;
-    top: -5vh;
+    top: -7vh;
     right: 20vh;
 
 }
 
 
 .lista2{
-    width: 200px;
+    width: 10vw;
     height: 120px;
     border: 1px;
-    margin-right: 10px;
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     position: relative;
-    top: -14vh;
-    right: 15vh;
+    top: -12vh;
+    right: 9vh;
 }
 
 .lista3 {
-    width: 200px;
+    width: 10vw;
     height: 120px;
     border: 1px;
-    margin-right: 10px;
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     position: relative;
-    top: -3vh;
+    bottom: 3vh;
+    top: -6vh;
 
 }
 
@@ -89,7 +97,7 @@ footer h4 {
     font-size: 20px;
     margin-bottom: 25px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #fff;
     display: inline-block;
 
 }
@@ -110,7 +118,9 @@ footer li a:hover {
 footer h3 {
     position: relative;
     left: 80vh;
-    top: -8vh;
+    top: -1vh;
+    display:inline;
+    text-align: right;
 }
 
 footer h3:hover {

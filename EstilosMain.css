@@ -10,14 +10,18 @@
 /* Contenedor Publicar Post */
 .PublicarPost{
     padding: 1vh;
-    border: 0px;
+    border: 2px solid #454BBF;
     border-radius: 5px;
-    background-color: #EBE7F6;
+    position: relative;
+    width: 38vw;
+    right: 5vw;
+    top: 13vh;
+    z-index: 9;
 }
 
 /* Colores para los iconos de la pagina */
 svg{
-    fill: #0E2A56;
+    fill: #454BBF;
 }
 
 /* Estilos Cuadro de Texto Para Publicar Post */
@@ -26,6 +30,7 @@ svg{
     border-radius: 5px;
     height: 4vh;
     width: 15vw;
+
 }
 
 .PublicarPost a{
@@ -37,7 +42,7 @@ svg{
 }
 
 .PublicarPost .LadoDerechoPublicar{
-    width: 35%;
+    width: 53%;
     height: 4vh;
     text-align: right;
     display: inline-block;
@@ -46,20 +51,25 @@ svg{
 /* Contenedor post de ejemplo ya publicados */
 .PostPublicados{
     margin: 10px auto;
-    border: 0px;
-    background-color: #ebe7f6c0;
+    border: 2px solid #454BBF;
     border-radius: 5px;
     padding: 1vh;
+    position: relative;
+    width: 38vw;
+    right: 5vw;
+    top:12vh;
+    z-index: 9;
 }
 
 /* Estilos posts ya publicados */
 .PostPublicados img{
-    width: 29vw;
+    width: 38vw;
+    
 }
 
 .PostPublicados h3{
     font-family: "TypnicHeadlineSlab";
-    color: #0E2A56;
+    color: #454BBF;
 }
 
 .PostPublicados p{
