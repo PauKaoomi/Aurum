@@ -1,14 +1,4 @@
-* {
-    margin:0;
-    padding:0;
-    width: 15%;
-    list-style: none;
-    text-decoration: none;
-    position:relative;
-    top:60px;
-    
 
-    }
     
 .sidebar {
     position:fixed;
@@ -21,6 +11,7 @@
 
 .sidebar header {
     margin:0;
+    width:10vw;
     padding: 80px;
     font-size:30px;
     color:white;
