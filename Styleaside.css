@@ -1,15 +1,19 @@
+@import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
+@import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
+
+
 aside {
     /*configuracion del contenedor*/
-    position: sticky;
-    left: 140vh;
-    bottom: 20vh;
+    position: fixed;
+    left: 144vh;
+    bottom: 1vh;
     width: 50vh;
-    height: 61vh;
-    background-color: #8AA1FD;
+    height: 80vh;
+    background-color: #958BD9;
     padding: 1vh;
-    margin: 2vh;
     text-align: center;
-    border-radius: 5vh;
+    border-radius: 15px 0 0 15px ;
+    z-index: 9;
 
 }
 
@@ -19,7 +23,7 @@ aside svg{
 .seccion1 h2 {
     /*titulo*/
     position: relative;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "TypnicHeadlineSlab";
     color: white;
     margin: 1vh;
     padding-left: 6vh;
@@ -31,9 +35,9 @@ aside a {
     /*textos del navar*/
     color: white;
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1vh;
     margin: 0;
+    font-family: "Regular";
 
 
 }
@@ -50,7 +54,7 @@ aside a {
 /*CONFIGURACION DE BOTONES */
 .bsc {
     position: relative;
-    background-color: #8AA1FD;
+    background-color: #958BD9;
     padding: 0vh;
     bottom: 1vh;
     margin: 1vh;
@@ -65,7 +69,7 @@ aside a {
 
 .bsc::before {
     content: "";
-    background-color: #4061BA;
+    background-color: #454BBF;
     width: 0;
     height: 100%;
     position: absolute;
@@ -84,7 +88,7 @@ aside a {
 .separator {
     position: relative;
     height: 1px;
-    background-color: #0E2A56;
+    background-color: #454BBF;
     margin: 1vh;
     top: -5vh;
     right: 1vh;
@@ -104,8 +108,8 @@ aside a {
 
 /*BOTONES MENU*/
 .smenu {
-    border: 2px solid #8AA1FD;
-    background-color: #8AA1FD;
+    border: 2px solid #958BD9;
+    background-color: #958BD9;
     border-radius: 10px;
     padding: 1vh;
     transition: all ease-in-out 0.1s;
@@ -119,5 +123,5 @@ aside a {
 }
 
 .smenu:hover {
-    background-color: #4061BA
+    background-color: #454BBF;
 }
