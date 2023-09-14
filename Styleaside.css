@@ -5,21 +5,21 @@
 aside {
     /*configuracion del contenedor*/
     position: fixed;
-    left: 144vh;
-    bottom: 1vh;
+    left: 75vw;
+    top: 14vh;
     width: 50vh;
-    height: 80vh;
+    height: 85vh;
     background-color: #958BD9;
     padding: 1vh;
     text-align: center;
     border-radius: 15px 0 0 15px ;
     z-index: 9;
-
 }
 
 aside svg{
     fill: whitesmoke;
 }
+
 .seccion1 h2 {
     /*titulo*/
     position: relative;
@@ -38,8 +38,6 @@ aside a {
     padding: 1vh;
     margin: 0;
     font-family: "Regular";
-
-
 }
 
 .tendencias nav ul {

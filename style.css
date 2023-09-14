@@ -1,13 +1,12 @@
 @import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
 @import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
 
-
 .header-h{
     height: 14vh;
     width: 100%;
-    border-radius: 15px;
+
     position:fixed;
-    background-color: #BBD8F2;
+    background-color: #0D0D0D;
     padding: 0;
     margin: 0;
     top: 0vh;
@@ -29,6 +28,7 @@
     position: relative;
 }
 .nombre-logo{
+    color: white;
     left: 3%;
     bottom: 8%;
     width: 23%;
@@ -39,19 +39,16 @@
     font-family: "TypnicHeadlineSlab";
 }
 
-
 .imagen-logo, .simbolo-logo, .nombre-logo{
     display: inline-block;
     margin: 0;
+    color: white;
 }
-
 
 .contenedor-imagen, .buscar, .menu{
     display: inline-block;
     margin: 0;
-
 }
-
 
 .buscar {
     position: relative;
@@ -59,21 +56,17 @@
     height: 100%;
     top: 15%;
     right: 12%;
-
 }
   
 .buscar input {
     width: 0;
-    height: 37%;
+    height: 30%;
     padding: 0 19px;
     font-size: 18px;
-    color: #000000;
+    color: white;
     border-radius: 30px;
     position: absolute;
     transition: all 0.6s ease;
-
-
-
 }
   
 .btn {
@@ -88,9 +81,7 @@
     font-size: 18px;
     border-radius: 50px;
     cursor: pointer;
-
 }
-  
   
 .buscar:hover input {
     width: 400px;
@@ -100,15 +91,12 @@
     width: 400px;
 }
 
-
 .menu{
-
+    color: white;
     position:  absolute;
     height: 100%;
     width: 42%;
     right: -2%;
-    
-
 }
 
 .menu ul{
@@ -117,29 +105,28 @@
     position: relative;
     padding-inline-start: 0;
     font-family: "Regular";
-
 }
 
 .menu ul li{
 
     display: inline-block;
-    background: #BBD8F2;
+    background: #0D0D0D;
     margin: 0 8px;
-
 }
 
-
+.textomenu p{
+    color: white;
+    margin: 0;
+}
 
 .menu ul .servicios li{
 
     display: inline-block;
     background: #ffff;
     left:-110px;
-
-
 }
 .menu ul li a{
-    color: rgb(0, 0, 0);
+    color: black;
     text-decoration: none;
     line-height: 75px;
     font-size: 20px;
@@ -147,11 +134,7 @@
 }
 
 .menu ul li a:hover{
-    color: #0404e2;
-    box-shadow: 0 0 5px #ff44d4,
-                0 0 5px cyan;
-    border-radius: 10px;
-
+    color: #958BD9;
 }
 .menu ul ul{
     position: absolute;
@@ -167,8 +150,6 @@
     top: 70px;
     opacity: 1;
     visibility: visible;
-
-
 }
 
 .menu ul ul li{
@@ -180,8 +161,6 @@
     border-bottom: 2px solid rgb(0, 0, 0);
     text-align: center;
     border-radius: 5px;
-
-
 }
 
 .menu ul ul li a{
@@ -194,9 +173,8 @@
     left: 150px;
     background-color: #ffff;
     border-radius: 5px;
-
-
 }
+
 .menu ul ul ul li a{
     font-size: 15px;
 

@@ -12,13 +12,14 @@ footer {
     font-family: sans-serif;
     background-color: #0D0D0D;
     color:#fff;
-    height: 27vh;
-    position: absolute;
-    width: 98vw;
-    padding: 5vh 2vh ;
+    height: 30vh;
+    position: relative;
+    width: 70vw;
+    margin-top: 13vh;
+    padding: 5vh 2vh;
     text-decoration: none;
     border-radius: 5px;
-    z-index: 10;
+    right: 25vh;
 
 }
 footer ul{
@@ -28,14 +29,11 @@ footer ul{
 }
 
 .contenedor {
-
-
-    height: 100%;
-    width: 60%;
+    height: 30vh;
+    width: 70vw;
     position: relative;
     top:12%;
-    left: 30%;
-
+    left: 15%;
 }
 
 .lista {
@@ -48,8 +46,7 @@ footer ul{
     font-size: medium;
     position: relative;
     top: -5vh;
-    right: 25vh;
-
+    right: 12vh;
 }
 
 .lista1 {
@@ -60,10 +57,9 @@ footer ul{
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     position: relative;
-    right: 5vh;
     position: relative;
     top: -7vh;
-    right: 20vh;
+    right: 12vh;
 
 }
 
@@ -76,8 +72,8 @@ footer ul{
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     position: relative;
-    top: -12vh;
-    right: 9vh;
+    top: -11vh;
+    right: 5vh;
 }
 
 .lista3 {
@@ -90,6 +86,7 @@ footer ul{
     position: relative;
     bottom: 3vh;
     top: -6vh;
+    right: 3vh;
 
 }
 
@@ -99,11 +96,10 @@ footer h4 {
     padding-bottom: 10px;
     border-bottom: 2px solid #fff;
     display: inline-block;
-
 }
 
 footer h4:hover {
-    color: aqua;
+    color: #958BD9;
 }
 
 footer li a {
@@ -112,19 +108,19 @@ footer li a {
 }
 
 footer li a:hover {
-    background-color: aquamarine;
+    background-color: #958BD9;
 }
 
 footer h3 {
     position: relative;
-    left: 80vh;
+    left: 50vh;
     top: -1vh;
     display:inline;
     text-align: right;
 }
 
 footer h3:hover {
-    color: red;
+    color: #958BD9;
 }
 
 footer h5 {

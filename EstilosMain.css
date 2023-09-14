@@ -17,6 +17,8 @@
     right: 5vw;
     top: 13vh;
     z-index: 9;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /* Colores para los iconos de la pagina */
@@ -64,7 +66,6 @@ svg{
 /* Estilos posts ya publicados */
 .PostPublicados img{
     width: 38vw;
-    
 }
 
 .PostPublicados h3{
