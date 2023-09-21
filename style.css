@@ -50,12 +50,102 @@
     margin: 0;
 }
 
+.inicio-registro{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 30%;
+    height: 100%;
+    
+}
+.inicio, .registro, .puntos{
+    display: inline-block;
+}
+.inicio{
+    width: 30%;
+    line-height: 40px;
+    text-align: center;
+    background-color: #F229BD;
+    border-radius: 30px;
+    margin-right: 3px;
+    position: relative;
+    top: 27%;
+    left: 28%;
+}
+
+.inicio a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+    font-family: "TypnicHeadlineSlab"; 
+}
+
+.registro{
+    width: 22%;
+    line-height: 40px;
+    text-align: center;
+    background-color: #F229BD;
+    border-radius: 30px;
+    margin-left: 3px;
+    position: relative;
+    top: 27%;
+    left: 28%;
+}
+
+.registro a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+    font-family: "TypnicHeadlineSlab"; 
+}
+.puntos{
+    line-height: 45px;
+    margin-left: 10px;
+    position: relative;
+    top: 27%;
+    left: 28%;
+    width: 5%;
+}
+
+.puntos ul{
+    list-style: none;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    padding-inline-start: 0;
+
+}
+.puntos ul{
+    width: 160px;
+    background-color: white;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+    z-index: 10;
+    
+}
+
+.puntos li:hover > ul{
+    top: 36px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*
 .buscar {
     position: relative;
     width: 18%;
     height: 100%;
-    top: 15%;
-    right: 12%;
+    top: 12%;
+    right: 13%;
+}
+
+.busqueda-btn{
+    position: relative;
+    left: 25%;
+    top: 4%;
 }
   
 .buscar input {
@@ -178,4 +268,4 @@
 .menu ul ul ul li a{
     font-size: 15px;
 
-}
+} */
