@@ -1,68 +1,71 @@
 @import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
 @import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
 
-
 aside {
     /*configuracion del contenedor*/
-    position: fixed;
-    left: 75vw;
-    top: 14vh;
-    width: 50vh;
-    height: 85vh;
+    position: absolute;
+    left:70vw;
+    top: 15vh;
+    width: 43vh;
+    height: 50vh;
     background-color: #958BD9;
     padding: 1vh;
-    text-align: center;
-    border-radius: 15px 0 0 15px ;
+    border-radius:10px ;
+    padding: 10px;
     z-index: 9;
-}
-
-aside svg{
-    fill: whitesmoke;
 }
 
 .seccion1 h2 {
     /*titulo*/
-    position: relative;
-    font-family: "TypnicHeadlineSlab";
+    font-family: "Regular";
     color: white;
-    margin: 1vh;
-    padding-left: 6vh;
-    padding-top: 1vh;
+    right: 10%;
+    bottom: 10%;
+    font-size: 15px;
+    margin: 2px;
+    text-align: left;
 
 }
 
-aside a {
+.opcionuno{
+    width: 15%;
+    height: auto;
+    position: relative;
+    left: 1;
+    top: 11%;
+    padding: 0;
+}
+
+
+.textouno {
     /*textos del navar*/
     color: white;
-    text-decoration: none;
-    padding: 1vh;
+    position: relative;
+    padding: 2px;
     margin: 0;
+    bottom: 17%;
     font-family: "Regular";
 }
 
-.tendencias nav ul {
+.navegacion  {
     /* opciones del navar*/
     position: relative;
     bottom: 1vh;
-    left: 4vh;
-    width: 40vh;
-    padding: 1VH;
+    left: 1vh;
+    padding: 1%;
 }
 
 /*CONFIGURACION DE BOTONES */
 .bsc {
     position: relative;
     background-color: #958BD9;
-    padding: 0vh;
-    bottom: 1vh;
-    margin: 1vh;
-    background-repeat: no-repeat;
-    width: 35vh;
-    height: 3vh;
+    width: 39vh;
+    height: 9vh;
     color: #fff;
-    border: none;
+    border:none;
     transition: all .4s ease-in-out;
     z-index: 1;
+    padding: 0;
 }
 
 .bsc::before {
@@ -82,17 +85,7 @@ aside a {
     width: 100%;
 }
 
-/*separador*/
-.separator {
-    position: relative;
-    height: 1px;
-    background-color: #454BBF;
-    margin: 1vh;
-    top: -5vh;
-    right: 1vh;
-    width: 50vh;
 
-}
 
 /*configuracion navr*/
 .tumenu {
