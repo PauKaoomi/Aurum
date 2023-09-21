@@ -63,17 +63,30 @@
 }
 
 .imagen-user{
-    top: 11px;
+    top: 10px;
     position: relative;
 }
+
+.btn-user{
+    height: 60px;
+    border-radius: 5px;
+    background-color: #0D0D0D;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 53%;
+    top:10%;
+}
+
+.btn-user:hover{
+    border: 2px solid white;
+}
+
 .user{
-    left: 55%;
-    top: 8%;
-    width: 45%;
+    width: 100%;
     height: 90%;
     border-radius: 5px;
     position: relative;
-    
 }
 
 .nombre-user{
@@ -81,7 +94,7 @@
     position: relative;
     margin-left: 5px;
     color: white;
-    top: 2px;
+    top:2px;
 
 }
 
@@ -90,6 +103,39 @@
     margin-left: 40px;
     top:3px;
     position: relative;
+}
+
+.notificacion{
+    background-color: black;
+    height: 40px ;
+    width: 40px ;
+    right: 7%;
+    top:11%;
+    position: relative;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.notificacion:hover{
+    border:2px solid white;
+}
+
+.mensaje{
+    position: relative;
+    background-color: black;
+    height: 40px ;
+    width: 40px ;
+    right: 28%;
+    top:11%;
+    position: relative;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.mensaje:hover{
+    border: 2px solid white;
 }
 
 .buscar {
@@ -220,10 +266,7 @@
     opacity: 1;
     visibility: visible;
 }
-
 /*
-
-
 .menu{
     color: white;
     position:  absolute;
