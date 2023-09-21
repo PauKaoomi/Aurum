@@ -1,19 +1,41 @@
 @import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
 @import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
 
-aside {
+.asideuno {
     /*configuracion del contenedor*/
     position: absolute;
     left:70vw;
     top: 15vh;
-    width: 43vh;
-    height: 50vh;
+    width: 41vh;
+    height: 34vh;
     background-color: #958BD9;
     padding: 1vh;
     border-radius:10px ;
     padding: 10px;
     z-index: 9;
+    display: block;
+    
 }
+
+
+.asidedos{
+    /*configuracion del contenedor*/
+    position: absolute;
+    left:70vw;
+    top: 53vh;
+    width: 41vh;
+    height: 34vh;
+    background-color: #958BD9;
+    padding: 1vh;
+    border-radius:10px ;
+    padding: 10px;
+    z-index: 9;
+    display: block;
+    
+}
+
+
+
 
 .seccion1 h2 {
     /*titulo*/
@@ -22,48 +44,63 @@ aside {
     right: 10%;
     bottom: 10%;
     font-size: 15px;
-    margin: 2px;
+    margin: 10px;
+    text-align: left;
+    border: black;
+
+}
+
+.seccion2 h2 {
+    /*titulo*/
+    font-family: "Regular";
+    color: white;
+    right: 10%;
+    bottom: 10%;
+    font-size: 15px;
+    margin: 10px;
     text-align: left;
 
 }
 
+
 .opcionuno{
+    float: left;
     width: 15%;
     height: auto;
-    position: relative;
     left: 1;
     top: 11%;
     padding: 0;
+    
+
 }
 
 
 .textouno {
     /*textos del navar*/
     color: white;
-    position: relative;
     padding: 2px;
     margin: 0;
-    bottom: 17%;
+    bottom: 1px;
     font-family: "Regular";
+    position: relative;
+    top:  10px;
 }
 
 .navegacion  {
     /* opciones del navar*/
-    position: relative;
-    bottom: 1vh;
-    left: 1vh;
-    padding: 1%;
+    padding: 1px;
+    margin: 1px;
+    left: 2px;
 }
 
 /*CONFIGURACION DE BOTONES */
 .bsc {
     position: relative;
     background-color: #958BD9;
-    width: 39vh;
+    width: 40vh;
     height: 9vh;
     color: #fff;
-    border:none;
-    transition: all .4s ease-in-out;
+    border: none;
     z-index: 1;
     padding: 0;
 }
@@ -71,14 +108,11 @@ aside {
 .bsc::before {
     content: "";
     background-color: #454BBF;
-    width: 0;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    transition: width 300ms ease-in-out;
-    display: inline-block;
 }
 
 .bsc:hover::before {
@@ -86,33 +120,3 @@ aside {
 }
 
 
-
-/*configuracion navr*/
-.tumenu {
-    top: -12vh;
-    position: relative;
-    right: 5vh;
-    width: 45vh;
-    padding: 5vh;
-
-}
-
-/*BOTONES MENU*/
-.smenu {
-    border: 2px solid #958BD9;
-    background-color: #958BD9;
-    border-radius: 10px;
-    padding: 1vh;
-    transition: all ease-in-out 0.1s;
-    font-size: 15px;
-}
-
-.smenu section {
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-
-.smenu:hover {
-    background-color: #454BBF;
-}
