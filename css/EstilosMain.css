@@ -9,6 +9,7 @@
 
 /* Contenedor Publicar Post */
 .PublicarPost{
+    display: none;
     padding: 1vh;
     border: 2px solid #454BBF;
     border-radius: 5px;
@@ -23,7 +24,7 @@
 
 /* Colores para los iconos de la pagina */
 svg{
-    fill: #454BBF;
+    fill: white;
 }
 
 /* Estilos Cuadro de Texto Para Publicar Post */
@@ -53,7 +54,7 @@ svg{
 /* Contenedor post de ejemplo ya publicados */
 .PostPublicados{
     margin: 10px auto;
-    border: 2px solid #454BBF;
+    background-color: #958BD9;
     border-radius: 5px;
     padding: 1vh;
     position: relative;
@@ -70,16 +71,42 @@ svg{
 
 .PostPublicados h3{
     font-family: "TypnicHeadlineSlab";
-    color: #454BBF;
+    color: white;
 }
 
 .PostPublicados p{
+    color: white;
     font-family: "Regular";
+}
+
+/* Estilos Header post publicados */
+
+.headerPostPublicados{
+    padding: 1vh;
+    display: inline-block;
+}
+
+.headerPostPublicados img{
+    width: 60px;
+}
+
+.espacioImg{
+    width: 8%;
+    display: inline-block;
+}
+
+.espacioTitulo{
+    padding-left: 10px;
+    width: 85%;
+    display: inline-block;
+}
+.espacioTitulo h3{
+    margin: 0;
 }
 
 /* Estilos Botones: Comentar, Compartir, Guardar */
 .BotonesAccionPost{
-    border-top: 1px solid grey;
+    border-top: 1px solid #454bbfd4;
     padding: 1vh;
 }
 
@@ -97,5 +124,5 @@ svg{
 .BotonesAccionPost ul li a{
     font-family: "Regular";
     text-decoration: none;
-    color: #140F07;
+    color: white;
 }
