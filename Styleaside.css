@@ -24,7 +24,7 @@
     left:70vw;
     top: 53vh;
     width: 41vh;
-    height: 34vh;
+    height: 30vh;
     background-color: #958BD9;
     padding: 1vh;
     border-radius:10px ;
@@ -69,11 +69,31 @@
     height: auto;
     left: 1;
     top: 11%;
-    padding: 0;
+    padding: 3px;
     
 
 }
+.info{
 
+    color: white;
+    padding: 2px;
+    margin: 0;
+    bottom: 15px;
+    font-family: "Regular";
+    position: absolute;
+    left: 12vh;
+    font-size: 9px;
+
+}
+
+.opciondos{
+    float: left;
+    width: 20%;
+    height: auto;
+    top: 11%;
+    padding: 10px;
+
+}
 
 .textouno {
     /*textos del navar*/
@@ -84,6 +104,31 @@
     font-family: "Regular";
     position: relative;
     top:  10px;
+}
+
+.textodos {
+    /*textos del navar*/
+    color: white;
+    padding: 2px;
+    margin: 0;
+    bottom: 30px;
+    font-family: "Regular";
+    position: absolute;
+    left: 12vh;
+    font-size: 20px;
+}
+
+
+.textotres {
+    /*textos del navar*/
+    color: white;
+    padding: 2px;
+    margin: 0;
+    bottom: 25px;
+    font-size: 13px;
+    font-family: "Regular";
+    position: absolute;
+    left: 25vh;
 }
 
 .navegacion  {
@@ -100,6 +145,16 @@
     width: 40vh;
     height: 9vh;
     color: #fff;
+    border: none;
+    z-index: 1;
+    padding: 0;
+}
+
+.asidedos .bsc {
+    position: relative;
+    background-color: #958BD9;
+    width: 40vh;
+    height: 11vh;
     border: none;
     z-index: 1;
     padding: 0;
