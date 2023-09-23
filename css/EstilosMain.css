@@ -28,12 +28,9 @@ svg{
 }
 
 /* Estilos Cuadro de Texto Para Publicar Post */
-.PublicarPost input{
+.CuadroTexto{
     border: 1px solid rgba(128, 128, 128, 0.801);
     border-radius: 5px;
-    height: 4vh;
-    width: 15vw;
-
 }
 
 .PublicarPost a{
@@ -60,7 +57,7 @@ svg{
     position: relative;
     width: 38vw;
     right: 5vw;
-    top:12vh;
+    top:14vh;
     z-index: 9;
 }
 
@@ -86,7 +83,7 @@ svg{
     display: inline-block;
 }
 
-.headerPostPublicados img{
+.headerPostPublicados img, .cajaComentarios img{
     width: 60px;
 }
 
@@ -95,7 +92,7 @@ svg{
     display: inline-block;
 }
 
-.espacioTitulo{
+.espacioTitulo, .espacioCajaTexto{
     padding-left: 10px;
     width: 85%;
     display: inline-block;
@@ -125,4 +122,44 @@ svg{
     font-family: "Regular";
     text-decoration: none;
     color: white;
+}
+/* Estilos Caja de Comentarios */
+
+.cajaComentarios{
+    width: 97%;
+    background-color: #454bbf5c;
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+.espacioCajaTexto input{
+    height: 4vh;
+    width: 100%;
+}
+
+.btn-publicar{
+    margin-top: 7px;
+    padding: 1vh;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: "Regular";
+    background-color: #F229BD;
+    position: relative;
+    left: 27vw;
+}
+
+.ImgComentarios{
+    position: relative;
+    bottom: 1vh;
+}
+
+.TituloComentarios h3{
+    margin: 0;
+}
+
+.TituloComentarios{
+    height: 3vh;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.512);
+    margin-bottom: 1vh;
 }
