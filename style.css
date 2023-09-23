@@ -63,12 +63,12 @@
 }
 
 .imagen-user{
-    top: 10px;
+    top: 8px;
     position: relative;
 }
 
 .btn-user{
-    height: 60px;
+    height: 90%;
     border-radius: 5px;
     background-color: #0D0D0D;
     border: none;
@@ -94,49 +94,51 @@
     position: relative;
     margin-left: 5px;
     color: white;
-    top:2px;
+
 
 }
 
 .user i {
     color: white;
     margin-left: 40px;
-    top:3px;
     position: relative;
+}
+.burbuja{
+    top:11%;
+    position: relative;
+    border-radius: 30px;
+    border:none ;
+    background-color: black;
+    height: 58%;
+    width: 8% ;
 }
 
 .notificacion{
-    background-color: black;
-    height: 40px ;
-    width: 40px ;
+
     right: 7%;
-    top:11%;
+
+}
+.notificacion i{
+    left: 0px;
     position: relative;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
 }
 
 .notificacion:hover{
-    border:2px solid white;
+    border: 2px solid white ;
 }
 
-.mensaje{
-    position: relative;
-    background-color: black;
-    height: 40px ;
-    width: 40px ;
-    right: 28%;
-    top:11%;
-    position: relative;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-}
+.mensaje {
 
+    right: 29%;
+}
+.mensaje i{
+    left: 0px;
+    position: relative;
+}
 .mensaje:hover{
-    border: 2px solid white;
+    border: 2px solid white ;
 }
+
 
 .buscar {
     position: relative;
@@ -196,16 +198,25 @@
 .inicio, .registro, .puntos{
     display: inline-block;
 }
-.inicio{
-    width: 30%;
+
+.btn-a{
     line-height: 40px;
     text-align: center;
     background-color: #F229BD;
     border-radius: 30px;
-    margin-right: 3px;
+    margin-left: 3px;
     position: relative;
     top: 27%;
     left: 28%;
+    border: none;
+    
+}
+
+.btn-a:hover{
+    border: 2px solid #fb34d3;
+}
+.inicio{
+    width: 30%;
 }
 
 .inicio a{
@@ -217,14 +228,6 @@
 
 .registro{
     width: 22%;
-    line-height: 40px;
-    text-align: center;
-    background-color: #F229BD;
-    border-radius: 30px;
-    margin-left: 3px;
-    position: relative;
-    top: 27%;
-    left: 28%;
 }
 
 .registro a{
@@ -265,6 +268,129 @@
     top: 36px;
     opacity: 1;
     visibility: visible;
+}
+
+.ventana{
+    background-color: rgb(255, 255, 255);
+    width: 21%;
+    padding: 50px;
+    min-height: 78vh;
+    border-radius: 22px;
+    top: 24%;
+    right: 36%;
+    position: absolute;
+    display: none;
+}
+#cerrar{
+    position: relative;
+    left: 100%;
+}
+.informacion-incio{
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+}
+.pab-i{
+    font-size: 25px;
+    margin: 0;
+}
+.acuerdo{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+i, .text-google{
+    display: inline-block;
+}
+.google{
+    border-radius: 30px;
+    position: relative;
+    top:25px;
+    background-color: white;
+    transition: all 1s ease;
+}
+.google:hover{
+    background: rgb(201, 50, 50);
+    color: #fff;
+
+}
+i{
+    position:relative;
+    right: 9%;
+}
+
+p{
+    font-family: "regular";
+    font-size: 16px;
+
+}
+i, .text-facebook{
+    display: inline-block;
+}
+.facebook{
+    border-radius: 30px;
+    position: relative;
+    top:33px;
+    background-color: white;
+    transition: all 1s ease;
+}
+.facebook:hover{
+    background: #318aac;
+    color: #fff;
+
+}
+i{
+    position:relative;
+    right: 9%;
+}
+
+p{
+    font-family: "regular";
+    font-size: 16px;
+
+}
+
+hr{
+    size: 3px;
+    color: black;
+    top: 60px;
+    position: relative;
+}
+.input-registro{
+    top: 90px;
+    position: relative;
+    height: 50px;
+    border-radius: 30px;
+}
+.correo{
+    height: 70%;
+    width: 91%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 3px solid black;
+}
+.input-contraseña{
+    top: 110px;
+    position: relative;
+    height: 50px;
+    border-radius: 30px;
+}
+.contraseña{
+    height: 70%;
+    width: 91%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 3px solid black;
+}
+.olvido{
+    top:110px;
+    position: relative;
+    font-size: 14px;
+}
+.ven-ini {
+    position: relative;
+    top: 120px;
+    font-family: "regular";
 }
 /*
 .menu{
