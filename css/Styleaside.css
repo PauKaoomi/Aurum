@@ -1,8 +1,9 @@
 @import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
 @import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
 
+/*configuracion del contenedores*/
 .asideuno {
-    /*configuracion del contenedor*/
+    
     position: absolute;
     left:70vw;
     top: 15vh;
@@ -17,9 +18,7 @@
     
 }
 
-
 .asidedos{
-    /*configuracion del contenedor*/
     position: absolute;
     left:70vw;
     top: 53vh;
@@ -33,12 +32,9 @@
     display: block;
     
 }
-
-
-
-
+/*titulos*/
 .seccion1 h2 {
-    /*titulo*/
+    
     font-family: "Regular";
     color: white;
     right: 10%;
@@ -49,9 +45,7 @@
     border: black;
 
 }
-
 .seccion2 h2 {
-    /*titulo*/
     font-family: "Regular";
     color: white;
     right: 10%;
@@ -59,7 +53,6 @@
     font-size: 15px;
     margin: 10px;
     text-align: left;
-
 }
 
 
@@ -71,18 +64,6 @@
     top: 11%;
     padding: 3px;
     
-
-}
-.info{
-
-    color: white;
-    padding: 2px;
-    margin: 0;
-    bottom: 15px;
-    font-family: "Regular";
-    position: absolute;
-    left: 12vh;
-    font-size: 9px;
 
 }
 
@@ -129,6 +110,19 @@
     font-family: "Regular";
     position: absolute;
     left: 25vh;
+}
+
+.info{
+
+    color: white;
+    padding: 2px;
+    margin: 0;
+    bottom: 15px;
+    font-family: "Regular";
+    position: absolute;
+    left: 12vh;
+    font-size: 9px;
+
 }
 
 .navegacion  {
