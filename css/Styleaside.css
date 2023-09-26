@@ -1,125 +1,169 @@
 @import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
 @import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
 
-
-aside {
-    /*configuracion del contenedor*/
-    position: fixed;
-    left: 75vw;
-    top: 14vh;
-    width: 50vh;
-    height: 85vh;
+/*configuracion del contenedores*/
+.asideuno {
+    
+    position: absolute;
+    left:70vw;
+    top: 15vh;
+    width: 41vh;
+    height: 34vh;
     background-color: #958BD9;
     padding: 1vh;
-    text-align: center;
-    border-radius: 15px 0 0 15px ;
+    border-radius:10px ;
+    padding: 10px;
     z-index: 9;
+    display: block;
+    
 }
 
-aside svg{
-    fill: whitesmoke;
+.asidedos{
+    position: absolute;
+    left:70vw;
+    top: 53vh;
+    width: 41vh;
+    height: 30vh;
+    background-color: #958BD9;
+    padding: 1vh;
+    border-radius:10px ;
+    padding: 10px;
+    z-index: 9;
+    display: block;
+    
 }
-
+/*titulos*/
 .seccion1 h2 {
-    /*titulo*/
-    position: relative;
-    font-family: "TypnicHeadlineSlab";
+    
+    font-family: "Regular";
     color: white;
-    margin: 1vh;
-    padding-left: 6vh;
-    padding-top: 1vh;
+    right: 10%;
+    bottom: 10%;
+    font-size: 15px;
+    margin: 10px;
+    text-align: left;
+    border: black;
+
+}
+.seccion2 h2 {
+    font-family: "Regular";
+    color: white;
+    right: 10%;
+    bottom: 10%;
+    font-size: 15px;
+    margin: 10px;
+    text-align: left;
+}
+
+
+.opcionuno{
+    float: left;
+    width: 15%;
+    height: auto;
+    left: 1;
+    top: 11%;
+    padding: 3px;
+    
 
 }
 
-aside a {
+.opciondos{
+    float: left;
+    width: 20%;
+    height: auto;
+    top: 11%;
+    padding: 10px;
+
+}
+
+.textouno {
     /*textos del navar*/
     color: white;
-    text-decoration: none;
-    padding: 1vh;
+    padding: 2px;
     margin: 0;
+    bottom: 1px;
     font-family: "Regular";
+    position: relative;
+    top:  10px;
 }
 
-.tendencias nav ul {
+.textodos {
+    /*textos del navar*/
+    color: white;
+    padding: 2px;
+    margin: 0;
+    bottom: 30px;
+    font-family: "Regular";
+    position: absolute;
+    left: 12vh;
+    font-size: 20px;
+}
+
+
+.textotres {
+    /*textos del navar*/
+    color: white;
+    padding: 2px;
+    margin: 0;
+    bottom: 25px;
+    font-size: 13px;
+    font-family: "Regular";
+    position: absolute;
+    left: 25vh;
+}
+
+.info{
+
+    color: white;
+    padding: 2px;
+    margin: 0;
+    bottom: 15px;
+    font-family: "Regular";
+    position: absolute;
+    left: 12vh;
+    font-size: 9px;
+
+}
+
+.navegacion  {
     /* opciones del navar*/
-    position: relative;
-    bottom: 1vh;
-    left: 4vh;
-    width: 40vh;
-    padding: 1VH;
+    padding: 1px;
+    margin: 1px;
+    left: 2px;
 }
 
 /*CONFIGURACION DE BOTONES */
 .bsc {
     position: relative;
     background-color: #958BD9;
-    padding: 0vh;
-    bottom: 1vh;
-    margin: 1vh;
-    background-repeat: no-repeat;
-    width: 35vh;
-    height: 3vh;
+    width: 40vh;
+    height: 9vh;
     color: #fff;
     border: none;
-    transition: all .4s ease-in-out;
     z-index: 1;
+    padding: 0;
+}
+
+.asidedos .bsc {
+    position: relative;
+    background-color: #958BD9;
+    width: 40vh;
+    height: 11vh;
+    border: none;
+    z-index: 1;
+    padding: 0;
 }
 
 .bsc::before {
     content: "";
     background-color: #454BBF;
-    width: 0;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    transition: width 300ms ease-in-out;
-    display: inline-block;
 }
 
 .bsc:hover::before {
     width: 100%;
-}
-
-/*separador*/
-.separator {
-    position: relative;
-    height: 1px;
-    background-color: #454BBF;
-    margin: 1vh;
-    top: -5vh;
-    right: 1vh;
-    width: 50vh;
-
-}
-
-/*configuracion navr*/
-.tumenu {
-    top: -12vh;
-    position: relative;
-    right: 5vh;
-    width: 45vh;
-    padding: 5vh;
-
-}
-
-/*BOTONES MENU*/
-.smenu {
-    border: 2px solid #958BD9;
-    background-color: #958BD9;
-    border-radius: 10px;
-    padding: 1vh;
-    transition: all ease-in-out 0.1s;
-    font-size: 15px;
-}
-
-.smenu section {
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-
-.smenu:hover {
-    background-color: #454BBF;
 }
