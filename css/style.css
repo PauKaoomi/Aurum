@@ -57,6 +57,7 @@
     height:60%;
     width: 30%;
     top: 0%;
+    display: none;
 }
 .imagen-user, .nombre-user{
     display: inline-block;
@@ -146,6 +147,7 @@
     height: 100%;
     top: 12%;
     right: 13%;
+    display: none;
 }
 
 .busqueda-btn{
@@ -209,7 +211,7 @@
     top: 27%;
     left: 28%;
     border: none;
-    
+    cursor: pointer;
 }
 
 .btn-a:hover{
@@ -281,10 +283,7 @@
     position: absolute;
     display: none;
 }
-#cerrar{
-    position: relative;
-    left: 100%;
-}
+
 .informacion-incio{
     height: 100%;
     width: 100%;
@@ -356,7 +355,7 @@ hr{
     top: 60px;
     position: relative;
 }
-.input-registro{
+.input-correo{
     top: 90px;
     position: relative;
     height: 50px;
@@ -392,92 +391,41 @@ hr{
     top: 120px;
     font-family: "regular";
 }
-/*
-.menu{
-    color: white;
-    position:  absolute;
-    height: 100%;
-    width: 42%;
-    right: -2%;
+.vent-registro{
+    display: block;
+    padding: 100px 50px;
+    min-height: 65vh;
+    display: none;
 }
 
-.menu ul{
-    list-style: none;
-    height: 100%;
+.continue{
+    width: 130px;
+    height: 40px;
+    line-height: 5px;
+    background-color: #fb34d3;
+    border: 0;
+    top: 120px;
+    left: 80px;
     position: relative;
-    padding-inline-start: 0;
-    font-family: "Regular";
-}
-
-.menu ul li{
-
-    display: inline-block;
-    background: #0D0D0D;
-    margin: 0 8px;
-}
-
-.textomenu p{
-    color: white;
-    margin: 0;
-}
-
-.menu ul .servicios li{
-
-    display: inline-block;
-    background: #ffff;
-    left:-110px;
-}
-.menu ul li a{
-    color: black;
-    text-decoration: none;
-    line-height: 75px;
-    font-size: 20px;
-    font-family: "Regular";
-}
-
-.menu ul li a:hover{
-    color: #958BD9;
-}
-.menu ul ul{
-    position: absolute;
-    top: 90px;
-    padding-inline-start: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: top .3s;
-    z-index: 10;
-}
-
-.menu ul li:hover > ul{
-    top: 70px;
-    opacity: 1;
-    visibility: visible;
-}
-
-.menu ul ul li{
-    position: relative;
-    width: 11vw;
-    background-color: #ffff;
-    float: none;
-    display: list-item;
-    border-bottom: 2px solid rgb(0, 0, 0);
     text-align: center;
-    border-radius: 5px;
-}
-
-.menu ul ul li a{
-    font-size: 19px;
-}
-
-.menu ul ul ul li{
-    position: relative;
-    top: -40px;
-    left: 150px;
-    background-color: #ffff;
-    border-radius: 5px;
-}
-
-.menu ul ul ul li a{
+    color: rgb(255, 255, 255);
     font-size: 15px;
+    font-family: "regular";
+    border-radius: 50px;
+    cursor: pointer;
 
-} 
+}
+
+.pregunta{
+    top:130px;
+    position: relative;
+    left: 23px;
+}
+
+.pregunta a{
+    cursor: pointer;
+}
+
+.cerrar{
+    cursor: pointer;
+}
