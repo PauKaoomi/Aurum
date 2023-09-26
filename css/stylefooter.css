@@ -1,0 +1,76 @@
+@import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
+@import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
+
+
+* {
+   
+    list-style: none;
+    text-decoration: none;
+
+}
+footer{
+   position: absolute;
+   right: 10vh;
+   top: 90vh;
+    width: 45vh;
+    height: 40vh;
+    background-color: #958BD9;
+    padding: 0;
+ 
+    border-radius: 10px ;
+}
+
+footer svg{
+    fill: rgb(255, 255, 255);
+}
+
+.botones{
+    position: relative;
+    right:5vh ;
+    background-color: #958BD9;
+    padding: 0vh;
+    bottom: 1vh;
+    margin: 1vh;
+ text-align: left;
+    width: 35vh;
+    height: 3vh;
+    
+    border: none;
+    transition: all .4s ease-in-out;
+}
+.botones::before {
+    content: "";
+    background-color:#5547af;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 300ms ease-in-out;
+    display: inline-block;
+}
+
+
+.botones:hover {
+    width: 100%;
+    background-color: #454BBF;
+}
+
+footer a {
+
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: "Regular";
+   
+
+}
+
+h3{
+    text-align: center;
+    color: white;
+}
+h3:hover{
+    color: rgb(147, 35, 199);
+
+}
