@@ -28,58 +28,6 @@
                 <p class="simbolo-logo" style="font-size: 75px;">|</p>
                 <p class="nombre-logo">Aurum</p>
             </section>
-            <section class="inicio-registro">
-                <button class="btn-a inicio">
-                    <a href="javascript:abrir()">Iniciar sesión</a>
-                </button>
-                <button class="btn-a registro" >
-                    <a href="#">Registro</a>
-                </button>
-                <article class="puntos">
-                    <li><a href="#" style="font-size: 30px; color: white;">...</a>
-                        <ul>
-                            <li><a href="#">Soporte</a></li>
-                            <li><a href="#">Top 5 cantantes </a></li>
-                            <li><a href="#">Nuevos discos</a></li>
-                        </ul>
-                    </li>        
-                </article>
-            </section>
-        <section class="ventana" id="emergente">
-
-            <article id="cerrar"><a href="javascript:cerrar()"><i class="fa-solid fa-xmark" style="color: #000000;"></i></a></article>
-    
-            <article class="informacion-incio">
-    
-                <h2 class="pab-i">Inicio sesion</h2>
-                <p class="acuerdo">Al continuar, estarás configurando una cuenta de Reddit y 
-                    aceptarás nuestro <a href="#">Acuerdo del usuario</a> y <a href="#">la Política de privacidad.</a></p>
-    
-            </article>
-            <button class="google" style="width: 100%; height: 10%;">
-                <i class="fa-brands fa-google" style="color: #000000;"></i>
-                <p class="text-google">Iniciar sesion con google</p>
-            </button>
-            <button class="facebook" style="width: 100%; height: 10%;">
-                <i class="fa-brands fa-facebook" style="color: #030303;"></i>
-                <p class="text-facebook">Iniciar sesion con google</p>
-            </button>
-            <hr>
-    
-            <article class="input-registro" >
-                <input class="correo" type="text" placeholder="Nombre o correo electronico" required>
-            </article>
-            <article class="input-contraseña" >
-                <input class="contraseña" type="text" placeholder="Contraseña" required>
-            </article>
-            <p class="olvido">¿Has olvidado tu nombre de <a href="#">usuario</a> o <a href="#">contraseña</a> ?</p>
-            <button class="btn-a ven-ini">
-                <a href="http://127.0.0.1:5501/index.html" style="color: white;">Iniciar sesión</a>
-            </button>
-    
-            <script src="abrir.js"></script>
-    
-        <!--</section>
             <section class="globo-perfil">
                 <button class="btn-user">
                     <article class="user">
@@ -105,11 +53,99 @@
                 <article style="height: 30px; width: 30px;" class="btn">
                     <img src="Img/lupa2.0.png" alt="logo" height="45" width="45" class="busqueda-btn">
                 </article>
+            </section>
+            <section class="inicio-registro">
+                <button class="btn-a inicio click" id="v-inicio" onclick="abrir('v-inicio')">
+                    <a id="v-inicio">Iniciar sesión</a>
+                </button>
+                <button class="btn-a registro click" id="v-registro" onclick="abrir('v-registro')">
+                    <a id="v-registro">Registro</a>
+                </button>
+                <article class="puntos">
+                    <li><a href="#" style="font-size: 30px; color: white;">...</a>
+                        <ul>
+                            <li><a href="#">Soporte</a></li>
+                            <li><a href="#">Top 5 cantantes </a></li>
+                            <li><a href="#">Nuevos discos</a></li>
+                        </ul>
+                    </li>        
+                </article>
+            </section>
 
-            </section>-->
+            <section class="ventana" id="emergente">
+
+                <i class="fa-solid fa-xmark click cerrar" id="cerrar-ini" onclick="cerrar('cerrar-ini')"  style="color: #000000;"></i>
+        
+                <article class="informacion-incio">
+        
+                    <h2 class="pab-i">Inicio sesion</h2>
+                    <p class="acuerdo">Al continuar, estarás configurando una cuenta de Reddit y 
+                        aceptarás nuestro <a href="#">Acuerdo del usuario</a> y <a href="#">la Política de privacidad.</a></p>
+        
+                </article>
+                <button class="google" style="width: 100%; height: 10%;">
+                    <i class="fa-brands fa-google" style="color: #000000;"></i>
+                    <p class="text-google">Iniciar sesion con google</p>
+                </button>
+                <button class="facebook" style="width: 100%; height: 10%;">
+                    <i class="fa-brands fa-facebook" style="color: #030303;"></i>
+                    <p class="text-facebook">Iniciar sesion con google</p>
+                </button>
+                <hr>
+        
+                <article class="input-correo" >
+                    <input class="correo" id="inp-correo" type="text" placeholder="Nombre o correo electronico" required>
+                </article>
+                <article class="input-contraseña" >
+                    <input class="contraseña" type="text" placeholder="Contraseña" required>
+                </article>
+                <p class="olvido">¿Has olvidado tu nombre de <a href="#">usuario</a> o <a href="#">contraseña</a> ?</p>
+                <button class="btn-a ven-ini" id="botonIniciar" onclick="eventoR()">
+                    <a style="color: white;" onclick="eventoR()">Iniciar sesión</a>
+                </button>
+        
+                <script src="abrir.js"></script>
+    
+            </section>
+            <!--registro-->
+    
+            <section class="ventana vent-registro" id="emergenteRe">
+                
+                <i class="fa-solid fa-xmark click cerrar" id="registroBtn" onclick="cerrar('registroBtn')" style="color: #000000;"></i>
+        
+                <article class="informacion-incio">
+        
+                    <h2 class="pab-i">Registro</h2>
+                    <p class="acuerdo">Al continuar, estarás configurando una cuenta de Reddit y 
+                        aceptarás nuestro <a href="#">Acuerdo del usuario</a> y <a href="#">la Política de privacidad.</a></p>
+        
+                </article>
+                <button class="google" style="width: 100%; height: 10%;">
+                    <i class="fa-brands fa-google" style="color: #000000;"></i>
+                    <p class="text-google">Iniciar sesion con google</p>
+                </button>
+                <button class="facebook" style="width: 100%; height: 10%;">
+                    <i class="fa-brands fa-facebook" style="color: #030303;"></i>
+                    <p class="text-facebook">Iniciar sesion con google</p>
+                </button>
+                <hr>
+    
+                <article class="input-correo in-re" >
+                    <input class="correo" id="inp-correo" type="text" placeholder="Correo electronico" required>
+                </article>
+    
+                <button class="continue">
+                    <span>continuar</span>
+                </button>
+    
+                <p class="pregunta">¿Ya estas en Aurum? <a href="#">Inicar sesion</a></p>
+        
+    
+            </section>
+
+
 
         </header>
-
         <nav class="sidebar">
             <h1>MY APPS</h1>
             <ul>
