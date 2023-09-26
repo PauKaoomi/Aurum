@@ -1,0 +1,169 @@
+@import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
+@import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
+
+/*configuracion del contenedores*/
+.asideuno {
+    
+    position: absolute;
+    left:70vw;
+    top: 15vh;
+    width: 41vh;
+    height: 34vh;
+    background-color: #958BD9;
+    padding: 1vh;
+    border-radius:10px ;
+    padding: 10px;
+    z-index: 9;
+    display: block;
+    
+}
+
+.asidedos{
+    position: absolute;
+    left:70vw;
+    top: 53vh;
+    width: 41vh;
+    height: 30vh;
+    background-color: #958BD9;
+    padding: 1vh;
+    border-radius:10px ;
+    padding: 10px;
+    z-index: 9;
+    display: block;
+    
+}
+/*titulos*/
+.seccion1 h2 {
+    
+    font-family: "Regular";
+    color: white;
+    right: 10%;
+    bottom: 10%;
+    font-size: 15px;
+    margin: 10px;
+    text-align: left;
+    border: black;
+
+}
+.seccion2 h2 {
+    font-family: "Regular";
+    color: white;
+    right: 10%;
+    bottom: 10%;
+    font-size: 15px;
+    margin: 10px;
+    text-align: left;
+}
+
+
+.opcionuno{
+    float: left;
+    width: 15%;
+    height: auto;
+    left: 1;
+    top: 11%;
+    padding: 3px;
+    
+
+}
+
+.opciondos{
+    float: left;
+    width: 20%;
+    height: auto;
+    top: 11%;
+    padding: 10px;
+
+}
+
+.textouno {
+    /*textos del navar*/
+    color: white;
+    padding: 2px;
+    margin: 0;
+    bottom: 1px;
+    font-family: "Regular";
+    position: relative;
+    top:  10px;
+}
+
+.textodos {
+    /*textos del navar*/
+    color: white;
+    padding: 2px;
+    margin: 0;
+    bottom: 30px;
+    font-family: "Regular";
+    position: absolute;
+    left: 12vh;
+    font-size: 20px;
+}
+
+
+.textotres {
+    /*textos del navar*/
+    color: white;
+    padding: 2px;
+    margin: 0;
+    bottom: 25px;
+    font-size: 13px;
+    font-family: "Regular";
+    position: absolute;
+    left: 25vh;
+}
+
+.info{
+
+    color: white;
+    padding: 2px;
+    margin: 0;
+    bottom: 15px;
+    font-family: "Regular";
+    position: absolute;
+    left: 12vh;
+    font-size: 9px;
+
+}
+
+.navegacion  {
+    /* opciones del navar*/
+    padding: 1px;
+    margin: 1px;
+    left: 2px;
+}
+
+/*CONFIGURACION DE BOTONES */
+.bsc {
+    position: relative;
+    background-color: #958BD9;
+    width: 40vh;
+    height: 9vh;
+    color: #fff;
+    border: none;
+    z-index: 1;
+    padding: 0;
+}
+
+.asidedos .bsc {
+    position: relative;
+    background-color: #958BD9;
+    width: 40vh;
+    height: 11vh;
+    border: none;
+    z-index: 1;
+    padding: 0;
+}
+
+.bsc::before {
+    content: "";
+    background-color: #454BBF;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bsc:hover::before {
+    width: 100%;
+}
