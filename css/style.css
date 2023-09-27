@@ -50,12 +50,110 @@
     margin: 0;
 }
 
+.globo-perfil{
+    position: absolute;
+    right: 0%;
+    padding: 20px;
+    height:60%;
+    width: 30%;
+    top: 0%;
+    display: none;
+}
+.imagen-user, .nombre-user{
+    display: inline-block;
+}
+
+.imagen-user{
+    top: 8px;
+    position: relative;
+}
+
+.btn-user{
+    height: 90%;
+    border-radius: 5px;
+    background-color: #0D0D0D;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 53%;
+    top:10%;
+}
+
+.btn-user:hover{
+    border: 2px solid white;
+}
+
+.user{
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.nombre-user{
+    font-family:"Regular";
+    position: relative;
+    margin-left: 5px;
+    color: white;
+
+
+}
+
+.user i {
+    color: white;
+    margin-left: 40px;
+    position: relative;
+}
+.burbuja{
+    top:11%;
+    position: relative;
+    border-radius: 30px;
+    border:none ;
+    background-color: black;
+    height: 58%;
+    width: 8% ;
+}
+
+.notificacion{
+
+    right: 7%;
+
+}
+.notificacion i{
+    left: 0px;
+    position: relative;
+}
+
+.notificacion:hover{
+    border: 2px solid white ;
+}
+
+.mensaje {
+
+    right: 29%;
+}
+.mensaje i{
+    left: 0px;
+    position: relative;
+}
+.mensaje:hover{
+    border: 2px solid white ;
+}
+
+
 .buscar {
     position: relative;
     width: 18%;
     height: 100%;
-    top: 15%;
-    right: 12%;
+    top: 12%;
+    right: 13%;
+    display: none;
+}
+
+.busqueda-btn{
+    position: relative;
+    left: 25%;
+    top: 4%;
 }
   
 .buscar input {
@@ -91,91 +189,245 @@
     width: 400px;
 }
 
-.menu{
-    color: white;
-    position:  absolute;
+.inicio-registro{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 30%;
     height: 100%;
-    width: 42%;
-    right: -2%;
+    
+}
+.inicio, .registro, .puntos{
+    display: inline-block;
 }
 
-.menu ul{
-    list-style: none;
-    height: 100%;
+.btn-a{
+    line-height: 40px;
+    text-align: center;
+    background-color: #F229BD;
+    border-radius: 30px;
+    margin-left: 3px;
     position: relative;
-    padding-inline-start: 0;
-    font-family: "Regular";
+    top: 27%;
+    left: 28%;
+    border: none;
+    cursor: pointer;
 }
 
-.menu ul li{
-
-    display: inline-block;
-    background: #0D0D0D;
-    margin: 0 8px;
+.btn-a:hover{
+    border: 2px solid #fb34d3;
+}
+.inicio{
+    width: 30%;
 }
 
-.textomenu p{
-    color: white;
-    margin: 0;
-}
-
-.menu ul .servicios li{
-
-    display: inline-block;
-    background: #ffff;
-    left:-110px;
-}
-.menu ul li a{
-    color: black;
+.inicio a{
+    font-size: 11px;
     text-decoration: none;
-    line-height: 75px;
-    font-size: 20px;
-    font-family: "Regular";
+    color: white;
+    font-family: "TypnicHeadlineSlab"; 
 }
 
-.menu ul li a:hover{
-    color: #958BD9;
+.registro{
+    width: 22%;
 }
-.menu ul ul{
+
+.registro a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+    font-family: "TypnicHeadlineSlab"; 
+}
+.puntos{
+    line-height: 45px;
+    margin-left: 10px;
+    position: relative;
+    top: 27%;
+    left: 28%;
+    width: 5%;
+}
+
+.puntos ul{
+    list-style: none;
     position: absolute;
     top: 90px;
+    right: 0px;
     padding-inline-start: 0;
+
+}
+.puntos ul{
+    width: 160px;
+    background-color: white;
+    text-align: center;
     opacity: 0;
     visibility: hidden;
     transition: top .3s;
     z-index: 10;
+    
 }
 
-.menu ul li:hover > ul{
-    top: 70px;
+.puntos li:hover > ul{
+    top: 36px;
     opacity: 1;
     visibility: visible;
 }
 
-.menu ul ul li{
+.ventana{
+    background-color: rgb(255, 255, 255);
+    width: 21%;
+    padding: 50px;
+    min-height: 78vh;
+    border-radius: 22px;
+    top: 24%;
+    right: 36%;
+    position: absolute;
+    display: none;
+}
+
+.informacion-incio{
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+}
+.pab-i{
+    font-size: 25px;
+    margin: 0;
+}
+.acuerdo{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+i, .text-google{
+    display: inline-block;
+}
+.google{
+    border-radius: 30px;
     position: relative;
-    width: 11vw;
-    background-color: #ffff;
-    float: none;
-    display: list-item;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    top:25px;
+    background-color: white;
+    transition: all 1s ease;
+}
+.google:hover{
+    background: rgb(201, 50, 50);
+    color: #fff;
+
+}
+i{
+    position:relative;
+    right: 9%;
+}
+
+p{
+    font-family: "regular";
+    font-size: 16px;
+
+}
+i, .text-facebook{
+    display: inline-block;
+}
+.facebook{
+    border-radius: 30px;
+    position: relative;
+    top:33px;
+    background-color: white;
+    transition: all 1s ease;
+}
+.facebook:hover{
+    background: #318aac;
+    color: #fff;
+
+}
+i{
+    position:relative;
+    right: 9%;
+}
+
+p{
+    font-family: "regular";
+    font-size: 16px;
+
+}
+
+hr{
+    size: 3px;
+    color: black;
+    top: 60px;
+    position: relative;
+}
+.input-correo{
+    top: 90px;
+    position: relative;
+    height: 50px;
+    border-radius: 30px;
+}
+.correo{
+    height: 70%;
+    width: 91%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 3px solid black;
+    font-weight: bold;
+}
+.input-contraseña{
+    top: 110px;
+    position: relative;
+    height: 50px;
+    border-radius: 30px;
+}
+.contraseña{
+    height: 70%;
+    width: 91%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 3px solid black;
+    font-weight: bold;
+}
+.olvido{
+    top:110px;
+    position: relative;
+    font-size: 14px;
+}
+.ven-ini {
+    position: relative;
+    top: 120px;
+    font-family: "regular";
+}
+.vent-registro{
+    display: block;
+    padding: 100px 50px;
+    min-height: 65vh;
+    display: none;
+}
+
+.continue{
+    width: 130px;
+    height: 40px;
+    line-height: 5px;
+    background-color: #fb34d3;
+    border: 0;
+    top: 120px;
+    left: 80px;
+    position: relative;
     text-align: center;
-    border-radius: 5px;
-}
-
-.menu ul ul li a{
-    font-size: 19px;
-}
-
-.menu ul ul ul li{
-    position: relative;
-    top: -40px;
-    left: 150px;
-    background-color: #ffff;
-    border-radius: 5px;
-}
-
-.menu ul ul ul li a{
+    color: rgb(255, 255, 255);
     font-size: 15px;
+    font-family: "regular";
+    border-radius: 50px;
+    cursor: pointer;
 
+}
+
+.pregunta{
+    top:130px;
+    position: relative;
+    left: 23px;
+}
+
+.pregunta a{
+    cursor: pointer;
+}
+
+.cerrar{
+    cursor: pointer;
 }

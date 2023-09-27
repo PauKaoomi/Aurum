@@ -24,80 +24,128 @@
     <body style="background-color: #BBD8F2;">
         <header class="header-h">
             <section class="contenedor-imagen">
-                <img src="Img/Logo_Trabajo2.png" alt="logo de la marca" height="70" width="70"
-                    class="imagen-logo">
+                <img src="Img/Logo_Trabajo2.png" alt="logo de la marca" height="70" width="70" class="imagen-logo">
                 <p class="simbolo-logo" style="font-size: 75px;">|</p>
                 <p class="nombre-logo">Aurum</p>
             </section>
+            <section class="globo-perfil">
+                <button class="btn-user">
+                    <article class="user">
+                        <img src="/Img/user-logo.png" alt="imagen user" style="height: 30px; width: 30px; border-radius: 5px;" class="imagen-user">
+                        <span class="nombre-user" >User_901223</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </article>
+                </button>
+                <button class="burbuja notificacion">
+                    <article class="box-notificacion">
+                        <i class="fa-solid fa-bell" style="color: white;"></i>
+                    </article>
+                </button>
+                <button class="burbuja mensaje">
+                    <article>
+                        <i class="fa-regular fa-comment" style="color: #ffffff;"></i>
+                    </article>
+                </button>
+
+            </section>
             <section class="buscar">
                 <input type="text" placeholder=".......Buscar" required />
-                <article style="height: 60px; width: 60px;" class="btn">
-                    <img src="Img/lupa2.png" alt="logo" height="55" width="55">
+                <article style="height: 30px; width: 30px;" class="btn">
+                    <img src="Img/lupa2.0.png" alt="logo" height="45" width="45" class="busqueda-btn">
                 </article>
+            </section>
+            <section class="inicio-registro">
+                <button class="btn-a inicio click" id="v-inicio" onclick="abrir('v-inicio')">
+                    <a id="v-inicio">Iniciar sesión</a>
+                </button>
+                <button class="btn-a registro click" id="v-registro" onclick="abrir('v-registro')">
+                    <a id="v-registro">Registro</a>
+                </button>
+                <article class="puntos">
+                    <li><a href="#" style="font-size: 30px; color: white;">...</a>
+                        <ul>
+                            <li><a href="#">Soporte</a></li>
+                            <li><a href="#">Top 5 cantantes </a></li>
+                            <li><a href="#">Nuevos discos</a></li>
+                        </ul>
+                    </li>        
+                </article>
+            </section>
 
+            <section class="ventana" id="emergente">
+
+                <i class="fa-solid fa-xmark click cerrar" id="cerrar-ini" onclick="cerrar('cerrar-ini')"  style="color: #000000;"></i>
+        
+                <article class="informacion-incio">
+        
+                    <h2 class="pab-i">Inicio sesion</h2>
+                    <p class="acuerdo">Al continuar, estarás configurando una cuenta de Reddit y 
+                        aceptarás nuestro <a href="#">Acuerdo del usuario</a> y <a href="#">la Política de privacidad.</a></p>
+        
+                </article>
+                <button class="google" style="width: 100%; height: 10%;">
+                    <i class="fa-brands fa-google" style="color: #000000;"></i>
+                    <p class="text-google">Iniciar sesion con google</p>
+                </button>
+                <button class="facebook" style="width: 100%; height: 10%;">
+                    <i class="fa-brands fa-facebook" style="color: #030303;"></i>
+                    <p class="text-facebook">Iniciar sesion con google</p>
+                </button>
+                <hr>
+        
+                <article class="input-correo" >
+                    <input class="correo" id="inp-correo" type="text" placeholder="Nombre o correo electronico" required>
+                </article>
+                <article class="input-contraseña" >
+                    <input id="cont" class="contraseña" type="password" placeholder="Contraseña" required>
+                </article>
+                <p class="olvido">¿Has olvidado tu nombre de <a href="#">usuario</a> o <a href="#">contraseña</a> ?</p>
+                <button class="btn-a ven-ini" id="botonIniciar" onclick="eventoR()">
+                    <a style="color: white;" onclick="eventoR()">Iniciar sesión</a>
+                </button>
+        
+                <script src="javascript/abrir.js"></script>
+    
+            </section>
+            <!--registro-->
+    
+            <section class="ventana vent-registro" id="emergenteRe">
+                
+                <i class="fa-solid fa-xmark click cerrar" id="registroBtn" onclick="cerrar('registroBtn')" style="color: #000000;"></i>
+        
+                <article class="informacion-incio">
+        
+                    <h2 class="pab-i">Registro</h2>
+                    <p class="acuerdo">Al continuar, estarás configurando una cuenta de Reddit y 
+                        aceptarás nuestro <a href="#">Acuerdo del usuario</a> y <a href="#">la Política de privacidad.</a></p>
+        
+                </article>
+                <button class="google" style="width: 100%; height: 10%;">
+                    <i class="fa-brands fa-google" style="color: #000000;"></i>
+                    <p class="text-google">Iniciar sesion con google</p>
+                </button>
+                <button class="facebook" style="width: 100%; height: 10%;">
+                    <i class="fa-brands fa-facebook" style="color: #030303;"></i>
+                    <p class="text-facebook">Iniciar sesion con google</p>
+                </button>
+                <hr>
+    
+                <article class="input-correo in-re" >
+                    <input class="correo" id="res-correo" type="text" placeholder="Correo electronico" required>
+                </article>
+    
+                <button class="continue">
+                    <span>continuar</span>
+                </button>
+    
+                <p class="pregunta">¿Ya estas en Aurum? <a href="#">Inicar sesion</a></p>
+        
+    
             </section>
 
 
-            <nav class="menu">
 
-                <ul>
-
-                    <li> <a class="textomenu" href="#"><p>Inicio</p></a> </li>
-
-                    <li> <a class="textomenu" href="#"><p>Relevancia</p></a>
-                        <ul>
-                            <li><a href="#">Pop</a>
-                                <ul class="pop">
-                                    <li><a href="#">Top 50 mas escuhado</a></li>
-                                    <li><a href="#">Top 5 cantantes </a></li>
-                                    <li><a href="#">Nuevos discos</a></li>
-                                    <li><a href="#">Eventos</a></li>
-                                </ul>
-
-                            </li>
-                            <li><a href="#">Reggaeton</a>
-                                <ul class="reggaeton">
-                                    <li><a href="#">Top 50 mas escuhado</a></li>
-                                    <li><a href="#">Top 5 cantantes </a></li>
-                                    <li><a href="#">Nuevos discos</a></li>
-                                    <li><a href="#">Eventos</a></li>
-                                </ul>
-
-                            </li>
-                            <li><a href="#">Electronica</a>
-                                <ul class="electronica">
-                                    <li><a href="#">Top 50 mas escuhado</a></li>
-                                    <li><a href="#">Top 5 cantantes </a></li>
-                                    <li><a href="#">Nuevos discos</a></li>
-                                    <li><a href="#">Eventos</a></li>
-                                </ul>
-
-                            <li><a href="#">Ver mas</a></li>
-                        </ul>
-
-                    </li>
-                    </li>
-                    <li> <a class="textomenu" href="#"><p>Nuevos Lanzamientos</p></a>
-                        <ul>
-                            <li><a href="#">Discos</a></li>
-                            <li><a href="#">canciones</a></li>
-                            <li><a href="#">Nuevos artistas</a></li>
-                        </ul>
-                    </li>
-
-                    <li> <a class="textomenu" href="#"><p>Servicios</p></a>
-                        <ul class="servicios">
-                            <li><a href="#">Preguntas</a></li>
-                            <li><a href="#">Referencias</a></li>
-                            <li><a href="#">Contacto</a></li>
-                            <li><a href="#">¿Quienes somos?</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
         </header>
-
-
         <nav class="sidebar">
             <h1>MY APPS</h1>
             <ul>
