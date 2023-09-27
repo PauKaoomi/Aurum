@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aurum</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/EstilosMainP.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Styleaside.css">
+    <link rel="stylesheet" href="css/stylefooter.css">
+    <link rel="icon" href="Img/Favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body style="background-color: #BBD8F2;">
+    <header class="header-h">
+        <section class="contenedor-imagen">
+            <img src="Img/Logo_Trabajo2.png" alt="logo de la marca" height="70" width="70" class="imagen-logo">
+            <p class="simbolo-logo" style="font-size: 75px;">|</p>
+            <p class="nombre-logo">Aurum</p>
+        </section>
+        <section class="globo-perfil">
+            <button class="btn-user">
+                <article class="user">
+                    <img src="/Img/user-logo.png" alt="imagen user"
+                        style="height: 30px; width: 30px; border-radius: 5px;" class="imagen-user">
+                    <span class="nombre-user">User_901223</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </article>
+            </button>
+            <button class="burbuja notificacion">
+                <article class="box-notificacion">
+                    <i class="fa-solid fa-bell" style="color: white;"></i>
+                </article>
+            </button>
+            <button class="burbuja mensaje">
+                <article>
+                    <i class="fa-regular fa-comment" style="color: #ffffff;"></i>
+                </article>
+            </button>
+
+        </section>
+        <section class="buscar">
+            <input type="text" placeholder=".......Buscar" required />
+            <article style="height: 30px; width: 30px;" class="btn">
+                <img src="Img/lupa2.0.png" alt="logo" height="45" width="45" class="busqueda-btn">
+            </article>
+        </section>
+        <!--<section class="inicio-registro">
+            <button class="btn-a inicio click" id="v-inicio" onclick="abrir('v-inicio')">
+                <a id="v-inicio">Iniciar sesión</a>
+            </button>
+            <button class="btn-a registro click" id="v-registro" onclick="abrir('v-registro')">
+                <a id="v-registro">Registro</a>
+            </button>
+            <article class="puntos">
+                <li><a href="#" style="font-size: 30px; color: white;">...</a>
+                    <ul>
+                        <li><a href="#">Soporte</a></li>
+                        <li><a href="#">Top 5 cantantes </a></li>
+                        <li><a href="#">Nuevos discos</a></li>
+                    </ul>
+                </li>
+            </article>
+        </section>
+        -->
+
+        <section class="ventana" id="emergente">
+
+            <i class="fa-solid fa-xmark click cerrar" id="cerrar-ini" onclick="cerrar('cerrar-ini')"
+                style="color: #000000;"></i>
+
+            <article class="informacion-incio">
+
+                <h2 class="pab-i">Inicio sesion</h2>
+                <p class="acuerdo">Al continuar, estarás configurando una cuenta de Reddit y
+                    aceptarás nuestro <a href="#">Acuerdo del usuario</a> y <a href="#">la Política de privacidad.</a>
+                </p>
+
+            </article>
+            <button class="google" style="width: 100%; height: 10%;">
+                <i class="fa-brands fa-google" style="color: #000000;"></i>
+                <p class="text-google">Iniciar sesion con google</p>
+            </button>
+            <button class="facebook" style="width: 100%; height: 10%;">
+                <i class="fa-brands fa-facebook" style="color: #030303;"></i>
+                <p class="text-facebook">Iniciar sesion con google</p>
+            </button>
+            <hr>
+
+            <article class="input-correo">
+                <input class="correo" id="inp-correo" type="text" placeholder="Nombre o correo electronico" required>
+            </article>
+            <article class="input-contraseña">
+                <input id="cont" class="contraseña" type="password" placeholder="Contraseña" required>
+            </article>
+            <p class="olvido">¿Has olvidado tu nombre de <a href="#">usuario</a> o <a href="#">contraseña</a> ?</p>
+            <button class="btn-a ven-ini" id="botonIniciar" onclick="eventoR()">
+                <a style="color: white;" onclick="eventoR()">Iniciar sesión</a>
+            </button>
+
+            <script src="javascript/abrir.js"></script>
+
+        </section>
+        <!--registro-->
+
+        <section class="ventana vent-registro" id="emergenteRe">
+
+            <i class="fa-solid fa-xmark click cerrar" id="registroBtn" onclick="cerrar('registroBtn')"
+                style="color: #000000;"></i>
+
+            <article class="informacion-incio">
+
+                <h2 class="pab-i">Registro</h2>
+                <p class="acuerdo">Al continuar, estarás configurando una cuenta de Reddit y
+                    aceptarás nuestro <a href="#">Acuerdo del usuario</a> y <a href="#">la Política de privacidad.</a>
+                </p>
+
+            </article>
+            <button class="google" style="width: 100%; height: 10%;">
+                <i class="fa-brands fa-google" style="color: #000000;"></i>
+                <p class="text-google">Iniciar sesion con google</p>
+            </button>
+            <button class="facebook" style="width: 100%; height: 10%;">
+                <i class="fa-brands fa-facebook" style="color: #030303;"></i>
+                <p class="text-facebook">Iniciar sesion con google</p>
+            </button>
+            <hr>
+
+            <article class="input-correo in-re">
+                <input class="correo" id="res-correo" type="text" placeholder="Correo electronico" required>
+            </article>
+
+            <button class="continue">
+                <span>continuar</span>
+            </button>
+
+            <p class="pregunta">¿Ya estas en Aurum? <a href="#">Inicar sesion</a></p>
+
+
+        </section>
+
+
+
+    </header>
+    <nav class="sidebar">
+        <h1>MY APPS</h1>
+        <ul>
+            <li><a href="#">Artistas</a> <i class="fa-solid fa-2x fa-music"></i></li>
+            <li><a href="#">Spotify</a> <i class="fa-brands fa-2x fa-spotify"></i></li>
+            <li><a href="#">Audios</a> <i class="fa-regular fa-2x fa-file-audio"></i></li>
+            <li><a href="#">Carpetas</a> <i class="fa-solid fa-2x fa-sliders"></i></li>
+            <li><a id="cargarPagina">inicio</a> <i class="fa-solid fa-2x fa-sliders"></i></li>
+        </ul>
+    </nav>
+
+    <!-- Cuerpo Posts de Foro -->
+    <main class="contenedorArticulos">
+
+        <section class="Miperfil">
+
+            <img class="portada" src="Img/portadados.jpg" alt="portada">
+            <img class="fotoperfil" src="Img/usuario.png" alt="fotop">
+            <button class="Editar">
+                Editar
+            </button>
+
+            <section class="datosp">
+
+                <h1> User name </h1>
+
+                <h2>@username</h2>
+
+                <p> Drescipcion, frase,Presentacion </p>
+
+
+
+            </section>
+            <section class="inf">
+                <p> Seguidores 20k | Siguiendo 1k </p>
+
+            </section>
+            <section class="botonesp">
+                <button>
+                    Post
+                </button>
+                <button>
+                    Citas
+                </button>
+                <button>
+                    Likes
+                </button>
+            </section>
+        </section>
+        <section class="PublicarPost">
+            <article class="LadoIzquierdoPublicar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                    <path
+                        d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
+                </svg>
+                <input class="CuadroTexto" type="text" placeholder="Crear Post...">
+            </article>
+            <article class="LadoDerechoPublicar">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+                        <path
+                            d="M160 80H512c8.8 0 16 7.2 16 16V320c0 8.8-7.2 16-16 16H490.8L388.1 178.9c-4.4-6.8-12-10.9-20.1-10.9s-15.7 4.1-20.1 10.9l-52.2 79.8-12.4-16.9c-4.5-6.2-11.7-9.8-19.4-9.8s-14.8 3.6-19.4 9.8L175.6 336H160c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16zM96 96V320c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H160c-35.3 0-64 28.7-64 64zM48 120c0-13.3-10.7-24-24-24S0 106.7 0 120V344c0 75.1 60.9 136 136 136H456c13.3 0 24-10.7 24-24s-10.7-24-24-24H136c-48.6 0-88-39.4-88-88V120zm208 24a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-paperclip"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z" />
+                    </svg>
+                </a>
+            </article>
+        </section>
+        <!-- Zona de Post ya Publicados -->
+        <section class="PostPublicados">
+            <header class="headerPostPublicados">
+                <article class="espacioImg">
+                    <img src="Img/concierto.png" alt="Imagen Redonda" class="imagen-redonda">
+                </article>
+                <article class="espacioTitulo">
+                    <h3>Marc Anthony recibe su estrella en el Paseo del Fama de Hollywood</h3>
+                </article>
+            </header>
+            <article class="Post">
+                <p>
+                    <img src="Img/MarkEstrella.png">
+                    <br>
+                    En la tarde de este jueves 7 de septiembre, fue la ceremonia oficial que posicionaba al cantante
+                    de salsa neoyorquino Marc Anthony,
+                    como el dueño de una estrella en el Paseo de la Fama de Hollywood, en Estados Unidos.
+                    La sobresaliente voz tenor del neoyorquino ha sido su firma personal en el mundo de la música
+                    desde 1990,
+                    siendo una de las más fáciles de reconocer de la salsa.
+                    <br>
+                    El artista también ha compartido su faceta como actor en la gran pantalla,
+                    participando en películas como “El cantante” haciendo el papel del rey de la salsa Héctor Lavoe;
+                    “Vidas al límite”,
+                    de Martin Scorsese, y “The Capeman”, un musical de Broadway de Paul Simon.
+                    <br>
+                    <br><b>Fuente:</b> El Espectador
+                </p>
+                <section class="BotonesAccionPost">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chat-left" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                                Comentarios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-share" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                </svg>
+                                Compartir
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                </svg>
+                                Guardar
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </section>
+
+        <section class="PostPublicados">
+            <article class="Post">
+                <h3>Canción generada por IA que imita a Drake y The Weeknd es enviada a consideración para el Grammy
+                </h3>
+                <p>
+                    Luego que el artista anónimo Ghostwriter se hiciera viral con su tema generado con inteligencia
+                    artificial (IA) “Heart on My Sleeve” —
+                    que imita a Drake y The Weeknd — a principios de este año, sus representantes revelaron en una
+                    entrevista reciente con el New York Times
+                    que la polémica canción fue enviada a los premios Grammy del próximo año.
+                    <br>
+                    Presentada para su consideración en las categorías de mejor canción de rap y canción del año,
+                    “Heart on My Sleeve” es elegible pese al uso
+                    de tecnología de IA en la grabación, dijo Harvey Mason, jr., CEO de la Academia de la Grabación,
+                    al New York Times.
+                    “En cuanto al lado creativo, es absolutamente elegible porque fue escrita por un humano”,
+                    señaló.
+                    <br>
+                    El pasado abril, “Heart on My Sleeve” fue retirada de los servicios de streaming tras generar
+                    más de 600.000 reproducciones en Spotify
+                    y 275.000 vistas en YouTube. Tras la indignación, Spotify, YouTube, Apple Music, TIDAL y Deezer
+                    retiraron la canción de sus respectivas plataformas.
+                    En una declaración a Billboard, UMG denunció la pista y el uso de IA diciendo que las
+                    publicaciones virales “demuestran por qué las plataformas
+                    tienen una responsabilidad legal y ética fundamental de evitar el uso de sus servicios de manera
+                    que perjudique a los artistas”.
+                </p>
+                <section class="BotonesAccionPost">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chat-left" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                                Comentarios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-share" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                </svg>
+                                Compartir
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                </svg>
+                                Guardar
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </section>
+        <footer>
+            <nav class="contenedor">
+                <li class="lista">
+                    <h4>ENLACES</h4>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Quienes somos</a></li>
+                        <li><a href="#">Politicas de seguridad</a></li>
+                    </ul>
+                </li>
+                <li class="lista1">
+                    <h4>SERVICIOS</h4>
+                    <ul>
+                        <li><a href="#">Foro de canciones</a></li>
+                        <li><a href="#">Foro de efectos de sonido</a></li>
+                        <li><a href="#">Noticias</a></li>
+                    </ul>
+                </li>
+                <li class="lista2">
+                    <h4>SIGUENOS</h4>
+                    <ul>
+                        <a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook"></a>
+                        <a href="https://twitter.com/" target="_blank" class="fab fa-twitter"></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></a>
+                        <a href="https://co.linkedin.com/" target="_blank" class="fab fa-linkedin"></a>
+                    </ul>
+
+                </li>
+                <li class="lista3">
+                    <h4>CONTACTO</h4>
+                    <h5>www.aurum.com</h5>
+                    <a href="https://web.whatsapp.com/" target="_blank" class="fab fa-whatsapp">Whatsapp</a>
+                </li>
+            </nav>
+            <h3>AURUM © 2023</h3>
+        </footer>
+    </main>
+    <aside class="asideuno">
+        <section class="seccion1">
+            <h2 class="titulouno">Articulos que te pueden interesar </h2>
+        </section>
+        <nav>
+            <ul class="navegacion">
+                <button class="bsc">
+                    <img class="opcionuno" src="Img/karaoke.png" alt="Imagen Redonda" class="imagen-redonda">
+                    <a class="textouno" href="#">Shakira mejor la cantante </a>
+                </button>
+                <button class="bsc">
+                    <img class="opcionuno" src="Img/concierto.png" alt="icono concierto" class="imagen-redonda">
+                    <a class="textouno" href="#">Conciertos Colombia24 </a>
+                </button>
+                <button class="bsc">
+                    <img class="opcionuno" src="Img/medalla.png" alt="Imagen Redonda" class="imagen-redonda">
+                    <a class="textouno" href="#">Lo mejor de la historia </a>
+                </button>
+            </ul>
+        </nav>
+
+
+
+    </aside>
+
+    <aside class="asidedos">
+        <section class="seccion2">
+            <h2>Artistas que te pueden interesar </h2>
+        </section>
+
+        <nav>
+            <ul class="navegacion">
+                <button class="bsc">
+                    <img class="opciondos" src="Img/perfil.png" alt="Imagen Redonda" class="imagen-redonda">
+                    <a class="textodos" href="#">Karol G </a>
+                    <a class="textotres" href="#"> Ver perfil</a>
+                    <p class="info">+2M followers</p>
+                </button>
+
+                <button class="bsc">
+                    <img class="opciondos" src="Img/hombre.png" alt="Imagen Redonda" class="imagen-redonda">
+                    <a class="textodos" href="#">Juanes </a>
+                    <a class="textotres" href="#"> Ver perfil</a>
+                    <p class="info">+1M followers</p>
+
+                </button>
+            </ul>
+        </nav>
+    </aside>
+    <script src="javascript/scriptpfl.js"></script>
+</body>
+
+</html>
