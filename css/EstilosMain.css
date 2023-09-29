@@ -188,3 +188,13 @@ svg{
     display: inline-block;
     margin: 0;
 }
+.contadorReacciones{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 5px;
+}
+
+.valor{
+    margin-right: 5px;
+}

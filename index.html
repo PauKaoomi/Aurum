@@ -210,10 +210,26 @@
                         <br>
                         <br><b>Fuente:</b> El Espectador
                     </p>
+                    <section class="contadorReacciones">
+                        <article class="valor">
+                            <span id="valorLikeUno">0</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                                <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                <path fill-rule="evenodd" d="M9 3v10H8V3h1z"/>
+                                <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z"/>
+                            </svg>
+                        </article>
+                        <article class="comment">
+                            <span id="valorCommUno">1</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chat-left" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                            </svg>
+                        </article>
+                    </section>
                     <section class="BotonesAccionPost">
                         <ul>
                             <li class="valorar">
-                                <a href="#">
+                                <a onclick="reaccion('Uno')">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
                                         <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
                                         <path fill-rule="evenodd" d="M9 3v10H8V3h1z"/>
@@ -223,7 +239,7 @@
                                 </a>
                             </li>
                             <li class="comentarios">
-                                <a href="#">
+                                <a>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-chat-left" viewBox="0 0 16 16">
                                         <path
@@ -233,7 +249,7 @@
                                 </a>
                             </li>
                             <li class="compartir">
-                                <a href="#">
+                                <a>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-share" viewBox="0 0 16 16">
                                         <path
@@ -244,7 +260,7 @@
                             </li>
                         </ul>
                     </section>
-                    <section id="comentariosCaja" class="cajaComentarios">
+                    <section id="comentariosCajaUno" class="cajaComentarios">
                         <section  class="agregarComentarios">
                             <article class="TituloComentarios">
                                 <h3>Comentarios</h3>
@@ -253,8 +269,8 @@
                                 <img class="ImgComentarios" src="Img/concierto.png" alt="Imagen Redonda" class="imagen-redonda">
                             </article>
                             <article class="espacioCajaTexto">
-                                <input id="cuadropub" class="CuadroTexto" type="text">
-                                <button id="buttonpubuno" class="btn-publicar">Publicar</button>
+                                <input id="cuadropubUno" class="CuadroTexto" type="text">
+                                <button id="buttonpubUno" onclick="publicar('Uno')" class="btn-publicar">Publicar</button>
                             </article>
                         </section>
                         <article class="comentariosPub">
@@ -297,6 +313,22 @@
                         tienen una responsabilidad legal y ética fundamental de evitar el uso de sus servicios de manera
                         que perjudique a los artistas”.
                     </p>
+                    <section class="contadorReacciones">
+                        <article class="valor">
+                            <span id="valorLikeDos">0</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                                <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                <path fill-rule="evenodd" d="M9 3v10H8V3h1z"/>
+                                <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z"/>
+                            </svg>
+                        </article>
+                        <article class="comment">
+                            <span id="valorCommDos">1</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chat-left" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                            </svg>
+                        </article>
+                    </section>
                     <section class="BotonesAccionPost">
                         <ul>
                             <li>
@@ -331,7 +363,7 @@
                             </li>
                         </ul>
                     </section>
-                    <section id="comentariosCaja" class="cajaComentarios">
+                    <section id="comentariosCajaDos" class="cajaComentarios">
                         <section  class="agregarComentarios">
                             <article class="TituloComentarios">
                                 <h3>Comentarios</h3>
@@ -340,8 +372,8 @@
                                 <img class="ImgComentarios" src="Img/concierto.png" alt="Imagen Redonda" class="imagen-redonda">
                             </article>
                             <article class="espacioCajaTexto">
-                                <input id="cuadropub" class="CuadroTexto" type="text">
-                                <button id="buttonpubdos" class="btn-publicar">Publicar</button>
+                                <input id="cuadropubDos" class="CuadroTexto" type="text">
+                                <button id="buttonpubDos" onclick="publicar('Dos')" class="btn-publicar">Publicar</button>
                             </article>
                         </section>
                     </section>
