@@ -18,14 +18,11 @@ function publicar(numero){
     window.document.querySelector("#valorComm"+numero+"").innerHTML= suma
 }
 
-let cont=0
-
 function reaccion(num){
-    cont +=1
     let numLike = parseInt(window.document.querySelector("#valorLike"+num+"").innerHTML)
-    if(cont==1){
+    if(numLike==0){
         numLike +=1
         window.document.querySelector("#valorLike"+num+"").innerHTML= numLike
-    
-}
+    }
+       
 }
