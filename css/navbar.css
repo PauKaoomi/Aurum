@@ -5,40 +5,32 @@
 
 
 .sidebar {
-   display:flex;
-   flex-direction: column;
+
    position: relative;
-   left: 0;
    width: 15vw;
    height: 90vh;
    background: #0D0D0D;
    top: 14vh;
-   left: 0vw;
    z-index: 10;
-   
+   margin: 0;
 }
 
 .sidebar ul {
-   display:flex;
-   flex-direction: column;
+
    font-weight: bold; 
    border-radius: 5px;
    font-family: "TypnicHeadlineSlab";
    bottom:180px;
    padding:0;
-
 }
 
 .sidebar ul a {
    line-height: 80px;
    font-size:  15px;
    color: white;
-   box-sizing: border-box;
    border-top: 10px;
    font-family: "TypnicHeadlineSlab";
    margin-left: 35px;
-
-
 }
 
 
@@ -67,10 +59,7 @@
    font-family:Arial, Helvetica, sans-serif;
 }
 
-.registro > br {
-   align-items: center;
-}
-button {
+.buttonNav {
    display:flex;
    justify-content: space-between;
    width:100%;
@@ -82,7 +71,7 @@ button {
    
 }
 
-button:hover {
+.buttonNav:hover {
    background-color: rgb(0, 0, 0);
   
 }
