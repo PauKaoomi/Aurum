@@ -6,30 +6,31 @@
 section.Miperfil {
 
     margin: 5px auto;
-    background-color: black;
+    background-color: #958BD9;
     border-radius: 5px;
     padding: 1vh;
     position: relative;
     width: 38vw;
     height: 60vh;
-    right: 5vw;
+    left: -1vh;
     top: 13vh;
     font-family: "Regular";
 
 }
 
-button.Editar{
+button.Editar {
 
-    background-color: black;
-    border-color: whitesmoke;
+    background-color: #fb34d3;
+    border-color: #fb34d3;
     color: whitesmoke;
     position: relative;
-    left:  50%;
+    left: 50%;
     bottom: 25%;
     border-radius: 8px;
     padding: 4px;
 
 }
+
 .fotoperfil {
 
     width: 10vw;
@@ -48,68 +49,126 @@ button.Editar{
     z-index: 10;
 }
 
-section.datosp h2{
+section.datosp h2 {
 
-    color: rgb(150, 144, 144);
+    color: rgb(212, 205, 205);
     margin: 1px;
     font-size: 12px;
 }
 
-section.datosp h1{
+section.datosp h1 {
     margin: 1px;
     font-size: 18px;
 }
 
-section.datosp{
+section.datosp {
 
     color: whitesmoke;
     position: relative;
-    text-align:left;
+    text-align: left;
     left: 1%;
     bottom: 16%;
     padding: 1px;
     font-family: "Regular";
-    
+
 
 }
 
-section.inf{
+section.inf {
 
     color: whitesmoke;
     position: absolute;
-    right:  6%;
+    right: 6%;
     bottom: 32%;
     padding: 5px;
     font-size: 15px;
 }
 
-section.inf p{
+section.inf p {
 
     margin: 2px;
     padding: 1px;
 }
-section.botonesp{
 
+.Botonesperfil {
 
+    display: grid;
     position: relative;
-    left: 3%;
-    bottom: 12%;
-    width:  92%;
+    grid-template-columns: repeat(3, 2fr);
+    bottom: 5vh;
+    border-top: 1px solid #454bbfd4;
+    padding: 1vh;
+
 }
 
-section.botonesp button{
-    
-    background-color: black;
-    margin: 1px 50px;
-    color: white;
-    padding: 7px;
-    border-radius: 10px;
+.Botonesperfil svg {
+    fill: white;
+    align-items: center;
 }
+
+.botonp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: "Regular";
+}
+
 /* Contenedor Main */
 .contenedorArticulos {
     margin: 10px auto;
     width: 30vw;
 }
+
+
+.fotomin {
+
+    height: 8vh;
+    width: auto;
+    padding: 10px;
+
+}
+
+.tituloscitas{
+
+    position: relative;
+    bottom: 11vh;
+    left: 12vh;
+    font-size: 25px;
+}
+
+.textocita{
+
+    position: relative;
+    top: -13vh;
+    left: 12vh;
+    font-size: 18px;
+text-align: justify;
+
+
+}
+.contenidosdos {
+
+   
+    position: relative;
+    width: 80vh;
+    right: 10vh;
+    top: 12vh;
+    height: 10vh;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3, 20vh);
+    gap: 1vh
+}
+
+
+.cita { 
+
+background-color:  #958BD9;;}
+
+
 
 /* Contenedor Publicar Post */
 .PublicarPost {
@@ -158,7 +217,7 @@ svg {
 /* Contenedor post de ejemplo ya publicados */
 .PostPublicados {
     margin: 10px auto;
-    background-color: black;
+    background-color: #958BD9;
     border-radius: 5px;
     padding: 1vh;
     position: relative;
@@ -227,6 +286,32 @@ svg {
 }
 
 .BotonesAccionPost ul li a {
+    font-family: "Regular";
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Estilos Botones: Comentar, Compartir, Guardar */
+.BotonesAccionPostp{
+    border-top: 1px solid #454bbfd4;
+    padding: 1vh;
+    position: relative;
+ bottom: 12vh;
+}
+
+.BotonesAccionPostp ul{
+    padding: 0;
+    margin: 0;
+}
+
+.BotonesAccionPostp ul li{
+    padding-right: 5px;
+    list-style:none;
+    display: inline-block;
+}
+
+.BotonesAccionPostp ul li a{
     font-family: "Regular";
     text-decoration: none;
     color: white;
