@@ -146,15 +146,36 @@
 
 
         </header>
-        <nav class="sidebar">
-            <h1>MY APPS</h1>
-            <ul>
-                <li><a href="#">Artistas</a> <i class="fa-solid fa-2x fa-music"></i></li>
-                <li><a href="#">Spotify</a> <i class="fa-brands fa-2x fa-spotify"></i></li>
-                <li><a href="#">Audios</a> <i class="fa-regular fa-2x fa-file-audio"></i></li>
-                <li><a href="Indexprf.html">Perfil</a> <i class="fa-solid fa-2x fa-sliders"></i></li>
-            </ul>
-        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div> 
+        </div>
+                <nav class="sidebar" id="sidebar"> 
+                    <img src="./Img/menu-regular-24.png" width="120" alt="logo"> 
+                <div class="perfil">
+                    <img src="https://i.pinimg.com/550x/47/f3/d0/47f3d0a65b5ed1aa44a530e2f6b2ebf6.jpg" alt="fotodeperfil" class="fotoperfil">
+                    <p class="registro"> @Register_user <br>Ver perfil</p> 
+                </div>
+                    <ul>           
+                        <ul>
+                          <button class="buttonNav"><li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+                          </svg><a href="#">Inicio</a></li></button>
+                          <button class="buttonNav"><li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                            <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                          </svg><a href="#">Tendencias</a></li></button>
+                          <button class="buttonNav"><li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg><a href="#">Busqueda</a></li></button>
+                          <button class="buttonNav"><li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                          </svg><a href="#">Notificaciones</a></li></button>
+                          <button class="buttonNav"><li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                          </svg><a href="#">Configuraciones</a></li></button>
+                        </ul>
+                </nav>
 
         <!-- Cuerpo Posts de Foro -->
         <main class="contenedorArticulos">
@@ -210,10 +231,36 @@
                         <br>
                         <br><b>Fuente:</b> El Espectador
                     </p>
+                    <section class="contadorReacciones">
+                        <article class="valor">
+                            <span id="valorLikeUno">0</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                                <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                <path fill-rule="evenodd" d="M9 3v10H8V3h1z"/>
+                                <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z"/>
+                            </svg>
+                        </article>
+                        <article class="comment">
+                            <span id="valorCommUno">1</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chat-left" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                            </svg>
+                        </article>
+                    </section>
                     <section class="BotonesAccionPost">
                         <ul>
-                            <li>
-                                <a href="#">
+                            <li class="valorar">
+                                <a onclick="reaccion('Uno')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                                        <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                        <path fill-rule="evenodd" d="M9 3v10H8V3h1z"/>
+                                        <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z"/>
+                                      </svg>
+                                    Valorar
+                                </a>
+                            </li>
+                            <li class="comentarios">
+                                <a>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-chat-left" viewBox="0 0 16 16">
                                         <path
@@ -222,8 +269,8 @@
                                     Comentarios
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="compartir">
+                                <a>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-share" viewBox="0 0 16 16">
                                         <path
@@ -232,17 +279,30 @@
                                     Compartir
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-bookmark" viewBox="0 0 16 16">
-                                        <path
-                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-                                    </svg>
-                                    Guardar
-                                </a>
-                            </li>
                         </ul>
+                    </section>
+                    <section id="comentariosCajaUno" class="cajaComentarios">
+                        <section  class="agregarComentarios">
+                            <article class="TituloComentarios">
+                                <h3>Comentarios</h3>
+                            </article>
+                            <article class="espacioImg">
+                                <img class="ImgComentarios" src="Img/concierto.png" alt="Imagen Redonda" class="imagen-redonda">
+                            </article>
+                            <article class="espacioCajaTexto">
+                                <input id="cuadropubUno" class="CuadroTexto" type="text">
+                                <button id="buttonpubUno" onclick="publicar('Uno')" class="btn-publicar">Publicar</button>
+                            </article>
+                        </section>
+                        <article class="comentariosPub">
+                            <article class="espacioImg">
+                                <img class="ImgComentarios" src="Img/concierto.png" alt="Imagen Redonda" class="imagen-redonda">
+                            </article>
+                            <article class="espacioCajaComentario">
+                                <p class="usuario"><b>@usuario</b></p>
+                                <p>Increible!</p>
+                            </article>
+                        </article>
                     </section>
                 </article>
             </section>
@@ -274,10 +334,36 @@
                         tienen una responsabilidad legal y ética fundamental de evitar el uso de sus servicios de manera
                         que perjudique a los artistas”.
                     </p>
+                    <section class="contadorReacciones">
+                        <article class="valor">
+                            <span id="valorLikeDos">0</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                                <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                <path fill-rule="evenodd" d="M9 3v10H8V3h1z"/>
+                                <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z"/>
+                            </svg>
+                        </article>
+                        <article class="comment">
+                            <span id="valorCommDos">0</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chat-left" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                            </svg>
+                        </article>
+                    </section>
                     <section class="BotonesAccionPost">
                         <ul>
-                            <li>
-                                <a href="#">
+                            <li class="valorar">
+                                <a onclick="reaccion('Dos')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                                        <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                        <path fill-rule="evenodd" d="M9 3v10H8V3h1z"/>
+                                        <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z"/>
+                                      </svg>
+                                    Valorar
+                                </a>
+                            </li>
+                            <li class="comentarios">
+                                <a>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-chat-left" viewBox="0 0 16 16">
                                         <path
@@ -286,8 +372,8 @@
                                     Comentarios
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li class="compartir">
+                                <a>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-share" viewBox="0 0 16 16">
                                         <path
@@ -296,57 +382,24 @@
                                     Compartir
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-bookmark" viewBox="0 0 16 16">
-                                        <path
-                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-                                    </svg>
-                                    Guardar
-                                </a>
-                            </li>
                         </ul>
+                    </section>
+                    <section id="comentariosCajaDos" class="cajaComentarios">
+                        <section  class="agregarComentarios">
+                            <article class="TituloComentarios">
+                                <h3>Comentarios</h3>
+                            </article>
+                            <article class="espacioImg">
+                                <img class="ImgComentarios" src="Img/concierto.png" alt="Imagen Redonda" class="imagen-redonda">
+                            </article>
+                            <article class="espacioCajaTexto">
+                                <input id="cuadropubDos" class="CuadroTexto" type="text">
+                                <button id="buttonpubDos" onclick="publicar('Dos')" class="btn-publicar">Publicar</button>
+                            </article>
+                        </section>
                     </section>
                 </article>
             </section>
-            <footer>
-                <nav class="contenedor">
-                    <li class="lista">
-                        <h4>ENLACES</h4>
-                        <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Ayuda</a></li>
-                            <li><a href="#">Quienes somos</a></li>
-                            <li><a href="#">Politicas de seguridad</a></li>
-                        </ul>
-                    </li>
-                    <li class="lista1">
-                        <h4>SERVICIOS</h4>
-                        <ul>
-                            <li><a href="#">Foro de canciones</a></li>
-                            <li><a href="#">Foro de efectos de sonido</a></li>
-                            <li><a href="#">Noticias</a></li>
-                        </ul>
-                    </li>
-                    <li class="lista2">
-                        <h4>SIGUENOS</h4>
-                        <ul>
-                            <a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook"></a>
-                            <a href="https://twitter.com/" target="_blank" class="fab fa-twitter"></a>
-                            <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></a>
-                            <a href="https://co.linkedin.com/" target="_blank" class="fab fa-linkedin"></a>
-                        </ul>
-    
-                    </li>
-                    <li class="lista3">
-                        <h4>CONTACTO</h4>
-                        <h5>www.aurum.com</h5>
-                        <a href="https://web.whatsapp.com/" target="_blank" class="fab fa-whatsapp">Whatsapp</a>
-                    </li>
-                </nav>
-                <h3>AURUM © 2023</h3>
-            </footer>
         </main>
         <aside class="asideuno">
             <section class="seccion1">
@@ -398,5 +451,6 @@
             </nav>
         </aside>
         <script src="javascript/scriptpfl.js"></script>
+        <script src="javascript/scriptmain.js"></script>
     </body>
 </html>
