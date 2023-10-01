@@ -2,6 +2,14 @@
 @import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
 
 
+.contenidoperfilgeneral {
+
+    position: absolute;
+    left:60vh;
+    top: 1vh;
+    height: auto;
+
+}
 
 section.Miperfil {
 
@@ -116,12 +124,39 @@ section.inf p {
 }
 
 /* Contenedor Main */
-.contenedorArticulos {
+.contenedorArticuloss {
     margin: 10px auto;
     width: 30vw;
+    display: relative;
 }
 
+/*CONTENIDOS DE LAS CITAS*/
 
+.contenidodos {
+    position: relative;
+    width: 81vh;
+    right: 1vh;
+    top: 13vh;
+    height: 10vh;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 20vh);
+    gap: 1vh
+}
+
+.Contenidotres {
+    position: relative;
+    width: 81vh;
+    right: 1vh;
+    top: 13vh;
+    height: 10vh;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 20vh);
+    gap: 1vh
+}
 .fotomin {
 
     height: 8vh;
@@ -129,8 +164,7 @@ section.inf p {
     padding: 10px;
 
 }
-
-.tituloscitas{
+.tituloscitas {
 
     position: relative;
     bottom: 11vh;
@@ -138,40 +172,28 @@ section.inf p {
     font-size: 25px;
 }
 
-.textocita{
+.textocita {
 
     position: relative;
     top: -13vh;
     left: 12vh;
     font-size: 18px;
-text-align: justify;
+    text-align: justify;
 
-
-}
-.contenidosdos {
-
-   
-    position: relative;
-    width: 80vh;
-    right: 10vh;
-    top: 12vh;
-    height: 10vh;
-    color: whitesmoke;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(3, 20vh);
-    gap: 1vh
 }
 
 
-.cita { 
-
-background-color:  #958BD9;;}
 
 
+.cita {
+
+    background-color: #958BD9;
+    border-radius: 10px;
+    
+}
 
 /* Contenedor Publicar Post */
-.PublicarPost {
+.PublicarPosts {
     display: none;
     padding: 1vh;
     border: 2px solid black;
@@ -191,7 +213,7 @@ svg {
 }
 
 /* Estilos Cuadro de Texto Para Publicar Post */
-.PublicarPost input {
+.PublicarPosts input {
     border: 1px solid rgba(128, 128, 128, 0.801);
     border-radius: 5px;
     height: 4vh;
@@ -199,23 +221,24 @@ svg {
 
 }
 
-.PublicarPost a {
+.PublicarPosts a {
     text-decoration: none;
 }
 
-.PublicarPost .LadoIzquierdoPublicar {
+.PublicarPosts .LadoIzquierdoPublicar {
     display: inline-block;
 }
 
-.PublicarPost .LadoDerechoPublicar {
+.PublicarPosts .LadoDerechoPublicar {
     width: 53%;
     height: 4vh;
     text-align: right;
     display: inline-block;
 }
 
+
 /* Contenedor post de ejemplo ya publicados */
-.PostPublicados {
+.PostPublicadoss {
     margin: 10px auto;
     background-color: #958BD9;
     border-radius: 5px;
@@ -228,28 +251,28 @@ svg {
 }
 
 /* Estilos posts ya publicados */
-.PostPublicados img {
+.PostPublicadoss img {
     width: 38vw;
 }
 
-.PostPublicados h3 {
+.PostPublicadoss h3 {
     font-family: "TypnicHeadlineSlab";
     color: white;
 }
 
-.PostPublicados p {
+.PostPublicadoss p {
     color: white;
     font-family: "Regular";
 }
 
 /* Estilos Header post publicados */
 
-.headerPostPublicados {
+.headerPostPublicadoss {
     padding: 1vh;
     display: inline-block;
 }
 
-.headerPostPublicados img {
+.headerPostPublicadoss img {
     width: 60px;
 }
 
@@ -258,60 +281,63 @@ svg {
     display: inline-block;
 }
 
-.espacioTitulo {
+.espacioTitulos {
     padding-left: 10px;
     width: 85%;
     display: inline-block;
 }
 
-.espacioTitulo h3 {
+.espacioTitulos h3 {
     margin: 0;
 }
 
+
 /* Estilos Botones: Comentar, Compartir, Guardar */
-.BotonesAccionPost {
+.BotonesAccionPosts {
     border-top: 1px solid #454bbfd4;
     padding: 1vh;
 }
 
-.BotonesAccionPost ul {
+.BotonesAccionPosts ul {
     padding: 0;
     margin: 0;
 }
 
-.BotonesAccionPost ul li {
+.BotonesAccionPosts ul li {
     padding-right: 5px;
     list-style: none;
     display: inline-block;
 }
 
-.BotonesAccionPost ul li a {
+.BotonesAccionPosts ul li a {
     font-family: "Regular";
     text-decoration: none;
     color: white;
 }
 
 
-/* Estilos Botones: Comentar, Compartir, Guardar */
-.BotonesAccionPostp{
+/* Estilos Botones: Comentar, Compartir, Guardar  en las citas*/
+.BotonesAccionPostpC {
     border-top: 1px solid #454bbfd4;
     padding: 1vh;
     position: relative;
- bottom: 12vh;
+    bottom: 12vh;
+    
+
 }
 
-.BotonesAccionPostp ul{
+.BotonesAccionPostpC ul {
     padding: 0;
     margin: 0;
 }
 
-.BotonesAccionPostp ul li{
+.BotonesAccionPostpC ul li {
     padding-right: 5px;
-    list-style:none;
+    list-style: none;
     display: inline-block;
 }
 
-.BotonesAccionPostp ul li a{
+.BotonesAccionPostpC ul li a {
     font-family: "Regular";
     text-decoration: none;
     color: white;

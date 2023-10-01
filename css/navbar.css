@@ -6,8 +6,8 @@
 
 .sidebar {
 
-   position: relative;
-   width: 15vw;
+   position: fixed;
+   width: 18vw;
    height: 90vh;
    background: #0D0D0D;
    top: 14vh;
@@ -35,28 +35,31 @@
 
 
 
-.fotoperfil {
+.fotoperfilp {
    border-radius: 50%;
-   height:100px;
-   width: 100px;
+   position: relative;
+   height:70px;
+   width: 70px;
+   bottom: 6vh;
    padding:10px;
    border: 1px solid #666;
 }
 
 
-.perfil {
+.perfiln {
    position:relative;
-   display:grid;
-   grid-template-columns: 1fr 1fr;
    height: 200px;
    padding: 20px 0 0 0;
    bottom:0px;
 }
 
-.registro {
+.registrop {
    color:white;
    font-size: 16px;
-   font-family:Arial, Helvetica, sans-serif;
+   font-family: "Regular";
+   position: relative;
+left: 16vh;
+top: 5vh;   
 }
 
 .buttonNav {
