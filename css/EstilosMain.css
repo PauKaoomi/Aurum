@@ -2,7 +2,8 @@
 @import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
 
 /* Contenedor Main */
-.contenedorArticulos{
+.contenedorArticulos{ 
+    position: relative;
     margin: 10px auto;
     width: 30vw;
 }
@@ -28,12 +29,9 @@ svg{
 }
 
 /* Estilos Cuadro de Texto Para Publicar Post */
-.PublicarPost input{
+.CuadroTexto{
     border: 1px solid rgba(128, 128, 128, 0.801);
     border-radius: 5px;
-    height: 4vh;
-    width: 15vw;
-
 }
 
 .PublicarPost a{
@@ -60,7 +58,7 @@ svg{
     position: relative;
     width: 38vw;
     right: 5vw;
-    top:12vh;
+    top:14vh;
     z-index: 9;
 }
 
@@ -86,7 +84,7 @@ svg{
     display: inline-block;
 }
 
-.headerPostPublicados img{
+.headerPostPublicados img, .cajaComentarios img{
     width: 60px;
 }
 
@@ -95,7 +93,7 @@ svg{
     display: inline-block;
 }
 
-.espacioTitulo{
+.espacioTitulo, .espacioCajaTexto{
     padding-left: 10px;
     width: 85%;
     display: inline-block;
@@ -125,4 +123,79 @@ svg{
     font-family: "Regular";
     text-decoration: none;
     color: white;
+}
+.valorar a:hover, .comentarios a:hover, .compartir a:hover{
+    color: #454BBF;
+}
+/* Estilos Caja de Comentarios */
+
+.cajaComentarios{
+    width: 97%;
+    background-color: #454bbf45;
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+.espacioCajaTexto input{
+    height: 4vh;
+    width: 100%;
+}
+
+.btn-publicar{
+    margin-top: 7px;
+    margin-bottom: 1vh;
+    padding: 1vh;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: "Regular";
+    background-color: #F229BD;
+    position: relative;
+    left: 27vw;
+}
+
+.btn-publicar:hover{
+    background-color: #d42ba7;
+}
+
+.ImgComentarios{
+    position: relative;
+    bottom: 1vh;
+}
+
+.TituloComentarios h3{
+    margin: 0;
+}
+
+.TituloComentarios{
+    height: 3vh;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.512);
+    margin-bottom: 1vh;
+}
+/* Caja de los comentarios ya publicados */
+.comentariosPub{
+    font-size: 17px;
+    border-top: solid 1px rgba(255, 255, 255, 0.512);
+    padding-top: 2vh;
+}
+
+.comentariosPub p{
+    margin: 0 0 5px 10px;
+}
+
+.espacioCajaComentario{
+    position: relative;
+    bottom: 3vh;
+    display: inline-block;
+    margin: 0;
+}
+.contadorReacciones{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 5px;
+}
+
+.valor{
+    margin-right: 5px;
 }
