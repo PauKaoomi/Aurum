@@ -1,9 +1,10 @@
 let listaClick = document.querySelectorAll(".click")
 let listaVentAbrir = document.querySelectorAll(".abrirV")
-let listaCerrar = document.querySelectorAll(".cerrarV")
+let main=document.querySelector(".contenedorArticulos")
+let side=document.querySelector(".sidebar")
+let asideuno=document.querySelector(".asideuno ")
+let asidedos=document.querySelector(".asidedos")
 
-
-//function eventC(id){
 
 
 for (i = 0; i < listaClick.length; i++) {
@@ -29,19 +30,20 @@ for (i = 0; i < listaClick.length; i++) {
             } else {
 
                 document.getElementById(idd).style.display = "none"
-                document.getElementById("mainCerrar").style.display = "none"
-                document.getElementById("asideC").style.display = "none"
-                document.getElementById("asideDosC").style.display = "none"
-                document.getElementById("navC").style.display = "none"
+                main.classList.add("desenfocado")
+                side.classList.add("desenfocado")
+                asideuno.classList.add("desenfocado")
+                asidedos.classList.add("desenfocado")
+                
+
 
 
             } if (ids == "x") {
 
-                console.log("Se ejecuto")
-                document.getElementById("mainCerrar").style.display = "block"
-                document.getElementById("asideC").style.display = "block"
-                document.getElementById("asideDosC").style.display = "block"
-                document.getElementById("navC").style.display = "block"
+                main.classList.remove("desenfocado")
+                side.classList.remove("desenfocado")
+                asideuno.classList.remove("desenfocado")
+                asidedos.classList.remove("desenfocado")
 
 
             }
@@ -92,6 +94,12 @@ function contraseña() {
 
 function acceso() {
     if (contraseña() == true && correoI() == true) {
+
+        
+        main.classList.remove("desenfocado")
+        side.classList.remove("desenfocado")
+        asideuno.classList.remove("desenfocado")
+        asidedos.classList.remove("desenfocado")
 
         let listaAcceso = document.querySelectorAll(".acceso")
         for (i = 1; i < listaAcceso.length; i++) {
@@ -172,4 +180,79 @@ function eventP() {
     }
 }
 eventP()
+
+
+
+function eventBtnPost(){
+
+
+    let btnPosts=document.querySelectorAll(".clikP")
+    let btnCambiar=document.querySelectorAll(".cambiarP")
+    let ventPost=document.getElementById("abrirPost")
+    let footerPost=document.getElementById("footerPostDos")
+    let mainPost=document.getElementById("mainPoDos")
+
+    console.log(btnPosts)
+    
+
+    for(i=0; i<btnPosts.length;i++){
+
+        btnPosts[i].addEventListener("click", function (e){
+
+                        
+            let is=e.target.getAttribute("id-post")
+            console.log(is)
+
+
+            for(i=0; i<btnCambiar.length;i++){
+
+                let on=btnCambiar[i].getAttribute("id")
+
+                console.log(is)
+                
+                console.log(on)
+
+
+                if(is==on){
+
+                    if (is=="linkP"){
+                        
+                        document.getElementById(on).style.display= "grid"
+                        ventPost.classList.add("lineaDeco2")
+                        footerPost.classList.add("footerPostdo")
+                        mainPost.classList.add("mainPostDos")
+
+                    }else{
+
+
+                        document.getElementById(on).style.display= "grid"
+                        ventPost.classList.remove("lineaDeco2")
+                        footerPost.classList.remove("footerPostdo")
+                        mainPost.classList.remove("mainPostDos")
+
+                    }
+    
+                
+                }else{
+                    document.getElementById(on).style.display= "none"
+
+                }
+                /*
+                let ventPost=document.getElementById("abrirPost")
+                let footerPost=document.getElementById("footerPostDos")
+                let mainPost=document.getElementById("mainPoDos")
+            
+                ventPost.classList.add("lineaDeco2")
+                footerPost.classList.add("footerPostdo")
+                mainPost.classList.add("mainPostDos")*/
+            }
+        
+        })
+
+
+    }
+
+}
+
+eventBtnPost()
 
