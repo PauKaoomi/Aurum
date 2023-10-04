@@ -4,19 +4,7 @@
 @import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
 
 
-.sidebar {
-   display:flex;
-   flex-direction: column;
-   position: relative;
-   left: 0;
-   width: 15vw;
-   height: 90vh;
-   background: #0D0D0D;
-   top: 14vh;
-   left: 0vw;
-   z-index: 10;
-   
-}
+
 
 .sidebar ul {
    display:flex;
@@ -86,6 +74,41 @@ button:hover {
    background-color: rgb(0, 0, 0);
   
 }
+
+.abrir-menu {
+   display:none
+}
+
+@media screen and (max-widht:550px) {
+   .abrir-menu 
+   .cerrar-menu {
+      display:flex;
+   }
+
+   .sidebar{
+      opacity: 0;
+      visibility: hidden;
+      display:flex;
+      flex-direction: column;
+      position: relative;
+      left: 0;
+      width: 15vw;
+      height: 90vh;
+      background: #0D0D0D;
+      top: 14vh;
+      left: 0vw;
+      
+   }
+
+.nav.visible {
+   opacity:1;
+   visibility:visible;
+}
+   
+}
+
+
+
 /*
 .menu-toggle {
    cursor:pointer;
