@@ -1,11 +1,11 @@
 @import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
 @import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
 
-.header-h{
+.header-h {
     height: 14vh;
     width: 100%;
 
-    position:fixed;
+    position: fixed;
     background-color: #0D0D0D;
     padding: 0;
     margin: 0;
@@ -14,20 +14,21 @@
 
 }
 
-.contenedor-imagen{
+.contenedor-imagen {
     height: 100%;
     width: 33%;
     margin: 0px;
-    position: relative;  
+    position: relative;
 }
 
-.imagen-logo{
-    padding: 0 15px ;
+.imagen-logo {
+    padding: 0 15px;
     top: 15%;
     width: 18%;
     position: relative;
 }
-.nombre-logo{
+
+.nombre-logo {
     color: white;
     left: 3%;
     bottom: 8%;
@@ -39,62 +40,70 @@
     font-family: "TypnicHeadlineSlab";
 }
 
-.imagen-logo, .simbolo-logo, .nombre-logo{
+.imagen-logo,
+.simbolo-logo,
+.nombre-logo {
     display: inline-block;
     margin: 0;
     color: white;
 }
 
-.contenedor-imagen, .buscar, .menu{
+.contenedor-imagen,
+.buscar,
+.menu {
     display: inline-block;
     margin: 0;
 }
 
-.globo-perfil{
+.globo-perfil {
     position: absolute;
-    right: 0%;
+    right: 2%;
     padding: 20px;
-    height:60%;
-    width: 30%;
+    height: 60%;
+    width: 20%;
     top: 0%;
     display: none;
 }
-.imagen-user, .nombre-user{
+
+.imagen-user,
+.nombre-user {
     display: inline-block;
 }
 
-.imagen-user{
-    top: 8px;
+.imagen-user {
+    top: 6px;
     position: relative;
 }
 
-.btn-user{
-    height: 90%;
+.btn-user {
+    height: 80%;
+    width: 80%;
     border-radius: 5px;
     background-color: #0D0D0D;
     border: none;
     cursor: pointer;
     position: relative;
-    left: 53%;
-    top:10%;
+    left: 30%;
+    top: 16%;
 }
 
-.btn-user:hover{
+.btn-user:hover {
     border: 2px solid white;
 }
 
-.user{
+.user {
     width: 100%;
     height: 90%;
     border-radius: 5px;
     position: relative;
 }
 
-.nombre-user{
-    font-family:"Regular";
+.nombre-user {
+    font-family: "Regular";
     position: relative;
     margin-left: 5px;
     color: white;
+    top: -3px;
 
 
 }
@@ -103,41 +112,48 @@
     color: white;
     margin-left: 40px;
     position: relative;
+    top: -3px;
 }
-.burbuja{
-    top:11%;
+
+.burbuja {
     position: relative;
+    top: 11%;
     border-radius: 30px;
-    border:none ;
+    border: none;
     background-color: black;
     height: 58%;
-    width: 8% ;
+    width: 12%;
 }
 
-.notificacion{
+.notificacion {
 
-    right: 7%;
+    right: 65%;
+
 
 }
-.notificacion i{
+
+.notificacion i {
     left: 0px;
     position: relative;
 }
 
-.notificacion:hover{
-    border: 2px solid white ;
+.notificacion:hover {
+    border: 2px solid white;
 }
 
 .mensaje {
 
-    right: 29%;
+    right: -2%;
+    top: -53%;
 }
-.mensaje i{
+
+.mensaje i {
     left: 0px;
     position: relative;
 }
-.mensaje:hover{
-    border: 2px solid white ;
+
+.mensaje:hover {
+    border: 2px solid white;
 }
 
 
@@ -150,12 +166,12 @@
     display: none;
 }
 
-.busqueda-btn{
+.busqueda-btn {
     position: relative;
     left: 25%;
     top: 4%;
 }
-  
+
 .buscar input {
     width: 0;
     height: 30%;
@@ -166,7 +182,7 @@
     position: absolute;
     transition: all 0.6s ease;
 }
-  
+
 .btn {
     width: 30px;
     height: 30px;
@@ -180,28 +196,31 @@
     border-radius: 50px;
     cursor: pointer;
 }
-  
+
 .buscar:hover input {
     width: 400px;
 }
-  
+
 .buscar input:focus {
     width: 400px;
 }
 
-.inicio-registro{
+.inicio-registro {
     position: absolute;
     right: 0%;
     top: 0%;
     width: 30%;
     height: 100%;
-    
+
 }
-.inicio, .registro, .puntos{
+
+.inicio,
+.registro,
+.puntos {
     display: inline-block;
 }
 
-.btn-a{
+.btn-a {
     line-height: 40px;
     text-align: center;
     background-color: #F229BD;
@@ -214,31 +233,33 @@
     cursor: pointer;
 }
 
-.btn-a:hover{
+.btn-a:hover {
     border: 2px solid #fb34d3;
 }
-.inicio{
+
+.inicio {
     width: 30%;
 }
 
-.inicio a{
+.inicio a {
     font-size: 11px;
     text-decoration: none;
     color: white;
-    font-family: "TypnicHeadlineSlab"; 
+    font-family: "TypnicHeadlineSlab";
 }
 
-.registro{
+.registro {
     width: 22%;
 }
 
-.registro a{
+.registro a {
     font-size: 11px;
     text-decoration: none;
     color: white;
-    font-family: "TypnicHeadlineSlab"; 
+    font-family: "TypnicHeadlineSlab";
 }
-.puntos{
+
+.puntos {
     line-height: 45px;
     margin-left: 10px;
     position: relative;
@@ -247,7 +268,7 @@
     width: 5%;
 }
 
-.puntos ul{
+.puntos ul {
     list-style: none;
     position: absolute;
     top: 90px;
@@ -255,7 +276,8 @@
     padding-inline-start: 0;
 
 }
-.puntos ul{
+
+.puntos ul {
     width: 160px;
     background-color: white;
     text-align: center;
@@ -263,16 +285,16 @@
     visibility: hidden;
     transition: top .3s;
     z-index: 10;
-    
+
 }
 
-.puntos li:hover > ul{
+.puntos li:hover>ul {
     top: 36px;
     opacity: 1;
     visibility: visible;
 }
 
-.ventana{
+.ventana {
     background-color: rgb(255, 255, 255);
     width: 21%;
     padding: 50px;
@@ -284,84 +306,97 @@
     display: none;
 }
 
-.informacion-incio{
+.informacion-incio {
     height: 100%;
     width: 100%;
     margin: 10px;
 }
-.pab-i{
+
+.pab-i {
     font-size: 25px;
     margin: 0;
 }
-.acuerdo{
+
+.acuerdo {
     font-size: 13px;
     margin-top: 10px;
 }
 
-i, .text-google{
+i,
+.text-google {
     display: inline-block;
 }
-.google{
+
+.google {
     border-radius: 30px;
     position: relative;
-    top:25px;
+    top: 25px;
     background-color: white;
     transition: all 1s ease;
 }
-.google:hover{
+
+.google:hover {
     background: rgb(201, 50, 50);
     color: #fff;
 
 }
-i{
-    position:relative;
+
+i {
+    position: relative;
     right: 9%;
 }
 
-p{
+p {
     font-family: "regular";
     font-size: 16px;
 
 }
-i, .text-facebook{
+
+i,
+.text-facebook {
     display: inline-block;
 }
-.facebook{
+
+.facebook {
     border-radius: 30px;
     position: relative;
-    top:33px;
+    top: 33px;
     background-color: white;
     transition: all 1s ease;
 }
-.facebook:hover{
+
+.facebook:hover {
     background: #318aac;
     color: #fff;
 
 }
-i{
-    position:relative;
+
+i {
+    position: relative;
     right: 9%;
 }
 
-p{
+p {
     font-family: "regular";
     font-size: 16px;
 
 }
 
-hr{
+hr {
     size: 3px;
     color: black;
     top: 60px;
     position: relative;
 }
-.input-correo{
+
+.input-correo {
     top: 90px;
     position: relative;
     height: 50px;
     border-radius: 30px;
 }
-.correo{
+
+.correo {
     height: 70%;
     width: 91%;
     border-radius: 30px;
@@ -369,13 +404,15 @@ hr{
     border: 3px solid black;
     font-weight: bold;
 }
-.input-contraseña{
+
+.input-contraseña {
     top: 110px;
     position: relative;
     height: 50px;
     border-radius: 30px;
 }
-.contraseña{
+
+.contraseña {
     height: 70%;
     width: 91%;
     border-radius: 30px;
@@ -383,24 +420,27 @@ hr{
     border: 3px solid black;
     font-weight: bold;
 }
-.olvido{
-    top:110px;
+
+.olvido {
+    top: 110px;
     position: relative;
     font-size: 14px;
 }
+
 .ven-ini {
     position: relative;
     top: 120px;
     font-family: "regular";
 }
-.vent-registro{
+
+.vent-registro {
     display: block;
     padding: 100px 50px;
     min-height: 65vh;
     display: none;
 }
 
-.continue{
+.continue {
     width: 130px;
     height: 40px;
     line-height: 5px;
@@ -418,23 +458,23 @@ hr{
 
 }
 
-.pregunta{
-    top:130px;
+.pregunta {
+    top: 130px;
     position: relative;
     left: 23px;
 }
 
-.pregunta a{
+.pregunta a {
     cursor: pointer;
 }
 
-.cerrar{
+.cerrar {
     cursor: pointer;
 }
 
 /*Estructura para los post*/
 
-.pubPost{
+.pubPost {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -454,30 +494,30 @@ hr{
 
 }
 
-.pubPost:hover{
-    background-color:black ;
+.pubPost:hover {
+    background-color: black;
     border: white 3px solid;
 
 }
 
-.lineaDeco{
+.lineaDeco {
 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 63vw;
-    height: 62vh;
+    width: 58vw;
+    height: 60vh;
     border: black 3px solid;
     position: absolute;
     border-radius: 10px;
-    left: 17%;
+    left: 20%;
     top: 25%;
     display: none;
 
 
 }
 
-.emergentePost{
+.emergentePost {
     display: flex;
     flex-direction: column;
     height: 96%;
@@ -491,7 +531,8 @@ hr{
 
 
 }
-.headerPost{
+
+.headerPost {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -500,19 +541,19 @@ hr{
 
 }
 
-.lineaPost{
+.lineaPost {
     margin: 0 5%;
     position: relative;
     top: 1%;
-    
+
 
 }
 
-.textPost{
+.textPost {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    font-family: "TypnicHeadlineSlab" ;
+    font-family: "TypnicHeadlineSlab";
     font-size: 19px;
     color: #fff;
     margin: 0 5%;
@@ -520,9 +561,9 @@ hr{
 
 /*main post*/
 
-.mainPost{
+.mainPost {
     display: grid;
-    grid-template: 28px 30px 29vh  / repeat(3,33%);
+    grid-template: 28px 30px 25px 25vh / repeat(3, 33%);
     align-items: center;
     justify-content: center;
     margin: 18px 35px 35px 35px;
@@ -531,30 +572,32 @@ hr{
 }
 
 
-.btnPost{
+.btnPost {
     display: grid;
-    background-color: #0D0D0D;
+    background-color: #fb34d3;
     color: white;
-    border: 1px solid rgb(181, 181, 181);
-    font-family: "TypnicHeadlineSlab" ;
+    font-family: "TypnicHeadlineSlab";
     cursor: pointer;
     border-radius: 3px;
-}
-.btnPost:hover{
-    background-color: #fb34d3;
-
 
 }
 
+.btnPost:hover {
+    border: 2px solid #fb34d3;
 
-.postP{
+
+}
+
+
+.postP {
 
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    margin-left: 20px;
 
 }
 
-.imgPost{
+.imgPost {
 
     grid-column: 2 / 3;
     grid-row: 1/ 2;
@@ -562,34 +605,249 @@ hr{
 
 }
 
-.linkPost{
+.linkPost {
     grid-column: 3 / 4;
     grid-row: 1/ 2;
+    margin-right: 20px;
 
 }
-.titlePost{
+
+.textPostCambiar {
     grid-column: 1/4;
+    position: relative;
+    top: 7rem;
+    display: none;
+}
+
+.titlePost {
+    width: 94%;
     height: 27px;
     margin: 0 20px;
     border-radius: 5px;
     font-family: "Regular";
+    outline: none;
+
 }
 
-.bodyPost{
+.bodyPost {
     display: grid;
-    grid-template: 30px 100%/ 1fr;
-    grid-column: 1 / 4;
+    grid-template: 15% 85%/ 1fr;
     height: 100%;
     margin: 0 20px;
 
+
 }
 
-.separadorPost{
-    grid-row: 1 / 2;
+.separadorPost {
+    display: grid;
+    grid-template-columns: repeat(7, 5%);
+    justify-content: center;
+    margin: 5px 20px 7px 20px;
+    height: 25px;
     background-color: #454545;
     border: none;
+
 }
 
-.textPo{
+.spanCambioN {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
+.spanCambioI {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+
+.spanCambioS {
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+}
+
+.spanCambioL {
+    grid-column: 4/5;
+    grid-row: 1/2;
+
+}
+
+.spanCambioT {
+    grid-column: 5/6;
+    grid-row: 1/2;
+
+}
+
+.spanCambioLp {
+    grid-column: 6/7;
+    grid-row: 1/2;
+
+}
+
+.spanCambioLn {
+    grid-column: 7/8;
+    grid-row: 1/2;
+
+}
+
+.btnCambioP {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #454545;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btnCambioP:hover {
+    background-color: #6a6a6a;
+    border-radius: 5px;
+
+}
+
+.cambioColor {
+    color: #0D0D0D;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.italica {
+    font-style: italic;
+}
+
+.subrayado {
+    text-decoration: line-through;
+
+}
+
+.textPo {
     font-family: "Regular";
+    grid-row: 1/ 3;
+    border-radius: 2px;
+    bottom: 7px;
+    position: relative;
+    outline: none;
+
+}
+
+.footerPost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 10vh;
+    bottom: 25px;
+    margin: 0 52px;
+}
+
+.postear {
+    margin-right: 0%;
+    cursor: pointer;
+    border: none;
+    background-color: #fb34d3;
+    color: white;
+    height: 60%;
+    width: 15%;
+    font-family: "regular";
+    border-radius: 20px;
+
+}
+
+
+.postear:hover {
+    border: 2px solid #ffffff;
+}
+
+.imgPostCambiar {
+    display: none;
+    grid-template-rows: 30px;
+    grid-row: 2/5;
+    grid-gap: 8px;
+    height: 100%;
+    grid-column: 1/4;
+}
+
+.subirImg {
+    display: flex;
+    grid-column: 1/2;
+    width: 94.5%;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+/*.archivoExplorador{
+    color: white;
+    border: white 2px solid;
+    width: 16%;
+    line-height: 1.5rem;
+    font-family: "regular";
+    border-radius: 14px;
+    outline: none;
+}*/
+.file-select {
+    position: relative;
+    display: inline-block;
+}
+
+.file-select::before {
+    background-color: #000000;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    content: 'Subir';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.file-select input[type="file"] {
+    opacity: 0;
+    width: 5rem;
+    height: 2rem;
+    display: inline-block;
+
+}
+
+#src-file1::before {
+    content: 'Subir';
+    font-family: "regular";
+}
+
+.textoImg {
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 20px;
+    font-family: "regular";
+}
+
+.selectPoPr {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    height: 65%;
+}
+
+.pubOpriv {
+    width: 100%;
+    height: 90%;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0 8px;
+    font-family: "regular";
+
+
 }
