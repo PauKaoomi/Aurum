@@ -28,10 +28,10 @@
             <p class="simbolo-logo" style="font-size: 75px;">|</p>
             <p class="nombre-logo">Aurum</p>
         </section>
-        <section class="globo-perfil">
+        <section class="globo-perfil acceso" id-acceso="accesoId">
             <button class="btn-user">
                 <article class="user">
-                    <img src="/Img/user-logo.png" alt="imagen user"
+                    <img src="/Img/calco.png" alt="imagen user"
                         style="height: 30px; width: 30px; border-radius: 5px;" class="imagen-user">
                     <span class="nombre-user">User_901223</span>
                     <i class="fa-solid fa-arrow-down"></i>
@@ -49,13 +49,13 @@
             </button>
 
         </section>
-        <section class="buscar">
+        <section class="buscar acceso" id-acceso="accesoId">
             <input type="text" placeholder=".......Buscar" required />
             <article style="height: 30px; width: 30px;" class="btn">
                 <img src="Img/lupa2.0.png" alt="logo" height="45" width="45" class="busqueda-btn">
             </article>
         </section>
-        <section class="inicio-registro">
+        <section class="inicio-registro acceso" id-acceso="accesoIdno">
             <button class="btn-a inicio click" id="v-inicio" id-modal="emergente">
                 <a id="v-inicio" id-modal="emergente">Iniciar sesión</a>
             </button>
@@ -73,7 +73,7 @@
             </article>
         </section>
 
-        <section class="ventana abrirV" id="emergente">
+        <section class="ventana abrirV acceso" id-acceso="accesoIdno" id="emergente">
 
             <i class="fa-solid fa-xmark click cerrar cerrarV" id-modal="x" style="color: #000000;"></i>
 
@@ -147,14 +147,14 @@
 
 
     </header>
-    <nav class="sidebar" id="navC">
+    <nav class="sidebar acceso" id-acceso="accesoId" id="navC">
         <h1>MY APPS</h1>
         <ul>
             <li><a href="#">Artistas</a> <i class="fa-solid fa-2x fa-music"></i></li>
             <li><a href="#">Spotify</a> <i class="fa-brands fa-2x fa-spotify"></i></li>
             <li><a href="#">Audios</a> <i class="fa-regular fa-2x fa-file-audio"></i></li>
             <li><a href="#">Carpetas</a> <i class="fa-solid fa-2x fa-sliders"></i></li>
-            <button class="pubPost click" id-modal="abrirPost"><i><i class="fa-regular fa-pen-to-square"
+            <button class="pubPost click acceso" id-acceso="accesoId" id-modal="abrirPost"><i><i class="fa-regular fa-pen-to-square"
                         style="color: #ffffff;"></i></i><span id-modal="abrirPost">Publicar post</span></button>
 
         </ul>
@@ -174,23 +174,49 @@
                 <button class="btnPost postP"><span>POST</span></button>
                 <button class="btnPost imgPost"><span>IMG</span></button>
                 <button class=" btnPost linkPost"><span>LINK</span></button>
-                <input class="titlePost" type="text" placeholder=" Title" maxlength="300"/>
-                <section class="bodyPost">
-                <article class="separadorPost">
-                </article>
-                <textarea class="textPo" id="" cols="30" rows="10" placeholder=" Texto -Opcional-" ></textarea>
-                </section>
-                
 
+                <section class="textPostCambiar">
+                    <input class="titlePost" type="text" placeholder=" Title" maxlength="300"/>
+                    <article class="separadorPost">
+                        <span class="spanCambioN"><button class="btnCambioP btnCam"  id="bold"> <i class="fa-solid fa-bold ne"></i></button></span>
+                        <span class="spanCambioI"><button class="btnCambioP btnCam" id="italica"> <i class="fa-solid fa-italic" ></i></button></span>
+                        <span class="spanCambioS"><button class="btnCambioP btnCam" id="subrayado"> <i class="fa-solid fa-strikethrough"></i></button></span>
+                        <span class="spanCambioL"><button class="btnCambioP btnCam" id="links"> <i class="fa-solid fa-link" ></i></button></span>
+                        <span class="spanCambioT"><button class="btnCambioP btnCam" id="titulo"> <i class="fa-solid fa-t" ></i></button></span>
+                        <span class="spanCambioLp"><button class="btnCambioP btnCam" id="listaP"> <i class="fa-solid fa-list" ></i></button></span>
+                        <span class="spanCambioLn"><button class="btnCambioP btnCam" id="listaN"> <i class="fa-solid fa-list-ol"></i></button></span>
+                    </article>
+                    <section class="bodyPost">
+                        <textarea class="textPo" id="textoEntero" cols="30" rows="10" placeholder=" Texto -Opcional-" onkeyup="mostrar(this.value)"></textarea>
+                    </section>
+                </section>
+                <section class="imgPostCambiar">
+                    <input class="titlePost imgTitle" type="text" placeholder=" Title" maxlength="300"/>
+                    <article class="subirImg">
+                        <span class="textoImg">Selecciona la imagen que deseas</span>
+                        <section class="file-select" id="src-file1" >
+                            <input type="file" name="src-file1" aria-label="Archivo">
+                        </section>
+                    </article>
+                </section>
             </section>
             <section class="footerPost">
+                <article class="selectPoPr">
+                    <select class="pubOpriv" name="publicOprivado" id="PubOrPriv">
+                        <option value="publico">Publico</option>
+                        <option value="privado">Privado</option>
+                    </select>
+                </article>
+                <button class="postear">
+                    <span>Post</span>
+                </button>
 
             </section>
         </section>
     </section>
 
     <!-- Cuerpo Posts de Foro -->
-    <main class="contenedorArticulos" id="mainCerrar">
+    <main class="contenedorArticulos acceso" id-acceso="accesoId" id="mainCerrar">
         <section class="PublicarPost">
             <article class="LadoIzquierdoPublicar">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
@@ -381,7 +407,7 @@
             <h3>AURUM © 2023</h3>
         </footer>
     </main>
-    <aside class="asideuno" id="asideC">
+    <aside class="asideuno acceso" id-acceso="accesoId" id="asideC">
         <section class="seccion1">
             <h2 class="titulouno">Articulos que te pueden interesar </h2>
         </section>
@@ -406,7 +432,7 @@
 
     </aside>
 
-    <aside class="asidedos" id="asideDosC">
+    <aside class="asidedos acceso" id-acceso="accesoId" id="asideDosC">
         <section class="seccion2">
             <h2>Artistas que te pueden interesar </h2>
         </section>
