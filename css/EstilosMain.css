@@ -2,9 +2,8 @@
 @import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
 
 /* Contenedor Main */
-.contenedorArticulos{
+.contenedorArticulos{ 
     position: relative;
-    bottom: 1vh;
     margin: 10px auto;
     width: 30vw;
 }

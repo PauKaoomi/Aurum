@@ -63,10 +63,7 @@ top: 5vh;
 }
 
 .buttonNav {
-   display:flex;
-   justify-content: space-between;
-   width:100%;
-   align-items: flex-start;
+   display:flex; 
    background-color: #0D0D0D;
    transition: 1s;
    border:none;

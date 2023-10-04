@@ -162,14 +162,13 @@
 
         <div class="perfiln">
 
-            <li><a id="boton0" class="registrop" href="#">@Register_user <br>Ver perfil</a></li>
-            <img src="Img/usuario.png" alt="fotodeperfilp"
-                class="fotoperfilp">
+            <li><a id="botonverperfil" class="registrop" href="#">@Username <br>Ver perfil</a></li>
+            <img src="Img/usuario.png" alt="fotodeperfilp" class="fotoperfilp">
 
         </div>
         <ul>
             <ul>
-                <button class="buttonNav" id="iniciosebas"  >
+                <button class="buttonNav" id="botoninicio">
                     <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                             class="bi bi-house-door" viewBox="0 0 16 16">
                             <path
@@ -209,291 +208,41 @@
 
     <!-- Cuerpo Posts de Foro -->
     <main>
-        <section id="contenidoprincipal" class="contenedorArticulos">
-            <section class="PublicarPost">
-                <article class="LadoIzquierdoPublicar">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                        <path
-                            d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
-                    </svg>
-                    <input class="CuadroTexto" type="text" placeholder="Crear Post...">
-                </article>
-                <article class="LadoDerechoPublicar">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
-                            <path
-                                d="M160 80H512c8.8 0 16 7.2 16 16V320c0 8.8-7.2 16-16 16H490.8L388.1 178.9c-4.4-6.8-12-10.9-20.1-10.9s-15.7 4.1-20.1 10.9l-52.2 79.8-12.4-16.9c-4.5-6.2-11.7-9.8-19.4-9.8s-14.8 3.6-19.4 9.8L175.6 336H160c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16zM96 96V320c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H160c-35.3 0-64 28.7-64 64zM48 120c0-13.3-10.7-24-24-24S0 106.7 0 120V344c0 75.1 60.9 136 136 136H456c13.3 0 24-10.7 24-24s-10.7-24-24-24H136c-48.6 0-88-39.4-88-88V120zm208 24a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" />
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-paperclip"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z" />
-                        </svg>
-                    </a>
-                </article>
-            </section>
-            <!-- Zona de Post ya Publicados -->
-            <section class="PostPublicados">
-                <header class="headerPostPublicados">
-                    <article class="espacioImg">
-                        <img src="Img/concierto.png" alt="Imagen Redonda" class="imagen-redonda">
-                    </article>
-                    <article class="espacioTitulo">
-                        <h3>Marc Anthony recibe su estrella en el Paseo del Fama de Hollywood</h3>
-                    </article>
-                </header>
-                <article class="Post">
-                    <p>
-                        <img src="Img/MarkEstrella.png">
-                        <br>
-                        En la tarde de este jueves 7 de septiembre, fue la ceremonia oficial que posicionaba al cantante
-                        de salsa neoyorquino Marc Anthony,
-                        como el dueño de una estrella en el Paseo de la Fama de Hollywood, en Estados Unidos.
-                        La sobresaliente voz tenor del neoyorquino ha sido su firma personal en el mundo de la música
-                        desde 1990,
-                        siendo una de las más fáciles de reconocer de la salsa.
-                        <br>
-                        El artista también ha compartido su faceta como actor en la gran pantalla,
-                        participando en películas como “El cantante” haciendo el papel del rey de la salsa Héctor Lavoe;
-                        “Vidas al límite”,
-                        de Martin Scorsese, y “The Capeman”, un musical de Broadway de Paul Simon.
-                        <br>
-                        <br><b>Fuente:</b> El Espectador
-                    </p>
-                    <section class="contadorReacciones">
-                        <article class="valor">
-                            <span id="valorLikeUno">0</span><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
-                                <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
-                                <path fill-rule="evenodd" d="M9 3v10H8V3h1z" />
-                                <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z" />
-                            </svg>
-                        </article>
-                        <article class="comment">
-                            <span id="valorCommUno">1</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-chat-left" viewBox="0 0 16 16">
-                                <path
-                                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                            </svg>
-                        </article>
-                    </section>
-                    <section class="BotonesAccionPost">
-                        <ul>
-                            <li class="valorar">
-                                <a onclick="reaccion('Uno')">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-music-note" viewBox="0 0 16 16">
-                                        <path
-                                            d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
-                                        <path fill-rule="evenodd" d="M9 3v10H8V3h1z" />
-                                        <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z" />
-                                    </svg>
-                                    Valorar
-                                </a>
-                            </li>
-                            <li class="comentarios">
-                                <a>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-chat-left" viewBox="0 0 16 16">
-                                        <path
-                                            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                    </svg>
-                                    Comentarios
-                                </a>
-                            </li>
-                            <li class="compartir">
-                                <a>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-share" viewBox="0 0 16 16">
-                                        <path
-                                            d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-                                    </svg>
-                                    Compartir
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-                    <section id="comentariosCajaUno" class="cajaComentarios">
-                        <section class="agregarComentarios">
-                            <article class="TituloComentarios">
-                                <h3>Comentarios</h3>
-                            </article>
-                            <article class="espacioImg">
-                                <img class="ImgComentarios" src="Img/concierto.png" alt="Imagen Redonda"
-                                    class="imagen-redonda">
-                            </article>
-                            <article class="espacioCajaTexto">
-                                <input id="cuadropubUno" class="CuadroTexto" type="text">
-                                <button id="buttonpubUno" onclick="publicar('Uno')"
-                                    class="btn-publicar">Publicar</button>
-                            </article>
-                        </section>
-                        <article class="comentariosPub">
-                            <article class="espacioImg">
-                                <img class="ImgComentarios" src="Img/concierto.png" alt="Imagen Redonda"
-                                    class="imagen-redonda">
-                            </article>
-                            <article class="espacioCajaComentario">
-                                <p class="usuario"><b>@usuario</b></p>
-                                <p>Increible!</p>
-                            </article>
-                        </article>
-                    </section>
-                </article>
-            </section>
 
-            <section class="PostPublicados">
-                <article class="Post">
-                    <h3>Canción generada por IA que imita a Drake y The Weeknd es enviada a consideración para el Grammy
-                    </h3>
-                    <p>
-                        Luego que el artista anónimo Ghostwriter se hiciera viral con su tema generado con inteligencia
-                        artificial (IA) “Heart on My Sleeve” —
-                        que imita a Drake y The Weeknd — a principios de este año, sus representantes revelaron en una
-                        entrevista reciente con el New York Times
-                        que la polémica canción fue enviada a los premios Grammy del próximo año.
-                        <br>
-                        Presentada para su consideración en las categorías de mejor canción de rap y canción del año,
-                        “Heart on My Sleeve” es elegible pese al uso
-                        de tecnología de IA en la grabación, dijo Harvey Mason, jr., CEO de la Academia de la Grabación,
-                        al New York Times.
-                        “En cuanto al lado creativo, es absolutamente elegible porque fue escrita por un humano”,
-                        señaló.
-                        <br>
-                        El pasado abril, “Heart on My Sleeve” fue retirada de los servicios de streaming tras generar
-                        más de 600.000 reproducciones en Spotify
-                        y 275.000 vistas en YouTube. Tras la indignación, Spotify, YouTube, Apple Music, TIDAL y Deezer
-                        retiraron la canción de sus respectivas plataformas.
-                        En una declaración a Billboard, UMG denunció la pista y el uso de IA diciendo que las
-                        publicaciones virales “demuestran por qué las plataformas
-                        tienen una responsabilidad legal y ética fundamental de evitar el uso de sus servicios de manera
-                        que perjudique a los artistas”.
-                    </p>
-                    <section class="contadorReacciones">
-                        <article class="valor">
-                            <span id="valorLikeDos">0</span><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
-                                <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
-                                <path fill-rule="evenodd" d="M9 3v10H8V3h1z" />
-                                <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z" />
-                            </svg>
-                        </article>
-                        <article class="comment">
-                            <span id="valorCommDos">0</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-chat-left" viewBox="0 0 16 16">
-                                <path
-                                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                            </svg>
-                        </article>
-                    </section>
-                    <section class="BotonesAccionPost">
-                        <ul>
-                            <li class="valorar">
-                                <a onclick="reaccion('Dos')">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-music-note" viewBox="0 0 16 16">
-                                        <path
-                                            d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
-                                        <path fill-rule="evenodd" d="M9 3v10H8V3h1z" />
-                                        <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z" />
-                                    </svg>
-                                    Valorar
-                                </a>
-                            </li>
-                            <li class="comentarios">
-                                <a>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-chat-left" viewBox="0 0 16 16">
-                                        <path
-                                            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                    </svg>
-                                    Comentarios
-                                </a>
-                            </li>
-                            <li class="compartir">
-                                <a>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-share" viewBox="0 0 16 16">
-                                        <path
-                                            d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-                                    </svg>
-                                    Compartir
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-                    <section id="comentariosCajaDos" class="cajaComentarios">
-                        <section class="agregarComentarios">
-                            <article class="TituloComentarios">
-                                <h3>Comentarios</h3>
-                            </article>
-                            <article class="espacioImg">
-                                <img class="ImgComentarios" src="Img/concierto.png" alt="Imagen Redonda"
-                                    class="imagen-redonda">
-                            </article>
-                            <article class="espacioCajaTexto">
-                                <input id="cuadropubDos" class="CuadroTexto" type="text">
-                                <button id="buttonpubDos" onclick="publicar('Dos')"
-                                    class="btn-publicar">Publicar</button>
-                            </article>
-                        </section>
-                    </section>
-                </article>
-            </section>
+        <section class="Miperfil" id="miperfil">
 
+            <img class="portada" src="Img/portadados.jpg" alt="portada">
+            <img class="fotoperfil" src="Img/usuario.png" alt="fotop">
+            <button class="Editar">
+                Editar
+            </button>
+            <section class="datosp">
+                <h1> User name </h1>
+                <h2>@username</h2>
+                <p> Drescripcion, frase, Presentacion </p>
+            </section>
+            <section class="inf">
+                <p> Seguidores 20k | Siguiendo 1k </p>
+            </section>
+            <section class="Botonesperfil">
+                <li><a id="botonpost" class="botonp"> Post</a></li>
+                <li><a id="botoncitas" class="botonp"> Citas</a></li>
+                <li><a id="botonlikes" class="botonp"> Likes </a></li>
+            </section>
         </section>
 
-        <section class="contenidoperfilgeneral"id="perfilsebas">
+        <section class="contenedorArticulos">
 
-            <section class="Miperfil">
-
-                <img class="portada" src="Img/portadados.jpg" alt="portada">
-                <img class="fotoperfil" src="Img/usuario.png" alt="fotop">
-                <button class="Editar">
-                    Editar
-                </button>
-
-                <section class="datosp">
-
-                    <h1> User name </h1>
-
-                    <h2>@username</h2>
-
-                    <p> Drescipcion, frase,Presentacion </p>
-
-
-
-                </section>
-                <section class="inf">
-                    <p> Seguidores 20k | Siguiendo 1k </p>
-
-                </section>
-
-                <section class="Botonesperfil">
-
-                    <li><a id="boton1" class="botonp"> Post</a></li>
-                    <li><a id="boton2" class="botonp"> Citas</a></li>
-                    <li><a id="boton3" class="botonp"> Likes </a></li>
-
-
-                </section>
-            </section>
-
-            <section class="contenedorArticuloss" id="contenido1">
-
-                <section class="PublicarPosts">
-                    <article class="LadoIzquierdoPublicars">
+            <section class="contenidouno" id="contenidoprincipal">
+                <section class="PublicarPost">
+                    <article class="LadoIzquierdoPublicar">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                             <path
                                 d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
                         </svg>
-                        <input class="CuadroTextos" type="text" placeholder="Crear Post...">
+                        <input class="CuadroTexto" type="text" placeholder="Crear Post...">
                     </article>
-                    <article class="LadoDerechoPublicars">
+                    <article class="LadoDerechoPublicar">
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
                                 <path
@@ -510,8 +259,8 @@
                     </article>
                 </section>
                 <!-- Zona de Post ya Publicados -->
-                <section class="PostPublicadoss">
-                    <header class="headerPostPublicadoss">
+                <section class="PostPublicados">
+                    <header class="headerPostPublicados">
                         <article class="espacioImg">
                             <img src="Img/concierto.png" alt="Imagen Redonda" class="imagen-redonda">
                         </article>
@@ -533,18 +282,47 @@
                             siendo una de las más fáciles de reconocer de la salsa.
                             <br>
                             El artista también ha compartido su faceta como actor en la gran pantalla,
-                            participando en películas como “El cantante” haciendo el papel del rey de la salsa
-                            Héctor
+                            participando en películas como “El cantante” haciendo el papel del rey de la salsa Héctor
                             Lavoe;
                             “Vidas al límite”,
                             de Martin Scorsese, y “The Capeman”, un musical de Broadway de Paul Simon.
                             <br>
                             <br><b>Fuente:</b> El Espectador
                         </p>
-                        <section class="BotonesAccionPosts">
+                        <section class="contadorReacciones">
+                            <article class="valor">
+                                <span id="valorLikeUno">0</span><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                                    <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
+                                    <path fill-rule="evenodd" d="M9 3v10H8V3h1z" />
+                                    <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z" />
+                                </svg>
+                            </article>
+                            <article class="comment">
+                                <span id="valorCommUno">1</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chat-left" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                            </article>
+                        </section>
+                        <section class="BotonesAccionPost">
                             <ul>
-                                <li>
-                                    <a href="#">
+                                <li class="valorar">
+                                    <a onclick="reaccion('Uno')">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
+                                            <path fill-rule="evenodd" d="M9 3v10H8V3h1z" />
+                                            <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z" />
+                                        </svg>
+                                        Valorar
+                                    </a>
+                                </li>
+                                <li class="comentarios">
+                                    <a>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
                                             <path
@@ -553,8 +331,8 @@
                                         Comentarios
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
+                                <li class="compartir">
+                                    <a>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
                                             <path
@@ -563,33 +341,47 @@
                                         Compartir
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                                            <path
-                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-                                        </svg>
-                                        Guardar
-                                    </a>
-                                </li>
                             </ul>
+                        </section>
+                        <section id="comentariosCajaUno" class="cajaComentarios">
+                            <section class="agregarComentarios">
+                                <article class="TituloComentarios">
+                                    <h3>Comentarios</h3>
+                                </article>
+                                <article class="espacioImg">
+                                    <img class="ImgComentarios" src="Img/concierto.png" alt="Imagen Redonda"
+                                        class="imagen-redonda">
+                                </article>
+                                <article class="espacioCajaTexto">
+                                    <input id="cuadropubUno" class="CuadroTexto" type="text">
+                                    <button id="buttonpubUno" onclick="publicar('Uno')"
+                                        class="btn-publicar">Publicar</button>
+                                </article>
+                            </section>
+                            <article class="comentariosPub">
+                                <article class="espacioImg">
+                                    <img class="ImgComentarios" src="Img/concierto.png" alt="Imagen Redonda"
+                                        class="imagen-redonda">
+                                </article>
+                                <article class="espacioCajaComentario">
+                                    <p class="usuario"><b>@usuario</b></p>
+                                    <p>Increible!</p>
+                                </article>
+                            </article>
                         </section>
                     </article>
                 </section>
 
-                <section class="PostPublicadoss">
+                <section class="PostPublicados">
                     <article class="Post">
-                        <h3>Canción generada por IA que imita a Drake y The Weeknd es enviada a consideración para
-                            el
+                        <h3>Canción generada por IA que imita a Drake y The Weeknd es enviada a consideración para el
                             Grammy
                         </h3>
                         <p>
                             Luego que el artista anónimo Ghostwriter se hiciera viral con su tema generado con
                             inteligencia
                             artificial (IA) “Heart on My Sleeve” —
-                            que imita a Drake y The Weeknd — a principios de este año, sus representantes revelaron
-                            en
+                            que imita a Drake y The Weeknd — a principios de este año, sus representantes revelaron en
                             una
                             entrevista reciente con el New York Times
                             que la polémica canción fue enviada a los premios Grammy del próximo año.
@@ -600,8 +392,7 @@
                             de tecnología de IA en la grabación, dijo Harvey Mason, jr., CEO de la Academia de la
                             Grabación,
                             al New York Times.
-                            “En cuanto al lado creativo, es absolutamente elegible porque fue escrita por un
-                            humano”,
+                            “En cuanto al lado creativo, es absolutamente elegible porque fue escrita por un humano”,
                             señaló.
                             <br>
                             El pasado abril, “Heart on My Sleeve” fue retirada de los servicios de streaming tras
@@ -612,15 +403,44 @@
                             retiraron la canción de sus respectivas plataformas.
                             En una declaración a Billboard, UMG denunció la pista y el uso de IA diciendo que las
                             publicaciones virales “demuestran por qué las plataformas
-                            tienen una responsabilidad legal y ética fundamental de evitar el uso de sus servicios
-                            de
+                            tienen una responsabilidad legal y ética fundamental de evitar el uso de sus servicios de
                             manera
                             que perjudique a los artistas”.
                         </p>
-                        <section class="BotonesAccionPosts">
+                        <section class="contadorReacciones">
+                            <article class="valor">
+                                <span id="valorLikeDos">0</span><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                                    <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
+                                    <path fill-rule="evenodd" d="M9 3v10H8V3h1z" />
+                                    <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z" />
+                                </svg>
+                            </article>
+                            <article class="comment">
+                                <span id="valorCommDos">0</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chat-left" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                            </article>
+                        </section>
+                        <section class="BotonesAccionPost">
                             <ul>
-                                <li>
-                                    <a href="#">
+                                <li class="valorar">
+                                    <a onclick="reaccion('Dos')">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
+                                            <path fill-rule="evenodd" d="M9 3v10H8V3h1z" />
+                                            <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z" />
+                                        </svg>
+                                        Valorar
+                                    </a>
+                                </li>
+                                <li class="comentarios">
+                                    <a>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
                                             <path
@@ -629,8 +449,8 @@
                                         Comentarios
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
+                                <li class="compartir">
+                                    <a>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
                                             <path
@@ -639,32 +459,33 @@
                                         Compartir
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                                            <path
-                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-                                        </svg>
-                                        Guardar
-                                    </a>
-                                </li>
                             </ul>
+                        </section>
+                        <section id="comentariosCajaDos" class="cajaComentarios">
+                            <section class="agregarComentarios">
+                                <article class="TituloComentarios">
+                                    <h3>Comentarios</h3>
+                                </article>
+                                <article class="espacioImg">
+                                    <img class="ImgComentarios" src="Img/concierto.png" alt="Imagen Redonda"
+                                        class="imagen-redonda">
+                                </article>
+                                <article class="espacioCajaTexto">
+                                    <input id="cuadropubDos" class="CuadroTexto" type="text">
+                                    <button id="buttonpubDos" onclick="publicar('Dos')"
+                                        class="btn-publicar">Publicar</button>
+                                </article>
+                            </section>
                         </section>
                     </article>
                 </section>
 
             </section>
 
-
-            <section id="contenido2" class="contenidodos">
-
+            <section class="contenidodos" id="contenidocitas">
                 <section class="cita">
-
                     <img class="fotomin" src="Img/nina.png" alt="foto de usuario">
-
                     <h1 class="tituloscitas"> username2 </h1>
-
                     <p class="textocita"> Deberias escuchar el playlist de Ricardo Arjona</p>
                     <section class="BotonesAccionPostpC">
                         <ul>
@@ -698,20 +519,10 @@
                                     Guardar
                                 </a>
                     </section>
-
                 </section>
-
-
-
                 <section class="cita">
-
-
-
                     <img class="fotomin" src="Img/nina.png" alt="foto de usuario">
-
                     <h1 class="tituloscitas"> username2 </h1>
-
-
                     <p class="textocita"> Ya viste el nuevo hit? </p>
                     <section class="BotonesAccionPostpC">
                         <ul>
@@ -748,15 +559,10 @@
                     </section>
                 </section>
                 <section class="cita">
-
-
                     <section class="titutocita">
                         <img class="fotomin" src="Img/nina.png" alt="foto de usuario">
-
                         <h1 class="tituloscitas"> username2 </h1>
-
                     </section>
-
                     <p class="textocita"> Tenias razon con la musica colombiana</p>
                     <section class="BotonesAccionPostpC">
                         <ul>
@@ -789,20 +595,13 @@
                                     </svg>
                                     Guardar
                                 </a>
-
                     </section>
-
                 </section>
-
             </section>
-            <section id="contenido3" class="Contenidotres">
-
+            <section class="Contenidotres" id="contenidolikes">
                 <section class="cita">
-
                     <img class="fotomin" src="Img/nina.png" alt="foto de usuario">
-
                     <h1 class="tituloscitas"> username2 </h1>
-
                     <p class="textocita"> La famosa Karol G esta soltera </p>
                     <section class="BotonesAccionPostpC">
                         <ul>
@@ -838,18 +637,9 @@
                     </section>
 
                 </section>
-
-
-
                 <section class="cita">
-
-
-
                     <img class="fotomin" src="Img/nina.png" alt="foto de usuario">
-
                     <h1 class="tituloscitas"> username2 </h1>
-
-
                     <p class="textocita"> Ya viste el nuevo hit? </p>
                     <section class="BotonesAccionPostpC">
                         <ul>
@@ -886,15 +676,10 @@
                     </section>
                 </section>
                 <section class="cita">
-
-
                     <section class="titutocita">
                         <img class="fotomin" src="Img/nina.png" alt="foto de usuario">
-
                         <h1 class="tituloscitas"> username2 </h1>
-
                     </section>
-
                     <p class="textocita"> Tenias razon con la musica colombiana</p>
                     <section class="BotonesAccionPostpC">
                         <ul>
@@ -927,17 +712,11 @@
                                     </svg>
                                     Guardar
                                 </a>
-
                     </section>
-
                 </section>
-
-
-
             </section>
-
-
         </section>
+
 
 
     </main>

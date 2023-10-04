@@ -2,14 +2,6 @@
 @import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
 
 
-.contenidoperfilgeneral {
-
-    position: absolute;
-    left:60vh;
-    top: 1vh;
-    height: auto;
-
-}
 
 section.Miperfil {
 
@@ -19,10 +11,11 @@ section.Miperfil {
     padding: 1vh;
     position: relative;
     width: 38vw;
-    height: 60vh;
+    height: 55vh;
     left: -1vh;
-    top: 13vh;
+    top: 14vh;
     font-family: "Regular";
+    z-index: 14;
 
 }
 
@@ -52,7 +45,7 @@ button.Editar {
 
 .portada {
     width: 38vw;
-    height: 25vh;
+    height: 20vh;
     position: relative;
     z-index: 10;
 }
@@ -123,20 +116,15 @@ section.inf p {
     font-family: "Regular";
 }
 
-/* Contenedor Main */
-.contenedorArticuloss {
-    margin: 10px auto;
-    width: 30vw;
-    display: relative;
-}
+
 
 /*CONTENIDOS DE LAS CITAS*/
 
 .contenidodos {
     position: relative;
+    right: 10vh;
+    top: 14vh;
     width: 81vh;
-    right: 1vh;
-    top: 13vh;
     height: 10vh;
     color: whitesmoke;
     display: grid;
@@ -145,11 +133,12 @@ section.inf p {
     gap: 1vh
 }
 
+
 .Contenidotres {
     position: relative;
+    right: 10vh;
+    top: 14vh;
     width: 81vh;
-    right: 1vh;
-    top: 13vh;
     height: 10vh;
     color: whitesmoke;
     display: grid;
@@ -190,105 +179,6 @@ section.inf p {
     background-color: #958BD9;
     border-radius: 10px;
     
-}
-
-/* Contenedor Publicar Post */
-.PublicarPosts {
-    display: none;
-    padding: 1vh;
-    border: 2px solid black;
-    border-radius: 5px;
-    position: relative;
-    width: 38vw;
-    right: 5vw;
-    top: 13vh;
-    z-index: 9;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-/* Colores para los iconos de la pagina */
-svg {
-    fill: white;
-}
-
-/* Estilos Cuadro de Texto Para Publicar Post */
-.PublicarPosts input {
-    border: 1px solid rgba(128, 128, 128, 0.801);
-    border-radius: 5px;
-    height: 4vh;
-    width: 15vw;
-
-}
-
-.PublicarPosts a {
-    text-decoration: none;
-}
-
-.PublicarPosts .LadoIzquierdoPublicar {
-    display: inline-block;
-}
-
-.PublicarPosts .LadoDerechoPublicar {
-    width: 53%;
-    height: 4vh;
-    text-align: right;
-    display: inline-block;
-}
-
-
-/* Contenedor post de ejemplo ya publicados */
-.PostPublicadoss {
-    margin: 10px auto;
-    background-color: #958BD9;
-    border-radius: 5px;
-    padding: 1vh;
-    position: relative;
-    width: 38vw;
-    right: 5vw;
-    top: 12vh;
-    z-index: 9;
-}
-
-/* Estilos posts ya publicados */
-.PostPublicadoss img {
-    width: 38vw;
-}
-
-.PostPublicadoss h3 {
-    font-family: "TypnicHeadlineSlab";
-    color: white;
-}
-
-.PostPublicadoss p {
-    color: white;
-    font-family: "Regular";
-}
-
-/* Estilos Header post publicados */
-
-.headerPostPublicadoss {
-    padding: 1vh;
-    display: inline-block;
-}
-
-.headerPostPublicadoss img {
-    width: 60px;
-}
-
-.espacioImg {
-    width: 8%;
-    display: inline-block;
-}
-
-.espacioTitulos {
-    padding-left: 10px;
-    width: 85%;
-    display: inline-block;
-}
-
-.espacioTitulos h3 {
-    margin: 0;
 }
 
 
