@@ -14,6 +14,10 @@
 
 }
 
+.desenfocado {
+    filter: blur(5px); 
+}
+
 .contenedor-imagen {
     height: 100%;
     width: 33%;
@@ -501,19 +505,17 @@ hr {
 }
 
 .lineaDeco {
-
-    display: flex;
+    position: absolute;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 58vw;
     height: 60vh;
     border: black 3px solid;
-    position: absolute;
     border-radius: 10px;
-    left: 20%;
+    left: 19%;
     top: 25%;
-    display: none;
-
+    z-index: 1000;
 
 }
 
@@ -612,11 +614,13 @@ hr {
 
 }
 
+/*estilos PostText*/
+
 .textPostCambiar {
     grid-column: 1/4;
     position: relative;
     top: 7rem;
-    display: none;
+    display: grid;
 }
 
 .titlePost {
@@ -736,33 +740,13 @@ hr {
 
 }
 
-.footerPost {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    height: 10vh;
-    bottom: 25px;
-    margin: 0 52px;
-}
-
-.postear {
-    margin-right: 0%;
-    cursor: pointer;
-    border: none;
-    background-color: #fb34d3;
-    color: white;
-    height: 60%;
-    width: 15%;
-    font-family: "regular";
-    border-radius: 20px;
-
-}
 
 
 .postear:hover {
     border: 2px solid #ffffff;
 }
+
+/*estilos PostImg*/
 
 .imgPostCambiar {
     display: none;
@@ -784,15 +768,6 @@ hr {
     border-radius: 5px;
 }
 
-/*.archivoExplorador{
-    color: white;
-    border: white 2px solid;
-    width: 16%;
-    line-height: 1.5rem;
-    font-family: "regular";
-    border-radius: 14px;
-    outline: none;
-}*/
 .file-select {
     position: relative;
     display: inline-block;
@@ -834,6 +809,32 @@ hr {
     font-family: "regular";
 }
 
+
+/*footerPost*/
+.footerPost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 10vh;
+    bottom: 25px;
+    margin: 0 52px;
+}
+
+
+.postear {
+    margin-right: 0%;
+    cursor: pointer;
+    border: none;
+    background-color: #fb34d3;
+    color: white;
+    height: 60%;
+    width: 15%;
+    font-family: "regular";
+    border-radius: 20px;
+
+}
+
 .selectPoPr {
     display: flex;
     align-items: center;
@@ -851,3 +852,68 @@ hr {
 
 
 }
+
+/*estilos PostUrl*/
+
+.lineaDeco2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58vw;
+    height: 45vh;
+    border: black 3px solid;
+    position: absolute;
+    border-radius: 10px;
+    left: 20%;
+    top: 32%;
+
+}
+
+.footerPostdo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    height: 3rem;
+    bottom: 40px;
+
+}
+.mainPostDos{
+    display: grid;
+    grid-template: 28px 30px 25px 13vh / repeat(3, 33%);
+    align-items: center;
+    justify-content: center;
+    margin: 18px 35px 35px 35px;
+    row-gap: 8px;
+    column-gap: 5px;
+}
+
+.urlPostCambiar {
+    display: none;
+    grid-template-rows: 30px;
+    grid-row: 2/5;
+    grid-gap: 8px;
+    height: 100%;
+    grid-column: 1/4;
+}
+
+.subirUrl{
+    display: grid;
+    grid-column: 1/2;
+    width: 94.5%;
+    margin: 0 20px;
+    border-radius: 5px;
+
+}
+
+.src-url{
+
+    height: 50%;
+    width: 99.5%;
+    outline: none;
+    border-radius: 3px;
+    font-family: "regular";
+}
+
