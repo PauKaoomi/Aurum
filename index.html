@@ -169,13 +169,13 @@
 
             </section>
             <hr class="lineaPost">
-            <section class="mainPost">
+            <section class="mainPost" id="mainPoDos">
 
-                <button class="btnPost postP"><span>POST</span></button>
-                <button class="btnPost imgPost"><span>IMG</span></button>
-                <button class=" btnPost linkPost"><span>LINK</span></button>
+                <button class="btnPost postP"><span class="clikP" id-post="posT">POST</span></button>
+                <button class="btnPost imgPost"><span class="clikP" id-post="imG">IMG</span></button>
+                <button class=" btnPost linkPost"><span class="clikP" id-post="linkP">LINK</span></button>
 
-                <section class="textPostCambiar">
+                <section class="textPostCambiar cambiarP" id="posT">
                     <input class="titlePost" type="text" placeholder=" Title" maxlength="300"/>
                     <article class="separadorPost">
                         <span class="spanCambioN"><button class="btnCambioP btnCam"  id="bold"> <i class="fa-solid fa-bold ne"></i></button></span>
@@ -190,7 +190,7 @@
                         <textarea class="textPo" id="textoEntero" cols="30" rows="10" placeholder=" Texto -Opcional-" onkeyup="mostrar(this.value)"></textarea>
                     </section>
                 </section>
-                <section class="imgPostCambiar">
+                <section class="imgPostCambiar cambiarP" id="imG">
                     <input class="titlePost imgTitle" type="text" placeholder=" Title" maxlength="300"/>
                     <article class="subirImg">
                         <span class="textoImg">Selecciona la imagen que deseas</span>
@@ -199,8 +199,16 @@
                         </section>
                     </article>
                 </section>
+                <section class="urlPostCambiar cambiarP" id="linkP">
+                    <input class="titlePost imgTitle" type="text" placeholder=" Title" maxlength="300"/>
+                    <article class="subirUrl">
+                        <section class="url-select" id="src-url" >
+                            <input type="url" class="src-url" aria-label="Archivo" placeholder="--Url--">
+                        </section>
+                    </article>
+                </section>
             </section>
-            <section class="footerPost">
+            <section class="footerPost" id="footerPostDos">
                 <article class="selectPoPr">
                     <select class="pubOpriv" name="publicOprivado" id="PubOrPriv">
                         <option value="publico">Publico</option>
