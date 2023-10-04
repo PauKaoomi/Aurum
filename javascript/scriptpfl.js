@@ -60,7 +60,7 @@ boton4.addEventListener("click", function () {
 });
 
 
-// Obtener referencias a elementos HTML
+
 const botonAbrir = document.getElementById("botonAbriruno");
 const miModal = document.getElementById("sugerenciauno");
 const botonAbrirdos = document.getElementById("botonAbrirdos");
@@ -68,12 +68,12 @@ const miModaldos = document.getElementById("sugerenciados");
 const cerrarModal = document.getElementById("cerrarModal");
 const cerrarModaldos = document.getElementById("cerrarModaldos");
 
-// Abrir la pantalla emergente al hacer clic en el botón
+
 botonAbrir.addEventListener("click", function() {
     miModal.style.display = "block";
 });
 
-// Cerrar la pantalla emergente al hacer clic en la "X"
+
 cerrarModal.addEventListener("click", function() {
     miModal.style.display = "none";
   
@@ -85,8 +85,6 @@ cerrarModaldos.addEventListener("click", function() {
     miModaldos.style.display = "none";
 });
 
-cerrarModaldos
-// Cerrar la pantalla emergente si se hace clic fuera de ella
 window.addEventListener("click", function(event) {
     if (event.target === miModal) {
         miModal.style.display = "none";
