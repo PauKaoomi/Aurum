@@ -1,0 +1,362 @@
+@import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
+@import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
+
+section.Miperfil {
+
+    margin: 5px auto;
+    background-color: #958BD9;
+    border-radius: 5px;
+    padding: 1vh;
+    position: relative;
+    width: 38vw;
+    height: 50vh;
+    left: -1vh;
+    top: 14vh;
+    font-family: "Regular";
+    z-index: 14;
+
+}
+
+button.Editar {
+
+    background-color: #fb34d3;
+    border-color: #fb34d3;
+    color: whitesmoke;
+    position: relative;
+    left: 50%;
+    bottom: 25%;
+    border-radius: 8px;
+    padding: 4px;
+
+}
+
+.fotoperfil {
+
+    width: 10vw;
+    height: 19vh;
+    position: relative;
+    left: 5%;
+    bottom: 15%;
+    z-index: 11;
+
+}
+
+.portada {
+    width: 38vw;
+    height: 20vh;
+    position: relative;
+    z-index: 10;
+}
+
+section.datosp h2 {
+
+    color: rgb(212, 205, 205);
+    margin: 1px;
+    font-size: 12px;
+}
+
+section.datosp h1 {
+    margin: 1px;
+    font-size: 18px;
+}
+
+section.datosp {
+
+    color: whitesmoke;
+    position: relative;
+    text-align: left;
+    left: 1%;
+    bottom: 16%;
+    padding: 1px;
+    font-family: "Regular";
+
+
+}
+
+section.inf {
+
+    color: whitesmoke;
+    position: absolute;
+    right: 6%;
+    bottom: 25%;
+    padding: 5px;
+    font-size: 15px;
+}
+
+section.inf p {
+
+    margin: 2px;
+    padding: 1px;
+}
+
+.Botonesperfil {
+
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 2fr);
+    bottom: 9vh;
+    border-top: 1px solid #454bbfd4;
+    padding: 1vh;
+
+}
+
+.Botonesperfil svg {
+    fill: white;
+    align-items: center;
+}
+
+.botonp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: "Regular";
+}
+
+
+
+/*CONTENIDOS DE LAS CITAS*/
+
+.contenidodos {
+    position: relative;
+    right: 10vh;
+    top: 14vh;
+    width: 81vh;
+    height: 22vh;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 22vh);
+    gap: 2vh;
+}
+
+
+.Contenidotres {
+    position: relative;
+    right: 10vh;
+    top: 14vh;
+    width: 81vh;
+    height: 22vh;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 22vh);
+    gap: 2vh
+}
+.fotomin {
+
+    height: 9vh;
+    width: auto;
+    padding: 8px 1px 1px 8px;
+
+}
+.tituloscitas {
+
+    position: relative;
+    bottom: 12vh;
+    left: 12vh;
+    font-size: 25px;
+}
+
+.textocita {
+
+    position: relative;
+    top: -13vh;
+    left: 12vh;
+    font-size: 18px;
+    text-align: justify;
+
+}
+
+
+
+
+.cita {
+
+    background-color: #958BD9;
+    border-radius: 10px;
+    
+}
+
+
+.contadorReaccionescitas {
+    
+  
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 5px;
+}
+
+.valorcitas{
+    margin-right: 5px;
+}
+
+/* Estilos Botones: Comentar, Compartir, Guardar  en las citas*/
+.BotonesAccionPostpC {
+    border-top: 1px solid #454bbfd4;
+    padding: 1vh;
+    display: flex;
+    bottom: 20vh;
+
+}
+
+.reacciones{
+    position: relative;
+    bottom: 15vh;
+
+}
+.BotonesAccionPostpC ul {
+    padding: 0;
+    margin: 0;
+}
+
+.BotonesAccionPostpC ul li {
+    padding-right: 5px;
+    list-style: none;
+    display: inline-block;
+}
+
+.BotonesAccionPostpC ul li a {
+    font-family: "Regular";
+    text-decoration: none;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Estilo para la ventana emergente */
+.modal-contenido {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 2px;
+    border: 1px solid #888;
+    width: 38%;
+    height: 48%;
+    max-width: 600px;
+    position: relative;
+}
+
+
+.cerrar {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+section.Perfilsugerido {
+
+    margin: 5px auto;
+    background-color: #958BD9;
+    border-radius: 5px;
+    padding: 1vh;
+    position: relative;
+    width: 38vw;
+    height: 50vh;
+    left: -1vh;
+    bottom: 3vh;
+    font-family: "Regular";
+    z-index: 14;
+
+}
+
+
+.fotoperfilSG {
+
+    width: 10vw;
+    height: 19vh;
+    position: relative;
+    left: 5%;
+    bottom: 15%;
+    z-index: 11;
+
+}
+
+.portadaSG {
+    width: 38vw;
+    height: 20vh;
+    position: relative;
+    z-index: 10;
+}
+
+section.datosSG h2 {
+
+    color: rgb(212, 205, 205);
+    margin: 1px;
+    font-size: 12px;
+}
+
+section.datosSG h1 {
+    margin: 1px;
+    font-size: 18px;
+}
+
+section.datosSG {
+
+    color: whitesmoke;
+    position: relative;
+    text-align: left;
+    left: 1%;
+    bottom: 16%;
+    padding: 1px;
+    font-family: "Regular";
+
+
+}
+
+section.infSG {
+
+    color: whitesmoke;
+    position: absolute;
+    right: 6%;
+    bottom: 25%;
+    padding: 5px;
+    font-size: 15px;
+}
+
+section.infSG p {
+
+    margin: 2px;
+    padding: 1px;
+}
+
+.BotonesperfilSG {
+
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 2fr);
+    bottom: 9vh;
+    border-top: 1px solid #454bbfd4;
+    padding: 1vh;
+
+}
+
+.BotonesperfilSG svg {
+    fill: white;
+    align-items: center;
+}
+
+.botonpSG {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: "Regular";
+}
+
