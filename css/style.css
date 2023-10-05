@@ -4,7 +4,6 @@
 .header-h {
     height: 14vh;
     width: 100%;
-
     position: fixed;
     background-color: #0D0D0D;
     padding: 0;
@@ -14,9 +13,6 @@
 
 }
 
-.desenfocado {
-    filter: blur(5px); 
-}
 
 .contenedor-imagen {
     height: 100%;
@@ -165,8 +161,8 @@
     position: relative;
     width: 18%;
     height: 100%;
-    top: 12%;
-    right: 13%;
+    bottom: 65%;
+    left:20%;
     display: none;
 }
 
@@ -298,16 +294,37 @@
     visibility: visible;
 }
 
+.ventI{
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.ventR{
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
 .ventana {
     background-color: rgb(255, 255, 255);
     width: 21%;
     padding: 50px;
     min-height: 78vh;
     border-radius: 22px;
-    top: 24%;
+    top: 4%;
     right: 36%;
     position: absolute;
-    display: none;
 }
 
 .informacion-incio {
@@ -441,7 +458,6 @@ hr {
     display: block;
     padding: 100px 50px;
     min-height: 65vh;
-    display: none;
 }
 
 .continue {
@@ -504,9 +520,20 @@ hr {
 
 }
 
+
+.ventP{
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
 .lineaDeco {
     position: absolute;
-    display: none;
     justify-content: center;
     align-items: center;
     width: 58vw;
@@ -916,4 +943,5 @@ hr {
     border-radius: 3px;
     font-family: "regular";
 }
+
 
