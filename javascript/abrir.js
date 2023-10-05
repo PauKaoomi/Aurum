@@ -3,7 +3,11 @@ let listaVentAbrir = document.querySelectorAll(".abrirV")
 let listaVentA = document.querySelectorAll(".exp")
 let inicio = document.querySelector(".ventI")
 let registro = document.querySelector(".ventR")
-console.log(listaVentAbrir)
+let main= document.querySelector(".mainMover")
+let asideDos= document.querySelector(".asidedos")
+let asideUno=document.querySelector(".asideuno")
+let asideDD=document.querySelector(".moverAsideDD")
+
 
 
 
@@ -50,7 +54,6 @@ for (i = 0; i < listaVentA.length; i++) {
 
             list.style.display="none"
         }
-
 
     })
 
@@ -99,7 +102,10 @@ function contraseña() {
 function acceso() {
     if (contraseña() == true && correoI() == true) {
 
-
+        main.classList.remove("mainMover")
+        asideUno.classList.remove("moverAsideUno")
+        asideDos.classList.remove("moverAsideDos")
+        asideDD.classList.remove("moverAsideDD")
         inicio.classList.remove("ventI")
         registro.classList.remove("ventR")
 
@@ -190,7 +196,7 @@ function eventBtnPost() {
 
     let btnPosts = document.querySelectorAll(".clikP")
     let btnCambiar = document.querySelectorAll(".cambiarP")
-    let ventPost = document.getElementById("abrirPost")
+    let ventPost = document.getElementById("abrirPostP")
     let footerPost = document.getElementById("footerPostDos")
     let mainPost = document.getElementById("mainPoDos")
 
@@ -209,10 +215,6 @@ function eventBtnPost() {
             for (i = 0; i < btnCambiar.length; i++) {
 
                 let on = btnCambiar[i].getAttribute("id")
-
-                console.log(is)
-
-                console.log(on)
 
 
                 if (is == on) {

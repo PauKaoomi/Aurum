@@ -5,7 +5,7 @@
 
 
 .sidebar {
-
+   display: none;
    position: fixed;
    width: 18vw;
    height: 90vh;
@@ -20,8 +20,10 @@
    font-weight: bold; 
    border-radius: 5px;
    font-family: "TypnicHeadlineSlab";
-   bottom:180px;
+   position: relative;
+   bottom:4rem;
    padding:0;
+   
 }
 
 .sidebar ul a {
@@ -67,6 +69,7 @@ top: 5vh;
    background-color: #0D0D0D;
    transition: 1s;
    border:none;
+   width: 100%;
    
    
 }
