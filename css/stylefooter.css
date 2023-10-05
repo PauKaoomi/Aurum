@@ -1,136 +1,76 @@
 @import url(https://db.onlinewebfonts.com/c/ce0326bb829449f42eedc2a38e45ef26?family=TypnicHeadlineSlab);
 @import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
-
+main{
+    height: 300vh;
+ }
 
 * {
-
     list-style: none;
     text-decoration: none;
 }
 
-footer {
-    font-family: sans-serif;
-    background-color: #0D0D0D;
-    color:#fff;
-    height: 30vh;
-    position: relative;
-    width: 70vw;
-    margin-top: 13vh;
-    padding: 5vh 2vh;
-    text-decoration: none;
-    border-radius: 5px;
-    right: 25vh;
-
+.asidepadre{
+    height: 200vh;
+    position: absolute;
+    left:70vw;
+    top: 53vh;
 }
-footer ul{
-
-    padding: 0;
-
+.contenedorFooter svg{
+    fill: rgb(255, 255, 255);
 }
 
-.contenedor {
-    height: 30vh;
-    width: 70vw;
-    position: relative;
-    top:12%;
-    left: 15%;
-}
-
-.lista {
-    width: 200px;
-    height: 120px;
-    border: 1px;
-    margin-right: 10px;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    position: relative;
-    top: -5vh;
-    right: 12vh;
-}
-
-.lista1 {
-    width: 200px;
-    height: 120px;
-    border: 1px;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    position: relative;
-    position: relative;
-    top: -7vh;
-    right: 12vh;
-
-}
-
-
-.lista2{
-    width: 10vw;
-    height: 120px;
-    border: 1px;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    position: relative;
-    top: -11vh;
-    right: 5vh;
-}
-
-.lista3 {
-    width: 10vw;
-    height: 120px;
-    border: 1px;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    position: relative;
-    bottom: 3vh;
-    top: -6vh;
-    right: 3vh;
-
-}
-
-footer h4 {
-    font-size: 20px;
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #fff;
-    display: inline-block;
-}
-
-footer h4:hover {
-    color: #958BD9;
-}
-
-footer li a {
-    color: whitesmoke;
-
-}
-
-footer li a:hover {
+.contenedorFooter {
+    position: sticky;
+    padding: 1vh;
+    top: 15vh;
+    margin-top: 2vh;
     background-color: #958BD9;
+    border-radius:10px;
 }
 
-footer h3 {
+.botones{
     position: relative;
-    left: 50vh;
-    top: -1vh;
-    display:inline;
-    text-align: right;
+    right:5vh ;
+    background-color: #958BD9;
+    padding: 0vh;
+    bottom: 1vh;
+    margin: 1vh;
+    text-align: left;
+    width: 35vh;
+    height: 3vh;
+    border: none;
+    transition: all .4s ease-in-out;
+}
+.botones::before {
+    background-color:#5547af;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: width 300ms ease-in-out;
+    display: inline-block;
 }
 
-footer h3:hover {
-    color: #958BD9;
+.botones:hover {
+    width: 100%;
+    background-color: #454BBF;
 }
 
-footer h5 {
-    position: relative;
-    top: -4vh;
-}
-
-footer .lista3 a {
-
-    position: relative;
-    top: -5vh;
+.contenedorFooter a {
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: "Regular";
+   
 
 }
+
+.contenedorFooter h3{
+    text-align: center;
+    color: white;
+}
+.contenedorFooter h3:hover{
+    color: #5547af;
+
+}
+
