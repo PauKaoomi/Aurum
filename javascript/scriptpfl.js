@@ -4,6 +4,7 @@ const boton1 = document.getElementById("botonpost");
 const boton2 = document.getElementById("botoncitas");
 const boton3 = document.getElementById("botonlikes");
 const boton4 = document.getElementById("botoninicio");
+const boton5 = document.querySelector(".globo-perfil")
 
 const contenido0 = document.getElementById("miperfil");
 const contenido1 = document.getElementById("contenidoprincipal");
@@ -58,6 +59,17 @@ boton4.addEventListener("click", function () {
 
 
 });
+
+boton5.addEventListener("click", function () {
+
+    contenido0.style.display = "block";
+    contenido1.style.display = "block";
+    contenido2.style.display = "none";
+    contenido3.style.display = "none";
+
+});
+
+
 
 
 

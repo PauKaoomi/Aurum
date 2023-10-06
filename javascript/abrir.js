@@ -4,9 +4,8 @@ let listaVentA = document.querySelectorAll(".exp")
 let inicio = document.querySelector(".ventI")
 let registro = document.querySelector(".ventR")
 let main= document.querySelector(".mainMover")
-let asideDos= document.querySelector(".asidedos")
+let asideDos= document.querySelector(".asidepadre")
 let asideUno=document.querySelector(".asideuno")
-let asideDD=document.querySelector(".moverAsideDD")
 
 
 
@@ -105,7 +104,6 @@ function acceso() {
         main.classList.remove("mainMover")
         asideUno.classList.remove("moverAsideUno")
         asideDos.classList.remove("moverAsideDos")
-        asideDD.classList.remove("moverAsideDD")
         inicio.classList.remove("ventI")
         registro.classList.remove("ventR")
 
