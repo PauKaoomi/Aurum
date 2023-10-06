@@ -8,10 +8,10 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="css/EstilosMain.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Styleaside.css">
     <link rel="stylesheet" href="css/stylefooter.css">
     <link rel="stylesheet" href="css/EstilosMainP.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="Img/Favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/navbar.css">
@@ -29,11 +29,11 @@
             <p class="simbolo-logo" style="font-size: 75px;">|</p>
             <p class="nombre-logo">Aurum</p>
         </section>
-        <section class="globo-perfil">
+        <section class="globo-perfil acceso" id-acceso="accesoId">
             <button class="btn-user">
                 <article class="user">
-                    <img src="/Img/user-logo.png" alt="imagen user"
-                        style="height: 30px; width: 30px; border-radius: 5px;" class="imagen-user">
+                    <img src="/Img/calco.png" alt="imagen user" style="height: 30px; width: 30px; border-radius: 5px;"
+                        class="imagen-user">
                     <span class="nombre-user">User_901223</span>
                     <i class="fa-solid fa-arrow-down"></i>
                 </article>
@@ -50,18 +50,18 @@
             </button>
 
         </section>
-        <section class="buscar">
+        <section class="buscar acceso" id-acceso="accesoId">
             <input type="text" placeholder=".......Buscar" required />
             <article style="height: 30px; width: 30px;" class="btn">
                 <img src="Img/lupa2.0.png" alt="logo" height="45" width="45" class="busqueda-btn">
             </article>
         </section>
-        <section class="inicio-registro">
-            <button class="btn-a inicio click" id="v-inicio" onclick="abrir('v-inicio')">
-                <a id="v-inicio">Iniciar sesión</a>
+        <section class="inicio-registro acceso" id-acceso="accesoIdno">
+            <button class="btn-a inicio click" id="v-inicio" id-modal="emergente">
+                <a id="v-inicio" id-modal="emergente">Iniciar sesión</a>
             </button>
-            <button class="btn-a registro click" id="v-registro" onclick="abrir('v-registro')">
-                <a id="v-registro">Registro</a>
+            <button class="btn-a registro click" id="v-registro" id-modal="emergenteRe">
+                <a id="v-registro" id-modal="emergenteRe">Registro</a>
             </button>
             <article class="puntos">
                 <li><a href="#" style="font-size: 30px; color: white;">...</a>
@@ -73,91 +73,103 @@
                 </li>
             </article>
         </section>
+        <section class="ventI abrirV exp" id="emergente" id-modal="abrirV">
+            <section class="ventana acceso" id-acceso="accesoIdno">
 
-        <section class="ventana" id="emergente">
+                <i class="fa-solid fa-xmark click cerrar cerrarV" id-modal="x" style="color: #000000;"></i>
 
-            <i class="fa-solid fa-xmark click cerrar" id="cerrar-ini" onclick="cerrar('cerrar-ini')"
-                style="color: #000000;"></i>
+                <article class="informacion-incio">
 
-            <article class="informacion-incio">
+                    <h2 class="pab-i">Inicio sesion</h2>
+                    <p class="acuerdo">Al continuar, estarás configurando una cuenta de Aurum y
+                        aceptarás nuestro <a href="#">Acuerdo del usuario</a> y <a href="#">la Política de
+                            privacidad.</a>
+                    </p>
 
-                <h2 class="pab-i">Inicio sesion</h2>
-                <p class="acuerdo">Al continuar, estarás configurando una cuenta de Reddit y
-                    aceptarás nuestro <a href="#">Acuerdo del usuario</a> y <a href="#">la Política de privacidad.</a>
-                </p>
+                </article>
+                <button class="google" style="width: 100%; height: 10%;">
+                    <i class="fa-brands fa-google" style="color: #ffffff;"></i>
+                    <p class="text-google">Iniciar sesion con google</p>
+                </button>
+                <button class="facebook" style="width: 100%; height: 10%;">
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                    <p class="text-facebook">Iniciar sesion con facebook</p>
+                </button>
+                <hr>
 
-            </article>
-            <button class="google" style="width: 100%; height: 10%;">
-                <i class="fa-brands fa-google" style="color: #000000;"></i>
-                <p class="text-google">Iniciar sesion con google</p>
-            </button>
-            <button class="facebook" style="width: 100%; height: 10%;">
-                <i class="fa-brands fa-facebook" style="color: #030303;"></i>
-                <p class="text-facebook">Iniciar sesion con google</p>
-            </button>
-            <hr>
-
-            <article class="input-correo">
-                <input class="correo" id="inp-correo" type="text" placeholder="Nombre o correo electronico" required>
-            </article>
-            <article class="input-contraseña">
-                <input id="cont" class="contraseña" type="password" placeholder="Contraseña" required>
-            </article>
-            <p class="olvido">¿Has olvidado tu nombre de <a href="#">usuario</a> o <a href="#">contraseña</a> ?</p>
-            <button class="btn-a ven-ini" id="botonIniciar" onclick="eventoR()">
-                <a style="color: white;" onclick="eventoR()">Iniciar sesión</a>
-            </button>
-
-            <script src="javascript/abrir.js"></script>
-
+                <article class="input-correo">
+                    <input class="correo" id="inp-correo" type="text" placeholder="Nombre o correo electronico"
+                        required>
+                </article>
+                <article class="input-contraseña">
+                    <input id="cont" class="contraseña" type="password" placeholder="Contraseña" required>
+                </article>
+                <p class="olvido">¿Has olvidado tu nombre de <a href="#">usuario</a> o <a href="#">contraseña</a> ?</p>
+                <button class="btn-a ven-ini" id="botonIniciar" onclick="eventoR()">
+                    <a style="color: white;" onclick="eventoR()">Iniciar sesión</a>
+                </button>
+            </section>
         </section>
         <!--registro-->
 
-        <section class="ventana vent-registro" id="emergenteRe">
+        <section class="ventR abrirV exp" id="emergenteRe" id-modal="abrirV">
+            <section class="ventana vent-registro">
 
-            <i class="fa-solid fa-xmark click cerrar" id="registroBtn" onclick="cerrar('registroBtn')"
-                style="color: #000000;"></i>
+                <i class="fa-solid fa-xmark click cerrar " id-modal="x" style="color: #000000;"></i>
 
-            <article class="informacion-incio">
+                <article class="informacion-incio">
 
-                <h2 class="pab-i">Registro</h2>
-                <p class="acuerdo">Al continuar, estarás configurando una cuenta de Reddit y
-                    aceptarás nuestro <a href="#">Acuerdo del usuario</a> y <a href="#">la Política de privacidad.</a>
+                    <h2 class="pab-i">Registro</h2>
+                    <p class="acuerdo">Al continuar, estarás configurando una cuenta de Aurum y
+                        aceptarás nuestro <a href="#">Acuerdo del usuario</a> y <a href="#">la Política de
+                            privacidad.</a>
+                    </p>
+
+                </article>
+                <button class="google" style="width: 100%; height: 10%;">
+                    <i class="fa-brands fa-google" style="color: #ffeeee;"></i>
+                    <p class="text-google">Iniciar sesion con google</p>
+                </button>
+                <button class="facebook" style="width: 100%; height: 10%;">
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                    <p class="text-facebook">Iniciar sesion con google</p>
+                </button>
+                <hr>
+
+                <article class="input-correo in-re">
+                    <input class="correo correoRe" id="res-correo" type="email" placeholder="Correo electronico" required>
+                </article>
+
+                <button class="continue">
+                    <span>continuar</span>
+                </button>
+
+                <p class="pregunta">¿Ya estas en Aurum? <a href="#">Inicar sesion</a></p>
+
+            </section>
+            <section class="ventanaDos vent-registro2">
+                <i class="fa-solid fa-xmark click cerrar cerrarV" id-modal="x" style="color: #000000;"></i>
+                <br>
+                <h2 class="pab-i">Crea tu nombre de usuario y contraseña</h2>
+                <p class="acuerdo">Aurum es una web anónima, así que se te conocerá por tu nombre de usuario. Elige sabiamente: una vez que escojas un nombre, no podrás cambiarlo.
                 </p>
-
-            </article>
-            <button class="google" style="width: 100%; height: 10%;">
-                <i class="fa-brands fa-google" style="color: #000000;"></i>
-                <p class="text-google">Iniciar sesion con google</p>
-            </button>
-            <button class="facebook" style="width: 100%; height: 10%;">
-                <i class="fa-brands fa-facebook" style="color: #030303;"></i>
-                <p class="text-facebook">Iniciar sesion con google</p>
-            </button>
-            <hr>
-
-            <article class="input-correo in-re">
-                <input class="correo" id="res-correo" type="text" placeholder="Correo electronico" required>
-            </article>
-
-            <button class="continue">
-                <span>continuar</span>
-            </button>
-
-            <p class="pregunta">¿Ya estas en Aurum? <a href="#">Inicar sesion</a></p>
-
-
+                <article class="input-contraseña  input-usuario">
+                    <input id="cont" class="contraseña" type="text" placeholder="Nombre de usuario" required>
+                </article>
+                <article class="input-contraseña contraseñaCreada">
+                    <input id="cont" class="contraseña contraseñados" type="password" placeholder="Contraseña" required>
+                </article>
+                <button class="btn-a ven-ini btnReIni" id="botonIniciar" onclick="eventoR()">
+                    <a style="color: white;" onclick="eventoR()">Iniciar sesión</a>
+                </button>
+            </section>
         </section>
+
 
 
 
     </header>
-    <div class="menu-toggle" id="menu-toggle">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    <nav class="sidebar" id="sidebar">
+    <nav class="sidebar acceso" id-acceso="accesoId" id="sidebar">
 
 
         <div class="perfiln">
@@ -203,8 +215,86 @@
                                 d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
                         </svg><a href="#">Configuraciones</a></li>
                 </button>
+                <section class="btnPP click acceso" id-acceso="accesoId" id-modal="abrirPost">
+                    <button class="pubPost"><i><i class="fa-regular fa-pen-to-square iModify" style="color: #ffffff;"></i></i><span id-modal="abrirPost">Publicar post</span></button>
+                </section>
             </ul>
+        </ul>
     </nav>
+    <section class="ventP abrirV" id="abrirPost" >
+        <section class="lineaDeco  exp"  id="abrirPostP">
+
+            <section class="emergentePost">
+                <section class="headerPost">
+
+                    <span class="textPost"> CREA UN POST</span>
+                    <i class="fa-solid fa-xmark click cerrar cerrarV " id-modal="x" style="color: #ffffff;"></i>
+
+                </section>
+                <hr class="lineaPost">
+                <section class="mainPost" id="mainPoDos">
+
+                    <button class="btnPost postP"><span class="clikP" id-post="posT">POST</span></button>
+                    <button class="btnPost imgPost"><span class="clikP" id-post="imG">IMG</span></button>
+                    <button class=" btnPost linkPost"><span class="clikP" id-post="linkP">LINK</span></button>
+
+                    <section class="textPostCambiar cambiarP" id="posT">
+                        <input class="titlePost" type="text" placeholder=" Title" maxlength="300" />
+                        <article class="separadorPost">
+                            <span class="spanCambioN"><button class="btnCambioP btnCam" id="bold"> <i
+                                        class="fa-solid fa-bold ne"></i></button></span>
+                            <span class="spanCambioI"><button class="btnCambioP btnCam" id="italica"> <i
+                                        class="fa-solid fa-italic"></i></button></span>
+                            <span class="spanCambioS"><button class="btnCambioP btnCam" id="subrayado"> <i
+                                        class="fa-solid fa-strikethrough"></i></button></span>
+                            <span class="spanCambioL"><button class="btnCambioP btnCam" id="links"> <i
+                                        class="fa-solid fa-link"></i></button></span>
+                            <span class="spanCambioT"><button class="btnCambioP btnCam" id="titulo"> <i
+                                        class="fa-solid fa-t"></i></button></span>
+                            <span class="spanCambioLp"><button class="btnCambioP btnCam" id="listaP"> <i
+                                        class="fa-solid fa-list"></i></button></span>
+                            <span class="spanCambioLn"><button class="btnCambioP btnCam" id="listaN"> <i
+                                        class="fa-solid fa-list-ol"></i></button></span>
+                        </article>
+                        <section class="bodyPost">
+                            <textarea class="textPo" id="textoEntero" cols="30" rows="10"
+                                placeholder=" Texto -Opcional-" onkeyup="mostrar(this.value)"></textarea>
+                        </section>
+                    </section>
+                    <section class="imgPostCambiar cambiarP" id="imG">
+                        <input class="titlePost imgTitle" type="text" placeholder=" Title" maxlength="300" />
+                        <article class="subirImg">
+                            <span class="textoImg">Selecciona la imagen que deseas</span>
+                            <section class="file-select" id="src-file1">
+                                <input type="file" name="src-file1" aria-label="Archivo">
+                            </section>
+                        </article>
+                    </section>
+                    <section class="urlPostCambiar cambiarP" id="linkP">
+                        <input class="titlePost imgTitle" type="text" placeholder=" Title" maxlength="300" />
+                        <article class="subirUrl">
+                            <section class="url-select" id="src-url">
+                                <input type="url" class="src-url" aria-label="Archivo" placeholder="--Url--">
+                            </section>
+                        </article>
+                    </section>
+                </section>
+                <section class="footerPost" id="footerPostDos">
+                    <article class="selectPoPr">
+                        <select class="pubOpriv" name="publicOprivado" id="PubOrPriv">
+                            <option value="publico">Publico</option>
+                            <option value="privado">Privado</option>
+                        </select>
+                    </article>
+                    <button class="postear">
+                        <span>Post</span>
+                    </button>
+
+                </section>
+            </section>
+        </section>
+    </section>
+
 
     <!-- Cuerpo Posts de Foro -->
     <main>
@@ -231,7 +321,7 @@
             </section>
         </section>
 
-        <section class="contenedorArticulos">
+        <section class="contenedorArticulos mainMover">
 
             <section class="contenidouno" id="contenidoprincipal">
                 <section class="PublicarPost">
@@ -856,13 +946,9 @@
                     </section>
                 </section>
             </section>
-    
-        </main>
-
-
-
+        </section>
     </main>
-    <aside class="asideuno">
+    <aside class="asideuno moverAsideUno">
         <section class="seccion1">
             <h2 class="titulouno">Articulos que te pueden interesar </h2>
         </section>
@@ -884,7 +970,7 @@
         </nav>
 
     </aside>
-    <aside class="asidepadre">
+    <aside class=" moverAsideDos asidepadre acceso " id-acceso="accesoId" id="asideDosC">
         <section class="asidedos" >
             <section class="seccion2">
                 <h2>Artistas que te pueden interesar </h2>
@@ -1010,7 +1096,7 @@
             </section>
         </div>
     </section>
-
+    <script src="javascript/abrir.js"></script>
     <script src="javascript/scriptpfl.js"></script>
     <script src="javascript/scriptmain.js"></script>
 </body>
