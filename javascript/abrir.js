@@ -6,6 +6,12 @@ let registro = document.querySelector(".ventR")
 let main= document.querySelector(".mainMover")
 let asideDos= document.querySelector(".asidepadre")
 let asideUno=document.querySelector(".asideuno")
+let btnReEmail=document.querySelector(".continue")
+let emailT = document.querySelector(".correoRe")
+let ventanaDos=document.querySelector(".ventanaDos")
+let venR=document.querySelector(".vent-registro")
+let contraseñaCreada=document.querySelector(".contraseñados")
+let btnIniRe=document.querySelector(".btnReIni")
 
 
 
@@ -98,6 +104,24 @@ function contraseña() {
     return contra
 }
 
+function eventRegir(){
+
+    btnReEmail.addEventListener("click",function(){
+        if (!emailT.value){
+
+            alert("email es incorrecto")
+        }else if (emailT.value){
+
+            
+            venR.style.display="none"
+            ventanaDos.style.display="block"
+        }
+    })
+    
+}
+eventRegir()
+
+
 function acceso() {
     if (contraseña() == true && correoI() == true) {
 
@@ -134,6 +158,58 @@ function acceso() {
 function eventoR() {
     btnIni.addEventListener("click", acceso)
 }
+
+function helpRe(){
+    
+}
+
+function accesoRegistro(){
+    btnIniRe.addEventListener("click", function (){
+
+        if (contraseñaCreada.value.length < 6){
+
+            alert("La contraseña tiene que ser mayor a 6 digitos")
+
+
+        }else{
+
+            main.classList.remove("mainMover")
+            asideUno.classList.remove("moverAsideUno")
+            asideDos.classList.remove("moverAsideDos")
+            inicio.classList.remove("ventI")
+            registro.classList.remove("ventR")
+
+            listaContraseña.push(contraseñaCreada.value)
+            console.log(listaContraseña)
+    
+            let listaAcceso = document.querySelectorAll(".acceso")
+            for (i = 1; i < listaAcceso.length; i++) {
+    
+                let classAcceso = listaAcceso[i].getAttribute("id-acceso")
+                let elemento = listaAcceso[i]
+    
+    
+    
+                if (classAcceso == "accesoId") {
+    
+    
+                    elemento.style.display = "block";
+                    ventanaDos.style.display = "none"
+                    document.querySelector(".globo-perfil").style.display = "block"
+    
+                } else {
+                    elemento.style.display = "none"
+                }
+    
+            }
+    
+            
+            
+        }
+    })
+}
+
+accesoRegistro()
 
 //post
 

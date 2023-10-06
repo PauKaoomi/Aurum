@@ -333,7 +333,7 @@
 }
 
 .ventana {
-    background-color: rgb(255, 255, 255);
+    background-color:white;
     width: 21%;
     padding: 50px;
     min-height: 78vh;
@@ -342,6 +342,19 @@
     right: 36%;
     position: absolute;
 }
+
+.ventanaDos {
+    background-color:white;
+    width: 21%;
+    padding: 50px;
+    min-height: 69vh;
+    border-radius: 22px;
+    top: 10%;
+    right: 36%;
+    position: absolute;
+    display: none;
+}
+
 
 .informacion-incio {
     height: 100%;
@@ -362,18 +375,19 @@
 i,
 .text-google {
     display: inline-block;
+    color: #fff;
 }
 
 .google {
     border-radius: 30px;
     position: relative;
     top: 25px;
-    background-color: white;
+    background-color: #0D0D0D;
     transition: all 1s ease;
 }
 
 .google:hover {
-    background: rgb(201, 50, 50);
+    background: #fb34d3;
     color: #fff;
 
 }
@@ -392,25 +406,27 @@ p {
 i,
 .text-facebook {
     display: inline-block;
+    color: white;
 }
 
 .facebook {
     border-radius: 30px;
     position: relative;
     top: 33px;
-    background-color: white;
+    background-color: #0D0D0D;
     transition: all 1s ease;
 }
 
 .facebook:hover {
-    background: #318aac;
+    background: #fb34d3;
     color: #fff;
 
 }
 
-i {
+.facebook i {
     position: relative;
     right: 9%;
+    margin-left: 17px;
 }
 
 p {
@@ -442,12 +458,19 @@ hr {
     font-weight: bold;
 }
 
+
 .input-contraseña {
-    top: 110px;
+    top:7rem;
     position: relative;
     height: 50px;
     border-radius: 30px;
+    margin-bottom: 25px;
 }
+
+.contraseñaCreada{
+    top: 2rem;
+}
+
 
 .contraseña {
     height: 70%;
@@ -464,10 +487,19 @@ hr {
     font-size: 14px;
 }
 
+.input-usuario{
+    top: 30px;
+}
+
 .ven-ini {
     position: relative;
     top: 120px;
     font-family: "regular";
+}
+
+.btnReIni{
+    top: 7rem;
+
 }
 
 .vent-registro {
@@ -494,6 +526,7 @@ hr {
 
 }
 
+
 .pregunta {
     top: 130px;
     position: relative;
@@ -506,6 +539,8 @@ hr {
 
 .cerrar {
     cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 /*Estructura para los post*/
